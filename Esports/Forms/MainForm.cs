@@ -5,6 +5,7 @@ namespace Esports
     public partial class MainForm : Form
     {
         private Button selectedScreen;
+        private Form activeForm;
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -31,10 +32,12 @@ namespace Esports
             panelNav.Height = homeBtn.Height;
             panelNav.Top = homeBtn.Top;
             panelNav.Left = homeBtn.Left;
-            homeBtn.BackColor = Color.AliceBlue;
+            homeBtn.BackColor = Color.FromArgb(220, 239, 255);
             this.selectedScreen = homeBtn;
             this.ControlBox = false;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this.activeForm = new Forms.PlayersForm();
+            openChildForm(new Forms.PlayersForm());
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -50,9 +53,10 @@ namespace Esports
                 panelNav.Height = EventsBtn.Height;
                 panelNav.Top = EventsBtn.Top;
                 panelNav.Left = EventsBtn.Left;
-                EventsBtn.BackColor = Color.AliceBlue;
+                EventsBtn.BackColor = Color.FromArgb(220, 239, 255);
                 HeaderLbl.Text = "Events";
                 this.selectedScreen = EventsBtn;
+                openChildForm(activeForm);
             }
         }
 
@@ -64,9 +68,10 @@ namespace Esports
                 panelNav.Height = teamBtn.Height;
                 panelNav.Top = teamBtn.Top;
                 panelNav.Left = teamBtn.Left;
-                teamBtn.BackColor = Color.AliceBlue;
+                teamBtn.BackColor = Color.FromArgb(220, 239, 255);
                 HeaderLbl.Text = "Teams";
                 this.selectedScreen = teamBtn;
+                openChildForm(activeForm);
             }
         }
 
@@ -78,9 +83,10 @@ namespace Esports
                 panelNav.Height = orgBtn.Height;
                 panelNav.Top = orgBtn.Top;
                 panelNav.Left = orgBtn.Left;
-                orgBtn.BackColor = Color.AliceBlue;
+                orgBtn.BackColor = Color.FromArgb(220, 239, 255);
                 HeaderLbl.Text = "Organizations";
                 this.selectedScreen = orgBtn;
+                openChildForm(activeForm);
             }
         }
 
@@ -92,9 +98,10 @@ namespace Esports
                 panelNav.Height = helpBtn.Height;
                 panelNav.Top = helpBtn.Top;
                 panelNav.Left = helpBtn.Left;
-                helpBtn.BackColor = Color.AliceBlue;
+                helpBtn.BackColor = Color.FromArgb(220, 239, 255);
                 HeaderLbl.Text = "Help";
                 this.selectedScreen = helpBtn;
+                openChildForm(activeForm);
             }
         }
 
@@ -106,9 +113,10 @@ namespace Esports
                 panelNav.Height = homeBtn.Height;
                 panelNav.Top = homeBtn.Top;
                 panelNav.Left = homeBtn.Left;
-                homeBtn.BackColor = Color.AliceBlue;
+                homeBtn.BackColor = Color.FromArgb(220, 239, 255);
                 HeaderLbl.Text = "Home";
                 this.selectedScreen = homeBtn;
+                openChildForm(activeForm);
             }
         }
 
@@ -126,9 +134,10 @@ namespace Esports
                 panelNav.Height = playersBtn.Height;
                 panelNav.Top = playersBtn.Top;
                 panelNav.Left = playersBtn.Left;
-                playersBtn.BackColor = Color.AliceBlue;
+                playersBtn.BackColor = Color.FromArgb(220, 239, 255);
                 HeaderLbl.Text = "Players";
                 this.selectedScreen = playersBtn;
+                openChildForm(activeForm);
             }
         }
 
@@ -155,6 +164,23 @@ namespace Esports
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+
+        private void openChildForm(Form child)
+        {
+            if (activeForm != child)
+            {
+                activeForm.Close();
+                activeForm = child;
+                child.TopLevel = false;
+                child.FormBorderStyle = FormBorderStyle.None;
+                child.Dock = DockStyle.Fill;
+                this.panelDesktop.Controls.Add(child);
+                this.panelDesktop.Tag = child;
+                child.BringToFront();
+                child.Show();
+            }
         }
     }
 }
