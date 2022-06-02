@@ -45,12 +45,15 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.HeaderLbl = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.searchBtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.searchBtn = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.closeBtn = new System.Windows.Forms.Button();
             this.miniBtn = new System.Windows.Forms.Button();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -233,7 +236,7 @@
             this.userLbl2.Location = new System.Drawing.Point(159, 159);
             this.userLbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.userLbl2.Name = "userLbl2";
-            this.userLbl2.Size = new System.Drawing.Size(50, 16);
+            this.userLbl2.Size = new System.Drawing.Size(59, 20);
             this.userLbl2.TabIndex = 3;
             this.userLbl2.Text = "label2";
             this.userLbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -246,7 +249,7 @@
             this.userLbl1.Location = new System.Drawing.Point(15, 159);
             this.userLbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.userLbl1.Name = "userLbl1";
-            this.userLbl1.Size = new System.Drawing.Size(50, 16);
+            this.userLbl1.Size = new System.Drawing.Size(59, 20);
             this.userLbl1.TabIndex = 2;
             this.userLbl1.Text = "label1";
             this.userLbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -259,7 +262,7 @@
             this.usernameLbl.Location = new System.Drawing.Point(82, 101);
             this.usernameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.usernameLbl.Name = "usernameLbl";
-            this.usernameLbl.Size = new System.Drawing.Size(68, 20);
+            this.usernameLbl.Size = new System.Drawing.Size(83, 25);
             this.usernameLbl.TabIndex = 1;
             this.usernameLbl.Text = "userLbl";
             this.usernameLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -280,10 +283,10 @@
             this.HeaderLbl.AutoSize = true;
             this.HeaderLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.HeaderLbl.ForeColor = System.Drawing.Color.AliceBlue;
-            this.HeaderLbl.Location = new System.Drawing.Point(31, 23);
+            this.HeaderLbl.Location = new System.Drawing.Point(31, 20);
             this.HeaderLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.HeaderLbl.Name = "HeaderLbl";
-            this.HeaderLbl.Size = new System.Drawing.Size(97, 33);
+            this.HeaderLbl.Size = new System.Drawing.Size(121, 42);
             this.HeaderLbl.TabIndex = 1;
             this.HeaderLbl.Text = "Home";
             // 
@@ -291,12 +294,24 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.AliceBlue;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel3.Controls.Add(this.searchBtn);
             this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Location = new System.Drawing.Point(283, 23);
+            this.panel3.Controls.Add(this.searchBtn);
+            this.panel3.Location = new System.Drawing.Point(325, 21);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(454, 36);
+            this.panel3.Size = new System.Drawing.Size(478, 43);
             this.panel3.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.AliceBlue;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.CausesValidation = false;
+            this.textBox1.Location = new System.Drawing.Point(62, 8);
+            this.textBox1.MinimumSize = new System.Drawing.Size(404, 33);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.PlaceholderText = "Search for players, teams, events...";
+            this.textBox1.Size = new System.Drawing.Size(404, 33);
+            this.textBox1.TabIndex = 0;
             // 
             // searchBtn
             // 
@@ -304,22 +319,11 @@
             this.searchBtn.FlatAppearance.BorderSize = 0;
             this.searchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.searchBtn.Image = ((System.Drawing.Image)(resources.GetObject("searchBtn.Image")));
-            this.searchBtn.Location = new System.Drawing.Point(-4, 0);
+            this.searchBtn.Location = new System.Drawing.Point(0, 0);
             this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(47, 34);
+            this.searchBtn.Size = new System.Drawing.Size(47, 40);
             this.searchBtn.TabIndex = 1;
             this.searchBtn.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.AliceBlue;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.CausesValidation = false;
-            this.textBox1.Location = new System.Drawing.Point(44, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Search for players, teams, events...";
-            this.textBox1.Size = new System.Drawing.Size(412, 19);
-            this.textBox1.TabIndex = 0;
             // 
             // panel5
             // 
@@ -373,7 +377,7 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1260, 900);
@@ -424,5 +428,8 @@
         private Button miniBtn;
         private Button closeBtn;
         private Panel panelDesktop;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private System.ComponentModel.BackgroundWorker backgroundWorker3;
     }
 }
