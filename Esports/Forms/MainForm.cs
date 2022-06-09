@@ -122,8 +122,9 @@ namespace Esports
 
         private void leaveBtn_Click(object sender, EventArgs e)
         {
+            var backForm = new Forms.LoginOrRegistForm();
+            backForm.Show();
             this.Close(); // fecha este form
-            // Application.Exit(); // fecha toda a aplicação
         }
 
         private void playersBtn_Click(object sender, EventArgs e)
