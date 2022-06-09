@@ -236,7 +236,7 @@
             this.userLbl2.Location = new System.Drawing.Point(159, 159);
             this.userLbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.userLbl2.Name = "userLbl2";
-            this.userLbl2.Size = new System.Drawing.Size(59, 20);
+            this.userLbl2.Size = new System.Drawing.Size(50, 16);
             this.userLbl2.TabIndex = 3;
             this.userLbl2.Text = "label2";
             this.userLbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -249,7 +249,7 @@
             this.userLbl1.Location = new System.Drawing.Point(15, 159);
             this.userLbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.userLbl1.Name = "userLbl1";
-            this.userLbl1.Size = new System.Drawing.Size(59, 20);
+            this.userLbl1.Size = new System.Drawing.Size(50, 16);
             this.userLbl1.TabIndex = 2;
             this.userLbl1.Text = "label1";
             this.userLbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -262,7 +262,7 @@
             this.usernameLbl.Location = new System.Drawing.Point(82, 101);
             this.usernameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.usernameLbl.Name = "usernameLbl";
-            this.usernameLbl.Size = new System.Drawing.Size(83, 25);
+            this.usernameLbl.Size = new System.Drawing.Size(68, 20);
             this.usernameLbl.TabIndex = 1;
             this.usernameLbl.Text = "userLbl";
             this.usernameLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -286,7 +286,7 @@
             this.HeaderLbl.Location = new System.Drawing.Point(31, 20);
             this.HeaderLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.HeaderLbl.Name = "HeaderLbl";
-            this.HeaderLbl.Size = new System.Drawing.Size(121, 42);
+            this.HeaderLbl.Size = new System.Drawing.Size(97, 33);
             this.HeaderLbl.TabIndex = 1;
             this.HeaderLbl.Text = "Home";
             // 
@@ -306,8 +306,9 @@
             this.textBox1.BackColor = System.Drawing.Color.AliceBlue;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.CausesValidation = false;
-            this.textBox1.Location = new System.Drawing.Point(62, 8);
+            this.textBox1.Location = new System.Drawing.Point(53, 8);
             this.textBox1.MinimumSize = new System.Drawing.Size(404, 33);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.PlaceholderText = "Search for players, teams, events...";
             this.textBox1.Size = new System.Drawing.Size(404, 33);
@@ -377,7 +378,7 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1260, 900);
