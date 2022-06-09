@@ -1,3 +1,5 @@
+USE Esports
+GO
 CREATE TABLE [USER] (
 username VARCHAR(25) PRIMARY KEY,
 birthday DATE,
