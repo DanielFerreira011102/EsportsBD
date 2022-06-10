@@ -61,5 +61,31 @@ namespace Esports.Forms
             MenuForm.Show();
             Hide();
         }
+
+        //declares
+        [DllImport("user32.dll")]
+        private static extern bool PostMessage(
+        IntPtr hWnd, // handle to destination window
+        Int32 msg, // message
+        Int32 wParam, // first message parameter
+        Int32 lParam // second message parameter
+        );
+
+        const Int32 WM_LBUTTONDOWN = 0x0201;
+
+        private void customDatepicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        //method to call dropdown
+        private void show(object sender, EventArgs e)
+        {
+            Int32 x = BirthdayReg.Width - 10;
+            Int32 y = BirthdayReg.Height / 2;
+            Int32 lParam = x + y * 0x00010000;
+
+            PostMessage(this.Handle, WM_LBUTTONDOWN, 1, lParam);
+        }
     }
 }

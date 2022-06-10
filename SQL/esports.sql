@@ -2,9 +2,10 @@ USE Esports
 GO
 CREATE TABLE [USER] (
 username VARCHAR(25) PRIMARY KEY,
+[password] VARCHAR(30) NOT NULL,
 birthday DATE,
 email VARCHAR(50) UNIQUE NOT NULL,
-region VARCHAR(20),
+region VARCHAR(20) DEFAULT('World'),
 join_date DATE DEFAULT GETDATE(),
 gender CHAR(1),
 CHECK (gender = 'M' OR gender = 'F')
@@ -40,7 +41,7 @@ earnings INT DEFAULT 0,
 wins INT DEFAULT 0,
 ties INT DEFAULT 0,
 losses INT DEFAULT 0,
-game VARCHAR(25) REFERENCES GAME([name]) ON DELETE CASCADE,
+game VARCHAR(25) REFERENCES GAME([name]),
 );
 
 CREATE TABLE TEAM_STAFF (
@@ -49,7 +50,7 @@ twitter_url VARCHAR(50),
 years_experience INT,
 team_join_date DATE,
 real_name VARCHAR(30),
-team_id INT REFERENCES TEAM(id) ON DELETE CASCADE,
+team_id INT REFERENCES TEAM(id),
 );
 
 CREATE TABLE TEAM_STAFF_ROLE (
@@ -60,7 +61,7 @@ PRIMARY KEY(username, [role])
 
 CREATE TABLE PLAYER (
 username VARCHAR(25) PRIMARY KEY REFERENCES [USER](username) ON DELETE CASCADE,
-team_id INT REFERENCES TEAM(id) ON DELETE CASCADE,
+team_id INT REFERENCES TEAM(id),
 ranking INT,
 IGN VARCHAR(25) NOT NULL,
 real_name VARCHAR(30) NOT NULL,
@@ -96,11 +97,11 @@ CREATE TABLE TOURNAMENT (
 [format] VARCHAR(30) NOT NULL,
 -- 'Single Elimination' 'Double Elimination' 'Multilevel' 'Round Robin' 'Swiss System'
 prize_pool INT,
-[start_date] DATE NOT NULL,
-[end_date] DATE NOT NULL,
+[start_date] DATETIME NOT NULL,
+[end_date] DATETIME NOT NULL,
 region VARCHAR(20),
 number_teams INT NOT NULL,
-game VARCHAR(25) REFERENCES GAME([name]) ON DELETE CASCADE,
+game VARCHAR(25) REFERENCES GAME([name]),
 organization VARCHAR(25) REFERENCES ORGANIZATION([name]) ON DELETE CASCADE,
 [status] VARCHAR(20) DEFAULT 'UPCOMING',
 PRIMARY KEY([name], organization)
@@ -114,16 +115,16 @@ organization VARCHAR(25),
 PRIMARY KEY(team_id, tournament)
 );
 -- update participates_in
-ALTER TABLE PARTICIPATES_IN ADD FOREIGN KEY (tournament, organization) REFERENCES TOURNAMENT([name], organization)
+ALTER TABLE PARTICIPATES_IN ADD FOREIGN KEY (tournament, organization) REFERENCES TOURNAMENT([name], organization) ON DELETE CASCADE
 
 CREATE TABLE SERIES (
 id INT IDENTITY,
-[date] DATE NOT NULL,
+[date] DATETIME NOT NULL,
 -- splitted score for each team
 score_team1 INT,
 score_team2 INT,
 -- made winner reference one of the teams (new relation 1:N)
-winner INT REFERENCES TEAM(id) ON DELETE CASCADE,
+winner INT REFERENCES TEAM(id),
 best_of INT NOT NULL,
 tournament VARCHAR(25),
 organization VARCHAR(25),
@@ -132,7 +133,7 @@ mvp VARCHAR(25) REFERENCES PLAYER(username),
 PRIMARY KEY(id, tournament, organization),
 );
 -- update series/matches
-ALTER TABLE SERIES ADD FOREIGN KEY (tournament, organization) REFERENCES TOURNAMENT([name], organization)
+ALTER TABLE SERIES ADD FOREIGN KEY (tournament, organization) REFERENCES TOURNAMENT([name], organization) ON DELETE CASCADE
 
 CREATE TABLE TEAM_PLAYS (
 match_id INT,
@@ -142,7 +143,7 @@ team_id INT REFERENCES TEAM(id) ON DELETE CASCADE,
 PRIMARY KEY(match_id, tournament, organization, team_id) 
 );
 -- update team_plays
-ALTER TABLE TEAM_PLAYS ADD FOREIGN KEY (match_id, tournament, organization) REFERENCES SERIES(id, tournament, organization)
+ALTER TABLE TEAM_PLAYS ADD FOREIGN KEY (match_id, tournament, organization) REFERENCES SERIES(id, tournament, organization) ON DELETE CASCADE
 
 CREATE TABLE MAP (
 number INT,
@@ -168,7 +169,7 @@ player VARCHAR(25) REFERENCES PLAYER(username) ON DELETE CASCADE
 PRIMARY KEY (player, map_number, match_id, organization, tournament)
 );
 -- update player_stats
-ALTER TABLE PLAYER_STATS ADD FOREIGN KEY (map_number, match_id, organization, tournament) REFERENCES MAP(number, match_id, tournament, organization)
+ALTER TABLE PLAYER_STATS ADD FOREIGN KEY (map_number, match_id, organization, tournament) REFERENCES MAP(number, match_id, tournament, organization) ON DELETE CASCADE
 
 CREATE TABLE STAT (
 [name] VARCHAR(20),
@@ -191,4 +192,4 @@ organization VARCHAR(25),
 PRIMARY KEY(player, match_id, tournament, organization)
 );
 -- update player_plays
-ALTER TABLE PLAYER_PLAYS ADD FOREIGN KEY (match_id, tournament, organization) REFERENCES SERIES(id, tournament, organization)
+ALTER TABLE PLAYER_PLAYS ADD FOREIGN KEY (match_id, tournament, organization) REFERENCES SERIES(id, tournament, organization) ON DELETE CASCADE
