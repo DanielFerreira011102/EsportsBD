@@ -1,0 +1,1001 @@
+CurrentHandle,NameFirst NameLast,CountryCode
+dupreeh,Peter Rasmussen,dk
+Xyp9x,Andreas Højsleth,dk
+dev1ce,Nicolai Reedtz,dk
+gla1ve,Lukas Rossander,dk
+Magisk,Emil Reif,dk
+Stewie2k,Jakey Yip,us
+TACO,Epitácio de Melo,br
+fer,Fernando Alvarenga,br
+FalleN,Gabriel Toledo,br
+coldzera,Marcelo David,br
+NAF,Keith Markovic,ca
+karrigan,Finn Andersen,dk
+ELiGE,Jonathan Jablonowski,us
+nitr0,Nick Cannella,us
+JW,Jesper Wecksell,se
+olofmeister,Olof Kajbjer,se
+flusha,Robin Rönnquist,se
+KRiMZ,Freddy Johansson,se
+Twistzz,Russel Van Dulken,ca
+apEX,Dan Madesclaire,fr
+NBK,Nathan Schmitt,fr
+GuardiaN,Ladislav Kovács,sk
+tarik,Tarik Celik,us
+rain,Håvard Nygaard,no
+NiKo,Nikola Kovač,ba
+flamie,Egor Vasilyev,ru
+kennyS,Kenny Schrub,fr
+Zeus,Daniil Teslenko,ua
+s1mple,Alexander Kostylev,ua
+shox,Richard Papillon,fr
+snax,Janusz Pogorzelski,pl
+Kjaerbye,Markus Kjærbye,dk
+Edward,Ioann Sukharev,ua
+neo,Filip Kubski,pl
+chrisJ,Chris de Jong,nl
+TaZ,Wiktor Wojtas,pl
+Rush,Will Wierzba,us
+pashaBiceps,Jarosław Jarząbkowski,pl
+byali,Paweł Bieliński,pl
+f0rest,Patrik Lindberg,se
+electroNic,Denis Sharipov,ru
+GeT_RiGhT,Christopher Alesund,se
+Xizt,Richard Landström,se
+ropz,Robin Kool,ee
+RpK,Cédric Guipouy,fr
+Happy,Vincent Schopenhauer,fr
+stanislaw,Peter Jarguz,ca
+Lekr0,Jonas Olofsson,se
+autimatic,Timothy Ta,us
+Golden,Maikil Selim,se
+Skadoodle,Tyler Latham,us
+allu,Aleksi Jalli,fi
+cajunb,Renè Borg,dk
+AdreN,Dauren Kystaubayev,kz
+friberg,Adam Friberg,se
+k0nfig,Kristian Wienecke,dk
+Brehze,Vincent Cayonte,us
+nahtE,Ethan Arnold,us
+fnx,Lincoln Lau,br
+boltz,Ricardo Prass,br
+KIOSHIMA,Fabien Fiey,fr
+CeRq,Cvetelin Nikolov,bg
+dennis,Dennis Edman,se
+MSL,Mathias Lauridsen,dk
+seized,Denis Kostin,ru
+oskar,Tomáš Šťastný,cz
+ZywOo,Mathieu Herbaut,fr
+aizy,Philip Aistrup,dk
+suNny,Miikka Kemppi,fi
+Valde,Valdemar Vangså,dk
+felps,João Vasconcellos,br
+Dosia,Mikhail Stolyarov,ru
+XANTARES,Can Dörtkardes,tr
+bodyy,Alexandre Pianaro,fr
+STYKO,Martin Styk,sk
+woxic,Özgür Eker,tr
+REZ,Fredrik Sterner,se
+Aleksib,Aleksi Virolainen,fi
+Qikert,Alexey Golubev,kz
+mou,Rustem Tlepov,kz
+Buster,Timur Tulepov,kz
+Jame,Ali Dzhami,ru
+SIXER,Christophe Xia,fr
+HObbit,Abay Khasenov,kz
+SmithZz,Edouard Dubourdeaux,fr
+frozen,David Čerňanský,sk
+poiz0n,Valentin Vasilev,bg
+daps,Damian Steele,ca
+twist,Simon Eliasson,se
+hen1,Henrique Teles,br
+ScreaM,Adil Benrlitom,be
+mixwell,Oscar Cañellas,es
+tabseN,Johannes Wodarz,de
+ALEX,Alex McMeekin,gb
+Furlan,Damian Kisłowski,pl
+somebody,HaoWen Xu,cn
+n0thing,Jordan Gilbert,us
+rallen,Karol Rodowicz,pl
+Amanek,Francois Delaunay,fr
+SANJI,Sanjar Kuliev,uz
+N0tail,Johan Sundstein,dk
+JerAx,Jesse Vainikka,fi
+ana,Anathan Pham,au
+Ceb,Sébastien Debs,fr
+Topson,Topias Taavitsainen,fi
+KuroKy,Kuro Takhasomi,de
+Miracle-,Amer Al-Barkawi,jo
+MinD_ContRoL,Ivan Ivanov,bg
+GH,Maroun Merhej,lb
+Matumbaman,Lasse Urpalainen,fi
+SumaiL,Sumail Hassan,pk
+UNiVeRsE,Saahil Arora,us
+ppd,Peter Dager,us
+Somnus丶M,Lu Yao,cn
+fy,Linsen Xu,cn
+Puppey,Clement Ivanov,ee
+Fear,Clinton Loomis,us
+s4,Gustav Magnusson,se
+Zai,Ludwig Wåhlberg,se
+Fly,Tal Aizik,il
+w33,Aliwi Omar,ro
+Arteezy,Artour Babaev,ca
+Ame,Chunyu Wang,cn
+y`,Zhang Yiping,cn
+Faith_bian,Zhang Ruida,cn
+Cr1t,Andreas Nielsen,dk
+Aui_2000,Kurtis Ling,ca
+iceice,Peng Li,cn
+Shadow,Chu Zeyu,cn
+bLink,Zhou Yang,cn
+xNova,Jianwei Yap,my
+Chalice,Shenyi Yang,cn
+xiao8,Ning Zhang,cn
+kpii,Damien Chok,au
+RAMZES666,Roman Kushnarev,ru
+KaKa,Liangzhi Hu,cn
+MidOne,Yeik Nai Zheng,my
+Solo,Alexei Berezin,ru
+Hao,Zhihao Chen,cn
+Faith,Hongda Zeng,cn
+9pasha,Pavel Khvastunov,ru
+Noone,Vladimir Minenko,ua
+Super,Junhao Xie,cn
+iceiceice,Daryl Pei Xiang Koh,sg
+YapzOr,Yazied Jaradat,jo
+MiSeRy,Rasmus Fillipsen,dk
+Resolut1on,Roman Fominok,ua
+Fenrir,Chao Lu,cn
+Mu,Pan Zhang,cn
+LaNm,Zhicheng Zhang,cn
+DDC,Fa Ming Liang,mo
+RodjER,Vladimir Nikogosyan,ru
+FATA,Adrian Trinks,de
+Sccc,Chun Song,cn
+Banana,Wang Jiao,cn
+Moogy,Xu Han,cn
+Sylar,Jiajun Liu,cn
+eLeVeN,Ren Yangwei,cn
+SanSheng,Zhaohui Wang,cn
+Yao,Zhengzheng Yao,cn
+MMY!,Zengrong Lei,cn
+Q,Bin Fu,cn
+Saksa,Martin Sazdov,mk
+Mushi,Yee Fung Chai,my
+Paparazi,Chengjun Zhang,cn
+pieliedie,Johan Åström,se
+EternaLEnVy,Jacky Mao,ca
+Nisha,Michał Jankowski,pl
+Lil,Ilya Ilyuk,ua
+Agressif,Zheng Sun,cn
+BurNIng,Zhilei Xu,cn
+MoonMeander,David Tan,ca
+Ori,Jiaoyang Zeng,cn
+Moo,David Hull,us
+Yang,Haiyang Zhou,cn
+Monet,Peng Du,cn
+Dendi,Danil Ishutin,ua
+DJ,Djardel Jicko Mampusti,ph
+Ah-fu,Tue Soon Chuan,my
+rOtK,Fan Bai,cn
+Tims,Timothy Randrup,ph
+Ace,Marcus Hoelgaard,dk
+ChuaN,Hock Chuan Wong,my
+KuKU,Kuku Palad,ph
+garder,Xinzhou Liu,cn
+Loda,Jonathan Berg,se
+Xz,Zezhi Chen,cn
+EGM,Jerry Lundqvist,se
+XBOCT,Oleksandr Dashkevych,ua
+Shiki,Jiwei Huang,cn
+Akke,Joakim Akterhall,se
+Fade,Pan Yi,cn
+AdmiralBulldog,Henrik Ahnberg,se
+Raven,Marc Polo Luis Fausto,ph
+Febby,Yong Min Kim,kr
+Inflame,Yongzheng He,cn
+Dy,Cong Ding,cn
+QO,Sunyeob Kim,kr
+fng,Artem Barshack,by
+MP,Noah Pyo,kr
+Faker,Sang Hyeok Lee,kr
+Duke,Ho Seong Lee,kr
+Bang,Jun Sik Bae,kr
+Wolf,Jae Wan Lee,kr
+Bengi,Seong Ung Bae,kr
+JackeyLove,Wen Bo Yu,cn
+Rookie,Eui Jin Song,kr
+Ning,Zhen Ning Gao,cn
+Blank,Sun Gu Kang,kr
+CoreJJ,Jo Yong-in,kr
+Ambition,Chan Yong Kang,kr
+Baolan,Liu Yi Wang,cn
+Uzi,Zihao Jian,cn
+Karsa,Hau Hsuan Hung,tw
+TheShy,Dong Geun Kang,kr
+Mata,Se Hyeong Cho,kr
+Ruler,Jae Hyuk Park,kr
+Impact,Jung Eon-yeong,kr
+xiaohu,Yuan Hao Li,cn
+CuVee,Seong Jin Lee,kr
+Crown,Min Ho Lee,kr
+Peanut,Wang Ho Han,kr
+Mlxg,Shi Yu Liu,cn
+PerkZ,Luka Perković,hr
+ClearLove,Kai Ming,cn
+Caps,Rasmus Winther,dk
+PawN,Won Seok Heo,kr
+Rekkles,Martin Larsson,se
+sOAZ,Paul Boyer,fr
+Deft,Hyuk Kyu Kim,kr
+Jankos,Marcin Jankowski,pl
+Ming,Sen Ming Shi,cn
+PraY,Jong In Kim,kr
+letme,Jun Ze Yan,cn
+Haru,Min Seung Kang,kr
+Huni,Seung Hoon Heo,kr
+Looper,Hyeong Seok Jang,kr
+Meiko,Ye Tian,cn
+SwordArt,Shuo Jie Hu,tw
+Wunder,Martin Hansen,dk
+doinb,Tae Sang Kim,kr
+GorillA,Beom Hyeon Kang,kr
+Hylissang,Zdravec Gulubov,bg
+imp,Seung Bin Gu,kr
+Broxah,Mads Brock-Pedersen,dk
+Doublelift,Peter Peng,us
+Smeb,Kyung Ho Song,kr
+Bwipo,Gabriël Rau,be
+bebe,Bo Wei Cheng,tw
+Sneaky,Zachary Scuderi,us
+DanDy,In Kyu Choi,kr
+Lwx,Wei Xiang Lin,cn
+Tian,Tian Liang Gao,cn
+kurO,Seo Haeng Lee,kr
+GimGoon,Han Saem Kim,kr
+Crisp,Qing Song Liu,cn
+Piglet,Gwang Jin Chae,kr
+Jensen,Nicolaj Jensen,dk
+Koro1,Yang Tong,cn
+Xmithie,Jake Puchero,ph
+Svenskeren,Dennis Johnsen,dk
+PoohManDu,Jeong Hyeon Lee,kr
+Mithy,Alfonso Aguirre Rodriguez,es
+Zven,Jesper Svenningsen,dk
+Bjergsen,Søren Bjerg,dk
+Easyhoon,Ji Hoon Lee,kr
+Scout,Ye Chan Lee,kr
+Maple,Yi Tang Huang,tw
+Khan,Dong Ha Kim,kr
+Zero,Kyung Sup Yoon,kr
+Stanley,June Tsan Wang,tw
+Toyz,Kurtis Wai Kin Lau,hk
+Mikyx,Mihael Mehle,si
+MaRin,Gyeong Hwan Jang,kr
+Lilballz,Kuan Po Sung,tw
+MiSTakE,Hui Chung Chen,tw
+xiye,Han Wei Su,cn
+Mouse,Yu Hao Chen,cn
+Zzitai,Zhihao Liu,cn
+Mystic,Sung Joon Jin,kr
+Score,Dong Bin Go,kr
+Ryu,Sang Ook Yoo,kr
+YellOwStaR,Bora Kim,fr
+Bdd,Bo Seong Gwak,kr
+WildTurtle,Jason Tran,ca
+Knight,Ding Zhuo,cn
+Trick,Gang Yun Kim,kr
+Betty,Yu Hung Lu,tw
+ShowMaker,Su Heo,kr
+Nuguri,Ha Gwon Jang,kr
+Canyon,Geon Bu Kim,kr
+369,Jia Hao Bai,cn
+BeryL,Geon Hee Cho,kr
+LokeN,Dong Wook Lee,kr
+xPeke,Enrique Cedeño Martinez,es
+Expect,Dae Han Gi,kr
+Fzzf,Zhuojun Feng,cn
+Condi,Ren Jie Xiang,cn
+Hjärnan,Petter Freyschuss,se
+957,Chang Yu Ke,cn
+Bugha,Kyle Giersdorf,us
+Aqua,David Wang,at
+psalm,Harrison Chang,us
+Nyhrox,Emil Bergquist Pedersen,no
+EpikWhale,Shane Cotton,us
+Wolfiez,Jaden Ashman,gb
+Rojo,Dave Jong,nl
+Kreo,Nate Kou,hk
+Zayt,Williams Aubin,ca
+Saf,Rocco Morales,us
+Ceice,Davis McClellan,us
+kinG,Thiago Lapp,ar
+Elevate,Hayden Krueger,us
+Skite,Clément Danglot,fr
+Mitr0,Dmitri Van de Vrie,nl
+Crue,Theo Ferrer,se
+Mongraal,Kyle Jackson,gb
+Bizzle,Timothy Miller,us
+Arkhram,Diego Lima,us
+Tfue,Turner Tenney,us
+ZexRow,Anthony Colandro,us
+BenjyFishy,Benjy David Fish,gb
+stompy,Klaus Konstanzer,at
+Falconer,Brendan Falconer,us
+Nayte,Nathan Berquignol,fr
+Dubs,Daniel Walsh,us
+Cloakzy,Dennis Lepore,us
+Nate Hill,Nate Hill,us
+Vivid,Noah Wright,us
+Kinstaar,Duong Huynh,ch
+Megga,Noam Ackenine,us
+Riversan,River Handley,us
+Vinny,Vinny Gilgan,us
+Cizzorz,Jack -,us
+hiimtylerh,Tyler -,ca
+Suezhoo,Stephan -,be
+Zand,- -,dk
+Chap,Ryan Chaplo,us
+Tschiiinken,Thomas Hörak,at
+Poach,Jake Brumleve,us
+FunkBomb,Trevor Siegler,us
+72hrs,Thomas Mulligan,us
+Vato,Pierre Mesey,ch
+MrSavage,Martin Foss,no
+Domentos,Domeniks Bunts,lv
+Reverse2k,Malachi Greiner,us
+Clix,Cody Conrod,us
+Morgausse,Austin Etue,us
+MackWood,Mack Aesoph,us
+Dmo,Dylan Moore,us
+yung calculator,Jonathan Weber,us
+Hunter,Corentin Tardif,fr
+Fatch,William Paquin-Brien,ca
+Commandment,Josh Roach,us
+Rhux,Keenan Santos,us
+itemm,Calum MacGillivray,gb
+Aspect,Nick McGuire,us
+Boyer,Adam Boyer-Dræby,dk
+Pate1k,Patrik Zaharchenko,no
+Svennoss,Sven Edelenbosch,nl
+TaySon,Tai Starčič,si
+Kamo,Liam Fillery,de
+Derox,Fabian Real,de
+Fwexy,Yan Kaur,ru
+Letw1k3,Mark Danilov,ru
+7ssk7,Artur Kurshin,by
+JannisZ,Jannis Matwin,de
+Th0masHD,Thomas Davidsen,dk
+Andilex,Alexandre Christophe,fr
+Pika,Julio Cesar Nevarez,us
+Teeqzy,Klaivert Dervishi,be
+BELAEU,Lassi Kallio,fi
+Endretta,Endre Byre,no
+Aïrwaks,Karim Benghalia,ch
+Sean,Sean Close,ca
+Wakie,Felix Hortlund,se
+Jamside,Jamal Saidayev,ru
+Aydan,Aydan Conrad,us
+Tchub,Pontus Bucht,se
+Noward,Howard Castiaux,be
+K1nzell,Blaž Lešnik,si
+Cented,Evan Barron,ca
+Unknown,Dominick Green,us
+Znappy,Alexander Zayedli,se
+LeNain,David Bois,ca
+Edgey,Ben Peterson,us
+Blax,Maxime Thomas,fr
+Tendons,Anthony Waller,us
+Peterpan,Jong Su Lee,kr
+TheVic,Victor Lopez,fr
+Furious,- -,us
+Ninja,Tyler Blevins,us
+4DRStorm,- -,us
+Redrush,Zygimantas Navickas,lt
+Symfuhny,Mason Lanier,us
+Nikof,Nicolas Frejavise,fr
+Chapix,Moussa Faour,se
+Klusia,Jonas Colkær Thomsen,dk
+Letshe,Kevin Fedjuschkin,de
+Tuckz,Jordan Tucker,gb
+Rascal,Dong Jun Kim,kr
+Striker,Nam Joo Kwon,kr
+smurf,Myeong Hwan Yoo,kr
+ChoiHyoBin,Hyo Bin Choi,kr
+Moth,Grant Espe,us
+super,Matthew DeLisi,us
+Viol2t,Min Ki Park,kr
+Gesture,Jae Hee Hong,kr
+Profit,Joon Yeong Park,kr
+Bdosin,Seung Tae Choi,kr
+Twilight,Joo Seok Lee,kr
+Fury,Jun Ho Kim,kr
+birdring,Ji Hyuk Kim,kr
+Closer,Won Sik Jung,kr
+NUS,Jong Seok Kim,kr
+SLIME,Sung Jun Kim,kr
+Nevix,Andreas Karlsson,se
+Saebyeolbe,Jong Yeol Park,kr
+Mano,Dong Gyu Kim,kr
+Libero,Hye Sung Kim,kr
+Stitch,Choong Hui Lee,kr
+sinatraa,Jay Won,us
+ta1yo,Sean Henderson,jp
+JJoNak,Sung Hyeon Bang,kr
+ANS,Seon Chang Lee,kr
+ANAMO,Tae-seong Jeong,kr
+Hooreg,Dong Eun Lee,kr
+Architect,Min Ho Park,kr
+tobi,Jin Mo Yang,kr
+JJANU,Hyeon Woo Choi,kr
+Haksal,Hyo Jong Kim,kr
+Mek0,Tae Hong Kim,kr
+pine,Do Hyun Kim,kr
+Michelle,Min-hyuk Choi,kr
+BUMPER,Sang Beom Park,kr
+ArK,Yeon Joon Hong,kr
+Marve1,Min Seo Hwang,kr
+Void,Jun Woo Kang,kr
+ILLICIT,Jae Min Park,kr
+SeoMinSoo,Min Soo Seo,kr
+Fits,Dong Eon Kim,kr
+Rapel,Jun Geun Kim,kr
+Boombox,Isaac Charles,gb
+FunnyAstro,Daniel Hathaway,gb
+diem,Min Seong Bae,kr
+Nenne,Yeon Kwan Jeong,kr
+Carpe,Jae Hyeok Lee,kr
+Creative,Young Wan Kim,kr
+Poko,Gael Gouzerch,fr
+SoOn,Terence Tarlier,fr
+TiZi,Jang Hyeon Hwang,kr
+janus,Joong Hwa Song,kr
+Fleta,Byeong Seon Kim,kr
+Ryujehong,Je Hong Ryu,kr
+Diya,Weida Lu,cn
+Eqo,Josh Corona,il
+Fl0w3R,Yeon Oh Hwang,kr
+Surefour,Lane Roberts,ca
+Izayaki,Min Chul Kim,kr
+SADO,Su Min Kim,kr
+snillo,Simon Ekström,se
+Luffy,Seong Hyeon Yang,kr
+AimGod,Min Seok Kwon,kr
+r0ar,Chang Hoon Gye,kr
+Decay,Gui Un Jang,kr
+Shaz,Jonas Suovaara,fi
+BigG00se,Benjamin Isohanni,fi
+Whoru,Seung Joon Lee,kr
+DDing,Jin Hyeok Yang,kr
+LeeJaeGon,Jae Gon Lee,kr
+Alarm,Kyung Ho Kim,kr
+zunba,Joon Hyuk Kim,kr
+Geguri,Se Yeon Kim,kr
+fragi,Joona Laine,fi
+Gator,Blake Scott,us
+HOTBA,Hong Joon Choi,kr
+neptuNo,Alberto Gonzales Molinillo,es
+NoSmite,Da Un Jeong,kr
+numlocked,Seb Barton,gb
+Erster,Joon Jeong,kr
+Heesu,Hee Su Jeong,kr
+ShaDowBurn,George Gushcha,ru
+Agilities,Brady Girardi,ca
+IDK,Ho Jin Park,kr
+Hydration,João Pedro Telles,br
+Stand1,Ji Won Seo,kr
+Taimou,Timo Kettunen,fi
+guxue,Xu Qiulin,cn
+HarryHook,Jonathan Rua,es
+chipshajen,Sebastian Widlund,se
+Joemeister,Joe Gramano,ca
+FaTe,Pan Seung Koo,kr
+SPACE,Indy Halpern,us
+aKm,Dylan Bignet,fr
+unKOE,Benjamin Chevasson,fr
+HagoPeun,Hyeon Woo Jo,kr
+Fearless,Eui Seok Lee,kr
+Panker,Byung Ho Lee,kr
+Custa,Scott Kennedy,au
+GodsB,Kyeon Bo Kim,kr
+Serral,Joona Sotala,fi
+Maru,Sung Choo Cho,kr
+Rogue,Byung Ryul Lee,kr
+Dark,Ryung Woo Park,kr
+INnoVation,Shin Hyung Lee,kr
+TY,Tae Yang Jun,kr
+Stats,Dae Yeob Kim,kr
+sOs,Yoo Jin Kim,kr
+soO,Yoon Su Eu,kr
+Zest,Sung Wook Joo,kr
+Neeb,Alex Sunderhaft,us
+MC,Min Chul Jang,kr
+Classic,Doh Woo Kim,kr
+Life,Seung Hyun Lee,kr
+Polt,Sung Hoon Choi,kr
+PartinG,Lee Sak Won,kr
+Byun,Hyun Woo Byun,kr
+MMA,Sung Won Moon,kr
+Mvp,Jong Hyun Jung,kr
+Scarlett,Sasha Hostyn,ca
+SpeCial,Juan Carlos Lopez,mx
+Snute,Jens Aasgaard,no
+Nerchio,Artur Bloch,pl
+Solar,Min Soo Kang,kr
+herO,Joon Ho Kim,kr
+Stephano,Ilyes Satouri,fr
+TaeJa,Young Suh Yoon,kr
+Reynor,Riccardo Romiti,it
+DongRaeGu,Soo Ho Park,kr
+Leenock,Dong Nyung Lee,kr
+NesTea,Jae Duk Lim,kr
+ShoWTimE,Tobias Sieber,de
+Trap,Sung Ho Cho,kr
+Bomber,Ji Sung Choi,kr
+Elazer,Mikołaj Ogonowski,pl
+HerO,Hyeon Deok Song,kr
+Dear,Dong Jun Baek,kr
+Rain,Yoon Jong Jung,kr
+HyuN,Seok Hyun Ko,kr
+GuMiho,Byung Jae Koh,kr
+Jaedong,Jae Dong Lee,kr
+MaNa,Grzegorz Komincz,pl
+MarineKing,Jung Hoon Lee,kr
+aLive,Lee Seok Han,kr
+TRUE,Tae Su Bang,kr
+TIME,Peinan Li,cn
+viOLet,Dong Hwan Kim,kr
+NaNiwa,Johan Lucchesi,se
+iAsonu,Zhou Hang,cn
+HeRoMaRinE,Gabriel Segat,de
+Kelazhur,Diego Schwimer,br
+Patience,Ji Hyun Jo,kr
+Soulkey,Min Chul Kim,kr
+uThermal,Marc Schlappi,nl
+Cure,Doh Wook Kim,kr
+HuK,Chris Loranger,ca
+Has,Yu Feng Ke,tw
+Hydra,Dong Won Shin,kr
+fOrGG,Ji Soo Park,kr
+PuMa,Ho Joon Lee,kr
+TooDming,Hui Ming Huang,cn
+Creator,Hyun Woo Jang,kr
+Sen,Chia Cheng Yang,tw
+XiGua,Lei Wang,cn
+Jjakji,Hoon Jung Ji,kr
+MaSa,Maru Kim,ca
+PtitDrogo,Théo Freydière,fr
+Bly,Aleksandr Svusuyk,ua
+Jim,Jin Hui Cao,cn
+TLO,Dario Wünsch,de
+ByuL,Ji Won Han,kr
+LosirA,Kang Ho Hwang,kr
+StarDust,Seok Hee Son,kr
+MacSed,Xiang Hu,cn
+Harstem,Kevin de Koning,nl
+san,Cho-Won Kang,kr
+Ryung,Dong Won Kim,kr
+Dream,Joong Hyuk Cho,kr
+FruitDealer,Won Ki Kim,kr
+ThorZaIN,Marcus Eklöf,se
+VortiX,Juan Moreno Durán,es
+Impact,Joon Hyuk Kim,kr
+Lambo,Julian Brosig,de
+Hurricane,Ki Woong Nam,kr
+Alicia,Joon Sik Yang,kr
+Symbol,Dong Hyun Kang,kr
+RagnaroK,Hee Bum Shin,kr
+KeeN,Kyo Seok Hwang,kr
+Genius,Min Soo Jung,kr
+Squirtle,Hyun Woo Park,kr
+Lilbow,David Moschetto,fr
+Cyan,Huang Min,cn
+Flash,Young Ho Lee,kr
+First,Hyun Woo Kang,kr
+MarineLorD,Alexis Eusebio,fr
+HasuObs,Dennis Schneider,de
+Bunny,Patrick Brix,dk
+YoDa,Byung Hyun Choi,kr
+SortOf,Rickard Bergman,se
+XY,Yao Xiang,cn
+KyoCha,Won Ho Jeong,kr
+sake,Jung Hyeog Lee,kr
+Rich,Jae Won Lee,kr
+Reset,Jin Woo Im,kr
+Ttsst,Woon Sung Kang,kr
+Wubby,Jonathan Gunnarsson,se
+sCsC,Seung Chul Kim,kr
+Snitch,Joshua Bennett,gb
+JayPL,Jérome Trinh,fr
+Sign,Ji Hoon Yoon,kr
+Jeongha,Jeong Ha Lee,kr
+Schwimpi,Simon Svensson,se
+Breez,Pontus Sjogren,se
+merryday,Tae Jun Lee,kr
+Smexystyle,Filip Liljeström,se
+QuackNiix,Dob Engström,se
+Noblesse,Do Joon Chae,kr
+Lockdown,Jae Hun Jin,kr
+Swoy,Seung Won Kim,kr
+Fan,Fan Yang,us
+Zaelia,Kenn Øster Rasmussen,dk
+NachoJin,Jin Su Park,kr
+Ménè,Thomas Cailleux,fr
+KingCaffeine,John Paul Lopez,us
+k1,Keiwan Itakura,us
+Bakery,James Baker,gb
+Sniper,Tae Hoon Kwon,kr
+Hide,Yeong Hwan Jing,kr
+XingC,Lunhan Kang,cn
+Atheroangel,Lawrence Harper,gb
+POILK,Vilhem Flennmark,se
+Tiger,Hanfei Chen,cn
+iDream,Kun Fang,cn
+Tumi,Zhihao Wu,cn
+HasuObs,Dennis Schneider,de
+dami,Ju Dam Park,kr
+Splendour,Lyubomir Kozlovski,bg
+melodyC,Xiangzhi Zheng,cn
+Cattlepillar,Ben Bunk,de
+adrd,Adrian Wójcik,pl
+Nurok,Nils Gebhardt,de
+Glaurung,Mike Fisk,us
+NccCc,Tuo Li,cn
+Zuna,Chris Buechter,us
+ethernal,Alexander Milanov,bg
+CrazymoviNG,Ki Soo Han,kr
+Jun,Jun Jang,kr
+Hooligan,Jong Hoon Park,kr
+Misaka,Lizhong Zhou,cn
+Fury,Manny Medina,us
+Hongcono,Dae Hyung Lee,kr
+xiaOt,Li Wei Sun,cn
+Gemini,Guo Jiayi,cn
+m,Hao Pu,cn
+JaeHyun,Jae Hyun Park,kr
+Darkmok,Simon Tabin,de
+SDE,Hyun Tae Kim,kr
+AlexTheProG,Alexander Grumstrup,dk
+psalm,Harrison Chang,us
+Magi,Jin Hwan Kim,kr
+DunkTrain,Ricardo Marques,us
+BadBenny,Benjamin Eekenulv,se
+Zarmony,Matic Mikec,si
+Aloof,Jing Gu,cn
+sk,Jize Song,cn
+McIntyre,Stafford Mcintyre,us
+Arthelon,Taylor Eder,us
+Sportbilly,Ivan Koturić,hr
+Good,Sung Hyun Moon,kr
+Nic,Dominic Asal,de
+Xuyu,Jing Chen,cn
+Cursen,Niklas Skogheim,no
+CauthonLuck,Rori Bryant-Raible,us
+bigempct,Sammuel Hua,us
+GoDDog,Yu Yen Su,tw
+Blumbi,Markus Hanke,de
+Cris,Christoph Gowitzke,de
+akaface,Stefen Anderson,us
+MichaelUdall,Michael Udall,us
+Buds,Chandler Gavran,us
+Justing,Justin Gapp,us
+Goku,Francisco Avalos,ca
+Khroen,Khalif Hashim,us
+duckdeok,Kyung Deok Kim,kr
+zZH,Zhihao Zhang,cn
+Prismaticism,Kyle Belaiche,ca
+canjian,Tianze Chen,cn
+taeseok,Tae Seok Oh,kr
+Arcaner,Liam Simpson,au
+Qx,Qian Li,cn
+KilluZiioN,Jerome Tanguay,ca
+Darvish,Seong Min Min,kr
+Alphaluna,Chun Yu Wu,tw
+Kty,Jiawei Zhang,cn
+Tomster,Thomas Maguire,us
+zugrug,Merek Kangas,ca
+bkid,Josh Choi,us
+Frankle,Jae Yeop Jeong,kr
+Wind,Gu Junfeng,cn
+Crozzby,Martin Rugh,dk
+Loki,Jeong Yeong Bak,kr
+ESTH3R,Jeong Wan Go,kr
+Pio,Seung Hoon Cha,kr
+Taemin,Tae Min Kang,kr
+fuzzface,David Tillberg,se
+mxey,Anssi Pekkonen,fi
+ubah,Ivan Kapustin,ru
+Aitzy,Ludvik Jahnsen,no
+Sambty,Samu Kauppinen,fi
+Jeemzz,Jim Eliassen,no
+Ibiza,Jord van Geldere,nl
+lionkk,Hao Yao,cn
+silentBT_,Yan Wang,cn
+xiaohaixxxx,Jinhai Zhang,cn
+GodV,Zhen Wei,cn
+xiaorong,Liangguang Liao,cn
+Meluke,Luke Laing,ca
+Jembty,Jere Kauppinen,fi
+EscA,In Jae Kim,kr
+seongjang,Jang Hwan Seong,kr
+indigo,Do-hoon Seol,kr
+kAyle,Su Yong Jeong,kr
+vard,Alex Gouge,gb
+MiracU,Justin McNally,ie
+Pr0phie,Magno Ramos,ph
+Zanpah,Logan Heckman,us
+Sharky,Mike Gariti,us
+Chelator,Min Ki Kim,kr
+Scoom,Keiron Prescott,gi
+Simsn,Young Hoon Shim,kr
+Forever,Zheng Wu,cn
+Kaymind,Thierry Kaltenback,ca
+ZGGO1,Xin Wang,cn
+ADOUZ1E,Roman Zinoviev,ru
+xxxLu,Daying Wei,cn
+ceh9,Arsenii Ivanychev,ru
+POKAMOLODOY,Vadim Ulshin,ru
+Starlord,Jong Ho Lee,kr
+YaBoiDre,Diondre Bond,us
+Menteul,- -,kr
+Hulk,Rak Gwon Chung,kr
+Daengchae,Do-hyun Kim,kr
+Hwan2da,Hwan Jang,kr
+Gaxy,Laurynas Rudys,lt
+Nerf,Ben Wheeler,us
+Summer,Chuan Yu,cn
+Uncivil,Timothy Ebarb,us
+Iroh,Ömer Develi,tr
+hwinn,Hunter Winn,us
+Purdy,Kurtis Bond,us
+Miccoy,Kevin Linn,us
+Moody,Mehmood Amin Askar,ca
+aLOW,Aaron Lommen,us
+Luke12,Luke Newey,au
+Bestoloch,Andrey Ionov,ru
+shou,Kang Wang,cn
+shox,Jiang Hua Chen,cn
+Sharpshothd,Daniel Hernandez,cu
+BBABBO,- -,kr
+SexyPIG,Jae Hyun Han,kr
+Shiv,Romain Hermann,fr
+Dahmien7,Damien Valliant,fr
+style,Kyung Chul Oh,kr
+YaKK,Bo Hyun Kim,kr
+BoLiang,Qicheng Chen,cn
+L1nnnn,Xin Lin,cn
+LongSkr,Ruilong Deng,cn
+DoYa,Do-gyeong Kim,kr
+GustavQQ,Gustav Blønd,dk
+JiaoYang,Bohang Li,cn
+Tide,- -,cn
+DG98,- -,kr
+Shrimzy,Tristan Nowicky,us
+CPT,Yu-Ze Sun,cn
+Haxete,Adrian Blom,se
+DouM,- -,cn
+DJBOY,- -,cn
+Larsen,Mathias Larsen,dk
+yoonroot,Hyun Woo Yoon,kr
+Leviz,Hữu Đoàn Nguyễn,vn
+LinShuNN,- -,cn
+0nuqtive,Alexey Trufanov,ru
+BaoLeiNB,Xin-hao Pan,cn
+DrasseL,Cedrik Lessard,ca
+jiaozhu,Pengcheng Wang,cn
+Wang88,Boyuan Wang,cn
+Temeria,Gil Do Lee,kr
+Qmccc,- -,cn
+Voxsic,Jace Patras,us
+PAT KAPS,Patrick Kaplan,us
+Dongdong,- -,cn
+shadow,Seung Sun Lee,kr
+udyRR,Magnus Hartmann,de
+Braexco,René Rehling,de
+mykLe,Michael Wake,gb
+067QAQ,- -,cn
+Makne,- -,kr
+DUCKMANZ,Katanyu Chinsorranan,th
+BALLOC,Sebastian Berendt,dk
+Snakers,Jake Winant,us
+Cat,Zhengzheng Chen,cn
+NuoYan,Guixin Guo,cn
+Alan,Tianlong Wang,cn
+HuaHai,Siyuan Luo,cn
+Wuming,Cong Zhang,cn
+XB,Xuân Bách Trần,vn
+ProE,Quang Hiệp Trần,vn
+FirstOne,Sanpett Marat,th
+Fly,Yunfei Peng,cn
+Hurt,Shengqqin Xia,cn
+ADC,Đức Chiến Trần,vn
+Gau,Hồng Quân Phạm,vn
+Isilindilz,Sorawichaya Mahavanakul,th
+Neil,Chun Sheng Chang,tw
+ĐạtKòiii,Tiến Đạt Đinh,vn
+Summer,Vatcharanan Thaworn,th
+JJak,Chang Hoon Shin,kr
+Nutalomlok,- -,th
+Rush,Ho Yeon Lee,kr
+Yuzon,Chou Chung,tw
+Winds,Ting Jui Chen,tw
+HAK,Do Yeop Kim,kr
+Sun,Sun Woo Kim,kr
+Star,Nsu Yu Lin,tw
+Benny,Chien Ting Chen,tw
+Song,- -,cn
+007x,Chayut Suebka,th
+Difoxn,Parit Pornrattanapitak,th
+770,- -,cn
+Tony,Eikapong Korhonen,th
+Snow,- -,cn
+JOMWick,Siwa Noomai,th
+Chaser,Hyung Min Kim,kr
+YANG,- -,cn
+行星,- -,cn
+轻雨,- -,cn
+久龙,- -,cn
+北岛,- -,cn
+暮色,- -,cn
+久诚,- -,cn
+月色,- -,cn
+柠栀,- -,cn
+最初,- -,cn
+尘夏,- -,cn
+阿可,- -,cn
+Moowan,Metasit Leelapipatkul,th
+Overfly,Satittirat Chetnarong,th
+NingZhi,- -,cn
+JiuLong,- -,cn
+JiuC,- -,cn
+ChenXia,- -,cn
+ZuiChu,- -,cn
+Getsrch,Sorachat Janechaijitravanit,th
+BLUENOPING,- -,th
+MeMarkz,Kawee Wachiraphas,th
+kSsA,Pakinai Srivijarn,th
+Moss,Sorawat Boonphrom,th
+Taoz,Piyapong Proathaisong,th
+Cherie,Patara Bhatarabhirom,th
+MrSunz,Nutdanai Rungruang,th
+Giao,- -,cn
+Munez,- -,th
+Erez,Pasu Yensabai,th
+Nt,Methus Meechom,th
+ReMix,Sirichai Sukpan,th
+IpodPro,Pakkapon Saethong,th
+Mojo,- -,cn
+Chichi,- -,tw
+Genji,- -,tw
+Hanzo,- -,tw
+Liang,- -,tw
+Sirenia,- -,tw
+JameCo,Denchai Eampaojeen,th
+Happy,Aum Chatchanapong,th
+Heroes,Hsing Cheng Lu,tw
+六点六,- -,cn
+小兽,- -,cn
+小剑,- -,cn
+居居,- -,cn
+Core,- -,kr
+PS Man,- -,vn
+Mts,Matt Stover,us
+XiXi,Chi Kang Chuang,tw
+Wayn,Sung Lin Hsieh,tw
+Lulala,- -,tw
+horror,Hyo Jong Kim,kr
+JY,- -,kr
+YK,- -,kr
+Xuan,- -,my
+Sweet,- -,kr
+Sky,Chanapol Siri,th
+KOKO,- -,cn
+Erl2oR,Chattrakarn Parichatkun,th
+Chen,- -,cn
+GaDuo,Yu-Yan Su,tw
+Kato,Tseng-Yung Chun,tw
+Gua,En Hao Chen,tw
+Rain,- -,tw
+O7T-V1,Komklit Wongsawat,th
+139,- -,cn
+Thijs,Thijs Molendijk,nl
+tom60229,Wei Lin Chen,tw
+Pavel,Pavel Beltiukov,ru
+Hunterace,Casper Notto,no
+Surrender,Jung Soo Kim,kr
+BunnyHoppor,Raphael Peltzer,de
+Jasonzhou,Bin Zhou,cn
+XHope,- -,cn
+Orange,Jon Westberg,se
+fr0zen,Frank Zhang,us
+bloodyface,Brian Eason,us
+Kolento,Aleksandr Malsh,ua
+Firebat,James Kostesich,us
+glory,Sato Kenta,jp
+Liooon,Xiao Meng Li,cn
+Dog,David Caero,us
+Viper,Torben Wahl,de
+Purple,Ryan Murphy-Root,ca
+DrHippi,Artem Kravets',ua
+Rdu,Dima Radu,ro
+Staz,Euneil Javiñas,ph
+Hoej,Frederik Høj Nielsen,dk
+SilverName,Vladislav Sinotov,ru
+Muzzy,Muzahidul I.,us
+Tiddler Celestial,Xieyu Wang,cn
+Jarla,Jaromír Vyskočil,cz
+Xixo,Sebastian Bentert,de
+Fujitora,Kaan Çekli,tr
+Ostkaka,Sebastian Engwall,se
+JustSaiyan,David Shan,us
+Seohyun,Eddie Lui,ca
+OmegaZero,Lin Zheng,cn
+Lifecoach,Adrian Koy,de
+Dawn,Hyun Jae Jang,kr
+Che0nsu,Cheon Su Kim,kr
+Jing,Guan Zhendong,cn
+Leaoh,- -,cn
+Lovelychook,Bohan Zhang,cn
+Casie,Kevin Eberlein,de
+Felkeine,Théo Dumont,fr
+Neirea,Eugene Shumilin,ua
+ShtanUdachi,Alexey Barsukov,ru
+Amnesiac,William Barton,us
+Monsanto,Jerome Faucher,ca
+Zalae,Paul Nemeth,us
+StrifeCro,Cong Shu,us
+languagehacker,Mihai Dragalin,ca
+LiBo,Bo Li,cn
+Cydonia,Julien Perrault-Harvey,ca
+handsomeguy,Il Mook Kang,kr
+Roger,Shengyuan Luo,tw
+Fenomeno,Chris Tsakopoulos,gr
+HotMEOWTH,Edwin Cook,us
+XiaoT,Juwei Wu,cn
+SamuelTsao,Tsu Lin Tsao,tw
+A83650,Kacper Kwieciński,pl
+BloodTrail,Zong Chang Wu,tw
+posesi,Wataru Ishibashi,jp
+xBlyzes,Zakarya Hail,fr
+PNC,Francisco Leimontas,ar
+kin0531,Tsz Kin Lo,hk
+BoarControl,George Webb,gb
+Chakki,Keaton Gill,us
+Naiman,Ole Batyrbekov,kz
+Tylerootd,Tyler Hoang Nguyen,nl
+SuperJJ,Jan Janßen,de
+DocPwn,- -,ca
+Alutemu,Yashima Nozomi,jp
+Sintolol,Thomas Zimmer,de
+Hamster,Songyang Zhao,cn
+killinallday,David Acosta,us
+Trump,Jeffrey Shih,us
+Nalguidan,Facu Pruzzo,ar
+Gallon213,Edward Goodwin,us
+Breath,Chen Yuxiang,cn
+Yueying,- -,cn
+DeadDraw,Jack Bancroft,gb
+StanCifka,Stanislav Cifka,cz
+Kranich,Baek Hak Jun,kr
+Flurry,Hyun Soo Cho,kr
+Zhym,Martin Prête,fr
+Mitsuhide,Louis Bremers,nl
+Luker,Michael Luker,ca
+Amaz,Jason Chan,hk
+Tarei,Jeffrey Liu,us
+Ek0p,Jan Palys,de
+Icefox,Xiao Feng,cn
+DDaHyoNi,Sang Hyeon Baek,kr
+Hotform,Dylan Mullins,ca
+Yulsic,Chun Pong Ng,hk
+Sword,Li Heyang,cn
+Crane,Simon Raunholst,dk
+Ant,Anthony Trevino,us
+Trunks,- -,cn
+Gaara,Petar Stevanovic,de
+Savjz,Janne Mikkonen,fi
+Tidesoftime,Drew Biessener,us
+Leta,Simone Liguori,it
+Ike,Mike Eichner,us
+SjoW,Jeffrey Brusi,se

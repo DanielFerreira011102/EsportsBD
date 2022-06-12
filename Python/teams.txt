@@ -1,0 +1,928 @@
+San Francisco Shock,3105000
+London Spitfire,1591136.5
+New York Excelsior,1572618.5
+Philadelphia Fusion,1186278.5
+Seoul Dynasty,1130000
+Vancouver Titans,950000
+Shanghai Dragons,755000
+Los Angeles Gladiators,709605.19
+Atlanta Reign,596098
+Los Angeles Valiant,535000
+Team Envy,504391.4
+Hangzhou Spark,425000
+RunAway,420808.84
+Lunatic-hai,320633.66
+Boston Uprising,288606
+GC Busan,262117.51
+Washington Justice,250000
+Rogue,233623.47
+Team Gigantti,224542.69
+Florida Mayhem,212672.5
+Misfits,172484.12
+LGD Gaming,165687.71
+Osh-Tekk Warriors,161534
+Talon Esports,159952
+Flash Wolves,157081.66
+Miraculous Youngster,148594.21
+Team Kongdoo,145971.95
+Cloud9,133251.4
+Blank Esports,132105.66
+Houston Outlaws,126172
+NRG Esports,117266.62
+Hong Kong Attitude,116404
+Afreeca Freecs,105281.62
+LuxuryWatch,98604.83
+Immortals,98067.52
+Vici Gaming,98025.65
+Paris Eternal,91600
+Gen.G,90982
+Guangzhou Charge,86250
+ahq e-Sports Club,85500.04
+Team Skadis Gift,80797.99
+Dallas Fuel,80000
+American National Team,77000
+Chinese National Team,77000
+French National Team,77000
+Korean National Team,77000
+Canadian National Team,74500
+Bilibili Gaming,73521.2
+FaZe Clan,73300
+MVP,72944.42
+Australian National Team,72000
+Invictus Gaming,64745.2
+ORDER,64500
+Fnatic,63939.34
+Finnish National Team,63000
+Swedish National Team,58500
+British National Team,56500
+Toronto Defiant,54400
+Star Horn Royal Club,52328.1
+Nova eSports,50278
+Russian National Team,49500
+Lowkey Esports,47500
+German National Team,47000
+Spanish National Team,47000
+Taiwanese National Team,47000
+eUnited,45750
+NGA Club,45335.36
+REUNITED,44988.63
+Samsung,43472.95
+Luminosity Gaming,43213.18
+Brazilian National Team,42000
+Thai National Team,42000
+Team Liquid,36216
+DeToNator,35650
+Team Singularity,35491.54
+Ninjas in Pyjamas,35235.95
+compLexity Gaming,34000
+Danish National Team,34000
+Dutch National Team,34000
+Mindfreak,32400
+Winstrike Team,32064
+Singaporian National Team,32000
+Austrian National Team,29000
+Italian National Team,29000
+Japanese National Team,29000
+Norweigan National Team,29000
+Third Impact,28450
+World Elite,28231.78
+Snake Esports,27410.98
+Isurus Gaming,27295.01
+GamersOrigin,26900.75
+Copenhagen Flames,25599.5
+Team Celestial,25187.04
+Polish National Team,24000
+Newbee,21590.82
+OMG,20768.17
+Legacy eSports,20612
+Triumph,20200
+Ghost Gaming,20000
+Hong Kong National Team,20000
+Jin Air Green Wings,2546572.7
+Team Liquid,1498925.04
+SK Telecom T1,1143991.9
+Incredible Miracle,1111753.4
+StarTale,1014565.47
+ENCE eSports,874436.92
+KT Rolster,869432.12
+Evil Geniuses,785050.9
+MVP,717672.07
+Millenium,673626.51
+Splyce,672400.74
+Prime,635241.44
+ROOT Gaming,627435.83
+Invictus Gaming,618066.17
+Team Acer,587934.65
+mousesports,542901.82
+Ting,491264.06
+mYinsanity,459995.35
+Old Generations,456814.74
+Team expert,449141.08
+Samsung,445432.31
+CJ Entus,428406.59
+PSISTORM Gaming,419733.17
+Team SCV Life,401781.95
+FXOpen e-Sports,396182.42
+SlayerS,383967.89
+Dragon Phoenix Gaming,356939.13
+Woongjin Stars,342724.34
+Afreeca Freecs,325994.36
+Flash Wolves,281169.44
+STX SouL,257868.69
+CM Storm,253404.17
+Chivo SC,239973.64
+Fnatic,237224.37
+Team QLASH,231495.97
+EURONICS Gaming,229864.05
+GamersOrigin,201116.29
+Newbee,198251.54
+Team Dignitas,192653.77
+SK Gaming,184671.48
+Axiom eSports,176342.72
+Ballistix,175000
+Team Reciprocity,166770.55
+Team Empire,155746.38
+Triumphant Song Gaming,155201.39
+AZUBU,151662.65
+KaiZi Gaming,151451.32
+Quantic Gaming,137582.67
+Dead Pixels,132577.26
+Team Roccat,132070.52
+The Gosu Crew,131096.69
+Mkers,128727.5
+compLexity Gaming,123940.64
+Zenith of Origin,119710.33
+True eSport,117357.81
+ALTERNATE aTTaX,115633.24
+Raise Your Edge Gaming,110702.49
+Karont3 e-Sports Club,105866.02
+New Star HoSeo,102207.62
+Cascade,100985.11
+Invasion eSport,99897.23
+OSC Elite,99817.22
+Brave Star Gaming,99294.24
+Ocean Gaming,97841.4
+ZeNEX,95798.79
+Arma Team,92710.71
+Team Envy,87486.76
+Alliance,84650.09
+Radical Online X-tremists,78734.83
+mTw,75389
+Gama Bears,68732.28
+Wayi Spider,66428.61
+Alien Invasion,65750.44
+X-Team,65599.84
+ESC Gaming,62239.12
+AT Gaming,59654.91
+TitanEX1,58132.79
+Korean National Team,55891.44
+AGO Esports,55366.6
+NewRoSoft,53962.44
+For Our Utopia,52647.06
+XMG,52604.36
+Planetkey Dynamics,51720.23
+Team Property,50391.62
+Legacy eSports,50235.16
+Western Wolves,50152.29
+Pixel 1,48592.1
+Elevate,47660.38
+J Team,47608.71
+FlipSid3 Tactics,46303.49
+TCM Gaming,41244.11
+Team Revolution,41089.28
+Asterion,37175.72
+Hong Kong Attitude,36703.17
+Team SPACECRAFT,36071.09
+PanDarea,34319.75
+SBENU,34211.12
+World Elite,33964.24
+O'Gaming,31870.64
+Exile5,31490.59
+SK Telecom T1,7139771.24
+Samsung,4252048.74
+Invictus Gaming,4176617.93
+Royal Never Give Up,3109363.51
+Fnatic,2883801.44
+EDward Gaming,2735906.7
+G2 Esports,2423913.52
+Cloud9,1845716.65
+World Elite,1783573.42
+Team SoloMid,1695975.02
+Taipei Assassins,1529565.39
+FunPlus Phoenix,1351265.67
+Flash Wolves,1302176.88
+KT Rolster,1142290.13
+Top Esports,1024395.86
+ROX Gaming,979041.98
+Counter Logic Gaming,951858.22
+Team Liquid,900463.5
+DAMWON Gaming,873905.84
+ahq e-Sports Club,840606.45
+JD Gaming,836118.08
+OMG,722072.89
+Star Horn Royal Club,707196.07
+DragonX,694398.74
+NaJin e-mFire,616799.21
+H2K,597032.96
+LGD Gaming,512324.15
+Afreeca Freecs,494452.56
+Gambit Esports,493101.79
+Suning,466293.44
+Misfits,433084.72
+SK Gaming,421665.24
+Origen,420582.91
+CJ Entus,419505.27
+AZUBU,399501.38
+Unicorns of Love,385930.36
+DetonatioN,375020.25
+Gen.G,370848.41
+Longzhu Gaming,347907.81
+Griffin,340668.2
+Marines Esports,340105.46
+Moscow Five,338435.21
+I May,335703.2
+Splyce,311433.5
+Snake Esports,306151.92
+Vici Gaming,304346.61
+Team LDLC.com,290534.04
+Vitality,289676.3
+MVP,278053.2
+mousesports,267924.75
+Team Dignitas,257562.2
+NASR eSports,252500
+Millenium,248283.32
+Albus NoX Luna,238702.5
+Illuminar Gaming,238301.36
+100 Thieves,237475
+eSuba,237472.51
+Jin Air Green Wings,218553.88
+FlyQuest,215250
+KaBuM! e-Sports,211740.9
+EURONICS Gaming,210216.22
+Schalke 04 Esports,207984.52
+paiN Gaming,207841.84
+Saigon Jokers,201934.86
+Team Curse,198907.95
+Kaos Latin Gamers,198769.35
+INTZ eSports,197810.93
+J Team,197654.1
+GamersOrigin,195460.56
+Young Miracles,193302
+BIG,192775.71
+Dark Passage,186871.49
+Hong Kong Attitude,184521.78
+Lyon Gaming,184012.05
+Rogue Warriors,179599.62
+MAD Lions,177719.21
+Qiao Gu Reapers,171577.28
+Positive Energy,154778.03
+Incredible Miracle,154615.32
+Team King,152173.93
+Immortals,151837
+Copenhagen Wolves,150220.76
+SinoDragon,146609.8
+Rogue,136453.23
+Radical Online X-tremists,134286.3
+Vega Squadron,132273.23
+Keyd Stars,130240.11
+Bangkok Titans,129837.01
+Maximum Impact Gaming,129499.39
+Bilibili Gaming,125362.2
+Giants Gaming,122226.08
+Kuala Lumpur Hunters,119837.07
+Ninjas in Pyjamas,119575.32
+Alliance,115000
+Newbee,112151.4
+Meet Your Makers,110739.31
+ESC Ever,110031.24
+EVOS,109233.82
+LMQ,109112.01
+CNB e-Sports Club,107540.5
+Lazarus,3708150
+Cooler Esport,3299864.26
+Sentinels,3166116.68
+100 Thieves,2197413.68
+FaZe Clan,2118743.79
+Team SoloMid,1950965.22
+Counter Logic Gaming,1855435
+NRG Esports,1824653.8
+LeStream Esport,1355092.35
+Team Liquid,1222866.66
+Ghost Gaming,1196623.61
+9z Team,1000950
+Kungarna,712075.89
+Valhalla Vikings,709300
+Solary,629049.47
+Team Atlantis,586429.44
+Eleven Gaming,522100
+Cloud9,428777.6
+Virtus.pro,312461.47
+Misfits,292900
+Gambit Esports,278684.31
+World Best Gaming,262500
+Vitality,247554.1
+Become Legends,242330
+GamersOrigin,238280.44
+SK Telecom T1,232150
+Team Secret,196525.38
+Team Kinguin,183047.82
+Gentside Esports Club,180275.55
+Crazy Raccoon,160041
+compLexity Gaming,154750
+TrainHard eSport,154396.6
+Fnatic,153230
+Team Envy,151000
+Executors One,150000
+Millenium,133602.1
+exceL eSports,130900
+MCES,117150
+Luminosity Gaming,114266.68
+Helsinki REDS,113230
+Supremacy,111808.94
+Natus Vincere,111380
+AGO Esports,110850
+Tempo Storm,110000
+Newbee,105100
+World Elite,101500
+Riot Squad Esports,100000
+Alliance,72245.11
+Renegades,63597.6
+Optimal Ambition,62333.34
+Oserv Esport,59506.41
+M10 Esports,59100
+FunPlus Phoenix,57247
+Team Singularity,56032.23
+Raised by Kings,54837.6
+Dynamind,50650
+Riddle,50400
+Stratum Esports,50300
+FURIA Esports,50000
+Team GamerLegion,50000
+Team Queso,50000
+The Chiefs eSports Club,50000
+Wave Esports,44080
+Built By Gamers,35633.32
+Rise Nation,31000
+GODSENT,30350
+OpTic Gaming,25200
+XSET,23200
+Method,17725.05
+BDS Esport,14650
+Ovation eSports,12750
+Exalty,11850.96
+Beşiktaş e-Sports Club,10000
+Fade 2 Karma,10000
+Gen.G,9481.8
+mousesports,7500
+Ninjas in Pyjamas,7500
+Grizi Esport,7400
+Rogue,7225
+Veloce Esports,6300
+Team LDLC.com,6100
+Qiao Gu Reapers,5844.16
+Project EVERSIO,5739.24
+Legacy eSports,5655.2
+Team Parallel,5625.8
+eUnited,5000
+ExAequo,5000
+FlyQuest,5000
+Cosa Nostra Games,4500
+Pittsburgh Knights,4000
+Copenhagen Flames,3850
+Enterprise Gaming,3850
+HellRaisers,3200
+Mock-It eSports,3000
+Team Requiem,2922.34
+Granit Gaming,2600
+War Legend,2128.81
+vsBANDITS,2000
+Winstrike Team,1500
+Rams,1200
+Astralis,8503918.81
+Team Liquid,4675925.35
+Fnatic,4653396.2
+Natus Vincere,3852176.82
+Virtus.pro,3708190.63
+FaZe Clan,3693528.94
+mousesports,3014009.9
+SK Gaming,2869076.54
+Ninjas in Pyjamas,2864971.31
+Cloud9,2571291.19
+G2 Esports,2395354.84
+Team Envy,2283113.9
+Gambit Esports,1649386.58
+Vitality,1558704.5
+MIBR,1499032.09
+Luminosity Gaming,1472759.47
+OpTic Gaming,1355766.25
+TyLoo,1232487.93
+North,1199410.05
+NRG Esports,1151975
+compLexity Gaming,1112298.52
+Heroic,1111397.85
+ENCE eSports,1100534.22
+Team Dignitas,1063314.3
+BIG,1003931.45
+Renegades,988341.74
+Evil Geniuses,888450
+FURIA Esports,873105
+HellRaisers,844550.08
+Team Kinguin,837573.07
+Windigo Gaming,761284.2
+Space Soldiers,760687.53
+AVANGAR,741234.01
+Vici Gaming,725920.46
+AGO Esports,662989.25
+Counter Logic Gaming,661286.14
+MAD Lions,655837.22
+Team LDLC.com,630876.2
+Team SoloMid,613660.69
+Immortals,578050
+GODSENT,551256.14
+Epsilon eSports,534867.08
+OG,487250
+Tricked eSports,476856.17
+forZe,474262.55
+Team Spirit,454001.21
+HAVU Gaming,450547.34
+ALTERNATE aTTaX,404718.49
+MVP,381670.12
+Sprout,328749.05
+FlipSid3 Tactics,324196.24
+Vega Squadron,319706.6
+Russian National Team,281476.36
+Chaos Esports Club,277650
+CR4ZY,256655.64
+eUnited,250275
+Bravado Gaming,231652.52
+The Chiefs eSports Club,213056.53
+PENTA Sports,193765.9
+Titan eSports,192401.15
+100 Thieves,190500
+Ghost Gaming,168829
+Endpoint,166760.45
+Gen.G,165600
+The Imperial,161986.06
+Tempo Storm,160634.6
+EURONICS Gaming,154436.82
+Rogue,154308.75
+Illuminar Gaming,151032.27
+Movistar Riders,146030.98
+x6tence,145987.69
+Misfits,144700
+Vox Eminor,144519.35
+Team Singularity,143139.46
+Isurus Gaming,141840.33
+SJ Gaming,140221.04
+Team VeryGames,137179.5
+PRIDE Gaming,132489.54
+Selfless Gaming,123835.6
+Echo Fox,117300
+Invictus Gaming,116912.99
+Splyce,116657.3
+Copenhagen Flames,110388.35
+Nemiga Gaming,103339.02
+The MongolZ,102568.14
+Winstrike Team,101245.66
+BOOM Esports,100869.16
+Giants Gaming,100563.02
+Team GamerLegion,99060.07
+INTZ eSports,98935.21
+Grayhound Gaming,96885.12
+3DMAX,96762.13
+Team One,93354.62
+PACT,92854.77
+ARCY,92840.1
+Swole Patrol,88000
+KOVA Esports,87185.26
+Syman Gaming,86874
+iGame.com,86488.02
+iBUYPOWER,86007.46
+OG,33810636.13
+Team Liquid,22967431.1
+Evil Geniuses,19988670.62
+Newbee,13523736.43
+Team Secret,11492345.09
+Vici Gaming,11182792.92
+LGD Gaming,10072755.42
+Virtus.pro,10037385.11
+Wings Gaming,9739247.35
+Paris Saint-Germain Esports,9066946.69
+Invictus Gaming,6379320.97
+Natus Vincere,4887214.87
+Alliance,4821664.38
+Chaos Esports Club,4588813
+TnC Gaming,4438715.42
+Fnatic,4077969.64
+EHOME,3885246.08
+CDEC Gaming,3704903.32
+MVP,3035123.95
+Mineski,2234647.17
+Cloud9,2123549.64
+Team Empire,2057457.3
+Team DK,1538998.85
+Infamous,1366548.6
+Keen Gaming,1274656.35
+OpTic Gaming,1242599
+Royal Never Give Up,1172901.26
+Ninjas in Pyjamas,1000100.08
+compLexity Gaming,904666.99
+Russian National Team,802000
+paiN Gaming,753508.98
+Gambit Esports,683779.84
+TongFu,578260.48
+Ad Finem,544089.37
+Vega Squadron,530116.38
+Nigma,500124
+Team Serenity,491431.75
+Winstrike Team,416233
+Orange Esports,399432.59
+Team Spirit,337002.41
+HellRaisers,336892.17
+FlyToMoon,335161
+Execration,303807.43
+Team Aster,298218.19
+Rave,285198.43
+Geek Fam,284938.05
+Team Faceless,281033
+BOOM Esports,276570
+J.Storm,258600
+SG e-sports,256201.55
+mousesports,250648.85
+Team NP,224679
+Vikin.gg,219906.93
+Big God,218550.13
+Quincy Crew,186422
+Tigers,169171.28
+Escape Gaming,167996.9
+beastcoast,164350
+HyperGloryTeam,160922.77
+Team Adroit,156240.3
+Scythe Gaming,152384
+Greek National Team,150000
+Team Tinker,124439.09
+Speed Gaming,116355.64
+4 Clovers & Lepricon,105298.45
+Forward Gaming,102510
+Power Rangers,101372.62
+StarTale,96108.79
+The Imperial,92460.6
+Meet Your Makers,89422.58
+Team Malaysia,88584.27
+Fighting PandaS,88000
+Planet Odd,83500
+Radical Online X-tremists,83055.7
+Team Kinguin,81015
+Titan eSports,76156.9
+Ukranian National Team,75992.12
+CR4ZY,71082
+DeToNator,67098.17
+Moscow Five,66381.89
+Sigma,63620.13
+Team Random,62500
+Thunderbirds,62500
+mudgolems,59000
+Immortals,56000
+Team Dignitas,53105.89
+Team Archon,48323
+Team Zenith,48217.23
+London Conspiracy,47592
+Rex Regum Qeon,42662.27
+PENTA Sports,38565.52
+Team Unique,37200
+(monkey) Business,37194
+Made in Thailand,34800.44
+Elite Wolves,34277
+EVOS,33860
+No Tidehunter,31777.08
+Business associates,31365
+NoPing e-sports,30438
+SK Telecom T1,30018.68
+Gen.G,2805813.88
+FaZe Clan,1349801
+Team Liquid,934382.58
+OMG,753543.35
+OGN Entus,680073.68
+Four Angry Men,664126.73
+Tempo Storm,550625
+Natus Vincere,434435
+Cloud9,359260
+Actoz Stars,344125.5
+Infantry Clan,340077.96
+Welcome to South Georgo,322800
+Team SoloMid,292975
+Afreeca Freecs,278101.48
+Ghost Gaming,263160
+VC Gaming,251280.6
+Snake Esports,229724
+KSV eSports,225728.2
+Shoot To Kill,224963.75
+Susquehanna Soniqs,181088.75
+Pittsburgh Knights,178145
+Luminous Stars,177829.84
+ahq e-Sports Club,174295.85
+Armory Gaming,158853.63
+ENCE eSports,132677.56
+Team Kongdoo,131998.5
+AVANGAR,108235
+Divine Esports,107996.41
+Vici Gaming,107086.99
+SK Telecom T1,106636.53
+Wildcard Gaming,105104.75
+Team Envy,104020
+Triumphant Song Gaming,102491.77
+QConfirm,101776.14
+LGD Gaming,101628.05
+Genesis,101258
+Russian National Team,100000
+QM Gaming,98702.56
+Athletico,98195.23
+G2 Esports,96000
+The Rumblers,96000
+Lazarus,95950
+Ninjas in Pyjamas,95881.03
+Buriram United Esports,92945.34
+Luminosity Gaming,84000
+Griffin,83274.06
+Tornado Energy,82594.1
+Royal Never Give Up,81734.76
+Northern Lights,72850
+DeToNator,72021.2
+Team Roccat,70801.5
+Made in Thailand,69946.23
+Sunsister,63119.42
+against All authority,60000
+Purple Mood E-Sport,59316.48
+Korean National Team,58000
+wisdom Nerve victory,57542.4
+OpTic Gaming,56850
+FURY,55708.6
+M19,55000
+Global Esports Xsset,54259.38
+PENTA Sports,51221.2
+Canadian National Team,50000
+DivisionX Gaming,50000
+RED Canids,46976.13
+Team Unique,45500
+Qiao Gu Reapers,45372
+Nova eSports,45176
+WClick,44600
+Vietnamese National Team,44000
+CERBERUS Esports,42877.35
+Noble eSports,39200
+DetonatioN,38315.36
+German National Team,38000
+Vitality,38000
+eUnited,37690
+Winstrike Team,37000
+ArkAngel,35500
+303 Esports,34508.75
+Thai National Team,34000
+FunPlus Phoenix,33886.17
+Team Dignitas,31960
+Taiwanese National Team,30000
+Flash Wolves,29571.51
+Rex Regum Qeon,29549.38
+The Chiefs eSports Club,29282.27
+Spacestation Gaming,28985
+Team Singularity,27219.71
+Chinese National Team,26000
+Simplicity Esports,26000
+Rascal Jester,25135.74
+MVP,25081
+FURIA Esports,24708.1
+ALTERNATE aTTaX,22425.57
+Elgiganten Gaming,22312.06
+Argentinian National Team,22000
+EDward Gaming,21908.92
+J Team,21684.18
+Black Dragons e-Sports,21541.11
+Method,21000
+G2 Esports,575312.54
+Nordavind,483601.94
+Cloud9,447242.63
+Team Liquid,426166.89
+Flash Wolves,417131.2
+Lazarus,366039
+compLexity Gaming,349189.46
+Planet Odd,344871.14
+Team Celestial,325502.87
+Tempo Storm,321833.14
+Team One More,321122.23
+Millenium,302268.47
+Virtus.pro,300120.06
+Team Archon,298733.08
+GamersOrigin,297974.11
+Team Spirit,275968.49
+Vici Gaming,242563.67
+Alliance,230972.12
+SK Telecom T1,229818.05
+Nihilum Gaming,204174.42
+Natus Vincere,187439.55
+Royal Never Give Up,166486.32
+SK Gaming,164747.85
+Invictus Gaming,159981.3
+Chinese National Team,138138.25
+Suning,136050
+Solary,135138.11
+American National Team,130949.95
+Luminosity Gaming,129200.35
+Team Gamer Sensei,125255.28
+ahq e-Sports Club,119902.72
+J Team,118745
+Fade 2 Karma,110512.34
+Illuminar Gaming,104994.51
+Newbee,102409.46
+World Elite,97445
+Team SoloMid,88550
+Vitality,83143.33
+Team Dignitas,81520.49
+Czech National Team,67400
+ROOT Gaming,67193.85
+Arma Team,61549.29
+NRG Esports,58125
+TongFu,57191.43
+Escape Gaming,53125
+Ukranian National Team,52625
+Omnislash,48072.83
+eSuba,45882.58
+Brazilian National Team,45625
+Radiance,44375
+New Zealand National Team,39000
+Wayi Spider,38613.91
+Team Hearthlytics,37510
+Norweigan National Team,37000
+Team Curse,35084.18
+Spacestation Gaming,33900
+Team Oplon,32500
+Hong Kong National Team,31500
+Sentinels,29900
+Meet Your Makers,29133.76
+Danish National Team,28000
+Konix eSport,27250
+British National Team,26000
+Korean National Team,25025
+Bulgarian National Team,24000
+Raise Your Edge Gaming,22750
+Counter Logic Gaming,22668.38
+Kyoto eSports,22315.7
+Misfits,22249.58
+Team Phantasma,21975
+ANOX,20836.94
+EDward Gaming,20445.27
+Big3,18683.42
+Vicious Syndicate Gaming,16925
+Singaporian National Team,16625
+Spanish National Team,16625
+Portugese National Team,16000
+Japanese National Team,15500
+Dutch National Team,14625
+PENTA Sports,14073.29
+Team Singularity,13250
+Trig Esports,12799.81
+Chilean National Team,12000
+Swiss National Team,12000
+GODSENT,11750
+Pittsburgh Knights,11500
+AGO Esports,11434.16
+FC Barcelona,11000
+Valencia CF eSports,10250
+Mexican National Team,10200
+Belgian National Team,10025
+Canadian National Team,10025
+Italian National Team,10000
+The Gosu Crew,9718.96
+Greek National Team,9600
+German National Team,9425
+Thai National Team,9400
+Polish National Team,9025
+Swedish National Team,9025
+Romanian National Team,9000
+MVP,1656839.93
+Team Dignitas,1178555.54
+Fnatic,931148.76
+Gen.G,700000
+Ballistix,680000
+eStar Gaming,638445.71
+Tempest,544085
+Tempo Storm,505121
+Team Liquid,433315.75
+Cloud9,393735.81
+Gale Force eSports,275967
+EDward Gaming,273145.71
+L5,259630
+Team Naventic,217569
+Team expert,200677.18
+Tricked eSports,200000
+KSV eSports,160000
+mYinsanity,157900
+Natus Vincere,135273.04
+Team No Limit,132718.55
+X-Team,129870.69
+Team DK,127944.58
+Method,125000
+Astral Authority,107500
+Denial Esports,79500
+Snake Esports,69315.87
+Mindfreak,54000
+COGnitive Gaming,50100
+G2 Esports,47493.55
+Misfits,40000
+Virtus.pro,35721.36
+Exile5,32958.73
+RED Canids,32500
+OMG,30456.01
+Team Roccat,30172.96
+compLexity Gaming,28100
+Panda Global,22000
+Brain Power,15000
+Bob Question Mark,13240.19
+Brave e-Sports,10800
+Newbee,8919.75
+Polish National Team,8000
+Dark Sided,7500
+ahq e-Sports Club,6133.56
+CNB e-Sports Club,6002.41
+Epsilon eSports,5000
+Reason Gaming,5000
+ALTERNATE aTTaX,4755.57
+Granit Gaming,3775
+El NeXo,3307.48
+INTZ eSports,3250
+SK Gaming,3075
+Dutch National Team,3000
+French National Team,3000
+German National Team,3000
+Hungarian National Team,3000
+Italian National Team,3000
+Russian National Team,3000
+Swedish National Team,3000
+Isurus Gaming,2000
+Elevate,1600
+Belgian National Team,1500
+British National Team,1500
+Czech National Team,1500
+Danish National Team,1500
+Finnish National Team,1500
+Portugese National Team,1500
+Spanish National Team,1500
+Ukranian National Team,1500
+Luminosity Gaming,1300
+Wind and Rain,1217.78
+Black Dragons e-Sports,1000
+ePunks,800
+Team Kinguin,750
+Millenium,640.67
+TCM Gaming,500
+mousesports,416.84
+Star Horn Royal Club,306
+3DMAX,300
+Team Acer,175
+eStar Gaming,2613323.67
+Hero JiuJ,1104361.96
+Qiao Gu Reapers,951865.26
+Buriram United Esports,658817.54
+Royal Never Give Up,361620.46
+J Team,336308.02
+EDward Gaming,321077.65
+Bazaar Gaming,300325.26
+Vietnamese National Team,268500
+ahq e-Sports Club,267634.02
+Talon Esports,231691.7
+Triumphant Song Gaming,222943.81
+King of Gamers Club,211777.93
+Korean National Team,203000
+Flash Wolves,199461.65
+Taiwanese National Team,196000
+Thai National Team,187000
+DragonX,179170.89
+Rogue Warriors,165306.18
+Nova eSports,163317.81
+ROX Gaming,142889.92
+Hong Kong Attitude,111667.89
+EVOS,86596.83
+Chinese National Team,67500
+French National Team,50000
+MVP,41363.97
+Team Allegiance,40000
+American National Team,34500
+Immortals,31000
+GameTV,26615.4
+Team Queso,25000
+Actoz Stars,22250
+German National Team,20000
+Italian National Team,15000
+paiN Gaming,15000
+FlipSid3 Tactics,11000
+INTZ eSports,10000
+Spanish National Team,10000
+Team Flash,10000
+Team QLASH,10000
+Vitality,10000
+x6tence,10000
+MEGA Esports,6544.4
+Rex Regum Qeon,6286.8
+Alliance,4000
+Marines Esports,3429.6
+British National Team,2500
+Swedish National Team,2500

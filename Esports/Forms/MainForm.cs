@@ -36,8 +36,14 @@ namespace Esports
             this.selectedScreen = homeBtn;
             this.ControlBox = false;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            this.activeForm = new Forms.PlayersForm();
-            openChildForm(new Forms.PlayersForm());
+            this.activeForm = new Forms.HomeForm();
+            openChildForm(activeForm);
+        }
+
+        public MainForm(String username, String region) : this()
+        {
+            usernameLbl.Text = username;
+            regionLbl.Text = region;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -116,7 +122,7 @@ namespace Esports
                 homeBtn.BackColor = Color.FromArgb(220, 239, 255);
                 HeaderLbl.Text = "Home";
                 this.selectedScreen = homeBtn;
-                openChildForm(activeForm);
+                openChildForm(new Forms.HomeForm());
             }
         }
 
@@ -138,7 +144,7 @@ namespace Esports
                 playersBtn.BackColor = Color.FromArgb(220, 239, 255);
                 HeaderLbl.Text = "Players";
                 this.selectedScreen = playersBtn;
-                openChildForm(activeForm);
+                openChildForm(new Forms.PlayersForm());
             }
         }
 
@@ -187,6 +193,21 @@ namespace Esports
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void MatchesBtn_Click(object sender, EventArgs e)
+        {
+            if (this.selectedScreen != MatchesBtn)
+            {
+                this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+                panelNav.Height = MatchesBtn.Height;
+                panelNav.Top = MatchesBtn.Top;
+                panelNav.Left = MatchesBtn.Left;
+                MatchesBtn.BackColor = Color.FromArgb(220, 239, 255);
+                HeaderLbl.Text = "Matches";
+                this.selectedScreen = MatchesBtn;
+                openChildForm(new Forms.MatchesForm());
+            }
         }
     }
 }

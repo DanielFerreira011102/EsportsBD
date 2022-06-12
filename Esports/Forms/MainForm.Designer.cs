@@ -39,8 +39,7 @@
             this.playersBtn = new System.Windows.Forms.Button();
             this.homeBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.userLbl2 = new System.Windows.Forms.Label();
-            this.userLbl1 = new System.Windows.Forms.Label();
+            this.regionLbl = new System.Windows.Forms.Label();
             this.usernameLbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.HeaderLbl = new System.Windows.Forms.Label();
@@ -54,6 +53,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
+            this.MatchesBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,6 +69,7 @@
             this.panel1.Controls.Add(this.helpBtn);
             this.panel1.Controls.Add(this.orgBtn);
             this.panel1.Controls.Add(this.EventsBtn);
+            this.panel1.Controls.Add(this.MatchesBtn);
             this.panel1.Controls.Add(this.teamBtn);
             this.panel1.Controls.Add(this.playersBtn);
             this.panel1.Controls.Add(this.homeBtn);
@@ -115,7 +116,7 @@
             this.helpBtn.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.helpBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(142)))), ((int)(((byte)(203)))));
             this.helpBtn.Image = ((System.Drawing.Image)(resources.GetObject("helpBtn.Image")));
-            this.helpBtn.Location = new System.Drawing.Point(0, 527);
+            this.helpBtn.Location = new System.Drawing.Point(0, 594);
             this.helpBtn.Margin = new System.Windows.Forms.Padding(4);
             this.helpBtn.Name = "helpBtn";
             this.helpBtn.Size = new System.Drawing.Size(239, 67);
@@ -133,7 +134,7 @@
             this.orgBtn.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.orgBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(142)))), ((int)(((byte)(203)))));
             this.orgBtn.Image = ((System.Drawing.Image)(resources.GetObject("orgBtn.Image")));
-            this.orgBtn.Location = new System.Drawing.Point(0, 460);
+            this.orgBtn.Location = new System.Drawing.Point(0, 527);
             this.orgBtn.Margin = new System.Windows.Forms.Padding(4);
             this.orgBtn.Name = "orgBtn";
             this.orgBtn.Size = new System.Drawing.Size(239, 67);
@@ -151,7 +152,7 @@
             this.EventsBtn.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.EventsBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(142)))), ((int)(((byte)(203)))));
             this.EventsBtn.Image = ((System.Drawing.Image)(resources.GetObject("EventsBtn.Image")));
-            this.EventsBtn.Location = new System.Drawing.Point(0, 393);
+            this.EventsBtn.Location = new System.Drawing.Point(0, 460);
             this.EventsBtn.Margin = new System.Windows.Forms.Padding(4);
             this.EventsBtn.Name = "EventsBtn";
             this.EventsBtn.Size = new System.Drawing.Size(239, 67);
@@ -217,8 +218,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.userLbl2);
-            this.panel2.Controls.Add(this.userLbl1);
+            this.panel2.Controls.Add(this.regionLbl);
             this.panel2.Controls.Add(this.usernameLbl);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -228,41 +228,30 @@
             this.panel2.Size = new System.Drawing.Size(239, 192);
             this.panel2.TabIndex = 0;
             // 
-            // userLbl2
+            // regionLbl
             // 
-            this.userLbl2.AutoSize = true;
-            this.userLbl2.Font = new System.Drawing.Font("Quicksand", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.userLbl2.ForeColor = System.Drawing.Color.AliceBlue;
-            this.userLbl2.Location = new System.Drawing.Point(159, 159);
-            this.userLbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.userLbl2.Name = "userLbl2";
-            this.userLbl2.Size = new System.Drawing.Size(64, 25);
-            this.userLbl2.TabIndex = 3;
-            this.userLbl2.Text = "label2";
-            this.userLbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // userLbl1
-            // 
-            this.userLbl1.AutoSize = true;
-            this.userLbl1.Font = new System.Drawing.Font("Quicksand", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.userLbl1.ForeColor = System.Drawing.Color.AliceBlue;
-            this.userLbl1.Location = new System.Drawing.Point(15, 159);
-            this.userLbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.userLbl1.Name = "userLbl1";
-            this.userLbl1.Size = new System.Drawing.Size(61, 25);
-            this.userLbl1.TabIndex = 2;
-            this.userLbl1.Text = "label1";
-            this.userLbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.regionLbl.AutoSize = true;
+            this.regionLbl.Font = new System.Drawing.Font("Quicksand", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.regionLbl.ForeColor = System.Drawing.Color.AliceBlue;
+            this.regionLbl.Location = new System.Drawing.Point(0, 154);
+            this.regionLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.regionLbl.MinimumSize = new System.Drawing.Size(239, 0);
+            this.regionLbl.Name = "regionLbl";
+            this.regionLbl.Size = new System.Drawing.Size(239, 25);
+            this.regionLbl.TabIndex = 2;
+            this.regionLbl.Text = "region";
+            this.regionLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // usernameLbl
             // 
             this.usernameLbl.AutoSize = true;
             this.usernameLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.usernameLbl.ForeColor = System.Drawing.Color.AliceBlue;
-            this.usernameLbl.Location = new System.Drawing.Point(82, 101);
+            this.usernameLbl.Location = new System.Drawing.Point(0, 101);
             this.usernameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.usernameLbl.MinimumSize = new System.Drawing.Size(239, 0);
             this.usernameLbl.Name = "usernameLbl";
-            this.usernameLbl.Size = new System.Drawing.Size(85, 30);
+            this.usernameLbl.Size = new System.Drawing.Size(239, 30);
             this.usernameLbl.TabIndex = 1;
             this.usernameLbl.Text = "userLbl";
             this.usernameLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -270,7 +259,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Esports.Properties.Resources.user_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(75, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(77, 13);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(81, 84);
@@ -296,7 +285,7 @@
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.searchBtn);
-            this.panel3.Location = new System.Drawing.Point(432, 25);
+            this.panel3.Location = new System.Drawing.Point(485, 25);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(478, 43);
             this.panel3.TabIndex = 3;
@@ -338,7 +327,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(239, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1261, 85);
+            this.panel5.Size = new System.Drawing.Size(1401, 85);
             this.panel5.TabIndex = 5;
             this.panel5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel5_MouseDown);
             // 
@@ -349,7 +338,7 @@
             this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeBtn.ForeColor = System.Drawing.Color.Transparent;
             this.closeBtn.Image = ((System.Drawing.Image)(resources.GetObject("closeBtn.Image")));
-            this.closeBtn.Location = new System.Drawing.Point(1197, 25);
+            this.closeBtn.Location = new System.Drawing.Point(1337, 25);
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(35, 29);
             this.closeBtn.TabIndex = 6;
@@ -363,7 +352,7 @@
             this.miniBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.miniBtn.ForeColor = System.Drawing.Color.Transparent;
             this.miniBtn.Image = ((System.Drawing.Image)(resources.GetObject("miniBtn.Image")));
-            this.miniBtn.Location = new System.Drawing.Point(1145, 25);
+            this.miniBtn.Location = new System.Drawing.Point(1285, 25);
             this.miniBtn.Name = "miniBtn";
             this.miniBtn.Size = new System.Drawing.Size(35, 29);
             this.miniBtn.TabIndex = 4;
@@ -375,15 +364,33 @@
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(239, 85);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1261, 815);
+            this.panelDesktop.Size = new System.Drawing.Size(1401, 815);
             this.panelDesktop.TabIndex = 6;
+            // 
+            // MatchesBtn
+            // 
+            this.MatchesBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MatchesBtn.FlatAppearance.BorderSize = 0;
+            this.MatchesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MatchesBtn.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MatchesBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(142)))), ((int)(((byte)(203)))));
+            this.MatchesBtn.Image = ((System.Drawing.Image)(resources.GetObject("MatchesBtn.Image")));
+            this.MatchesBtn.Location = new System.Drawing.Point(0, 393);
+            this.MatchesBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.MatchesBtn.Name = "MatchesBtn";
+            this.MatchesBtn.Size = new System.Drawing.Size(239, 67);
+            this.MatchesBtn.TabIndex = 9;
+            this.MatchesBtn.Text = "Matches";
+            this.MatchesBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.MatchesBtn.UseVisualStyleBackColor = true;
+            this.MatchesBtn.Click += new System.EventHandler(this.MatchesBtn_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(1500, 900);
+            this.ClientSize = new System.Drawing.Size(1640, 900);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
@@ -413,8 +420,7 @@
         private Panel panel2;
         private Label usernameLbl;
         private PictureBox pictureBox1;
-        private Label userLbl2;
-        private Label userLbl1;
+        private Label regionLbl;
         private Button homeBtn;
         private Button orgBtn;
         private Button EventsBtn;
@@ -434,5 +440,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.ComponentModel.BackgroundWorker backgroundWorker3;
+        private Button MatchesBtn;
     }
 }
