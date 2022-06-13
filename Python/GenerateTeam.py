@@ -3,7 +3,36 @@
 # fetch logo url
 # generate game
 import random
+import string
 
+
+def generateRandomEmail(number) -> list:
+    emailDomains = ["hotmail.com", "gmail.com", "aol.com", "mail.com", "prodigy-agency.gg", "mail.kz", "yahoo.com", "ua.pt", "nivomanagement.com"]
+    alpha = list(string.ascii_letters)
+    digit = list(string.digits)
+    special = ['.', '-', '_']
+    letters = alpha + digit + special
+    lst = []
+
+    def get_one_random_domain():
+        return random.choice(emailDomains)
+
+    def get_one_random_name():
+        email_name = ''.join(random.choice(alpha))
+        for i in range(random.randint(0, 22)):
+            gen = random.choice(letters)
+            if not (gen in special and email_name[-1] in special):
+                email_name = email_name + random.choice(letters)
+        if email_name[-1] in special:
+            email_name = email_name[:-1]
+        return email_name
+
+    for email in range(0, number):
+        one_name = str(get_one_random_name())
+        one_domain = str(get_one_random_domain())
+        lst.append(one_name + "@" + one_domain)
+
+    return lst
 
 def generateRandomLogo(number) -> list:
     lst = []

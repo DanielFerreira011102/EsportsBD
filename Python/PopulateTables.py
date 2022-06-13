@@ -5,6 +5,7 @@ from GenerateTeam import *
 from GenerateGame import *
 from GeneratePlayer import *
 from GenerateTeamStaff import *
+from GenerateOrganization import *
 
 """ --------- CONSTANTS --------- """
 
@@ -89,4 +90,8 @@ def insert(table: str, records: list):
 # records1, records2 = generateRandomTeamStaff(200)
 # insert('TEAM_STAFF', records1)
 # insert('TEAM_STAFF_ROLE', records2)
+
+""" INSERT ORGANIZATION """
+# records = generateRandomOrgs(100)
+# insert('ORGANIZATION', records)
 
