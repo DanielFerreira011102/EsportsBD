@@ -13,6 +13,10 @@ GO
 DROP FUNCTION IF EXISTS getTeams;
 GO
 DROP FUNCTION IF EXISTS getGamePlayerData;
+GO
+DROP FUNCTION IF EXISTS getRandomTeamCaptain;
+GO
+DROP VIEW IF EXISTS getNewID
 
 GO
 CREATE FUNCTION CheckUserExists(@Username VARCHAR(25), @Email VARCHAR(50)) 
@@ -124,3 +128,14 @@ AS
 		SELECT * FROM PLAYER AS P, (SELECT id, [name] FROM TEAM) AS T WHERE P.game=@GAME AND P.team_id = T.id
 	)
 GO
+
+CREATE VIEW getNewID AS SELECT NEWID() AS NEW_ID;
+
+GO
+CREATE FUNCTION getRandomTeamCaptain(@TEAM INT)
+RETURNS TABLE
+AS
+	RETURN (SELECT TOP 1 username FROM PLAYER AS P WHERE P.team_id = @TEAM ORDER BY (select new_id from getNewID))
+GO
+
+

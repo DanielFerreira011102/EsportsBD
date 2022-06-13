@@ -6,6 +6,8 @@ from GenerateGame import *
 from GeneratePlayer import *
 from GenerateTeamStaff import *
 from GenerateOrganization import *
+from GenerateTeamCaptain import *
+from GenerateEventStaff import *
 
 """ --------- CONSTANTS --------- """
 
@@ -13,8 +15,8 @@ from GenerateOrganization import *
 
 AttrMap = {'[USER]': 7, 'TOURNAMENT': 10, 'TEAM_STAFF_ROLE': 2, 'TEAM_STAFF': 5, 'TEAM_PLAYS': 2, 'TEAM': 8, 'STAT': 5,
            'SERIES': 4, 'PLAYER_STATS': 3, 'PLAYER_PLAYS': 2, 'PLAYER': 11, 'PARTICIPATES_IN': 3, 'ORGANIZATION': 3,
-           'MAP': 4, 'GAME_TYPE': 2, 'GAME': 3, 'EVENT_STAFF_ROLE': 3, 'EVENT_STAFF': 3, 'TEAM_CAPTAIN': 2,
-           'SERIES_RESULT': 4, 'SERIES_MVP': 2, 'MAP_RESULT': 4, }
+           'MAP': 4, 'GAME_TYPE': 2, 'GAME': 3, 'EVENT_STAFF_ROLE': 2, 'EVENT_STAFF': 2, 'TEAM_CAPTAIN': 2,
+           'SERIES_RESULT': 4, 'SERIES_MVP': 2, 'MAP_RESULT': 4, 'SUPER_EVENT_STAFF': 2}
 
 DRIVER = 'SQL Server'
 SERVER_NAME = 'LAPTOP-C8296JRI\\SQLEXPRESS'
@@ -95,3 +97,12 @@ def insert(table: str, records: list):
 # records = generateRandomOrgs(100)
 # insert('ORGANIZATION', records)
 
+""" INSERT TEAM CAPTAIN """
+# records = generateRandomTeamCaptain(200)
+# insert('TEAM_CAPTAIN', records)
+
+""" INSERT EVENT STAFF AND ROLE AND SUPER """
+# records1, records2, records3 = generateRandomEventStaff(350)
+# insert('EVENT_STAFF', records1)
+# insert('EVENT_STAFF_ROLE', records2)
+# insert('SUPER_EVENT_STAFF', records3)

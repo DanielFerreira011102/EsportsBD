@@ -83,22 +83,25 @@ ALTER TABLE TEAM_CAPTAIN ADD CONSTRAINT FK_Team_Captain FOREIGN KEY (captain) RE
 
 CREATE TABLE EVENT_STAFF (
 username VARCHAR(25) REFERENCES [USER](username) ON DELETE CASCADE,
-super_username VARCHAR(25),
-organization VARCHAR(25) REFERENCES ORGANIZATION([name]) ON DELETE CASCADE,
-PRIMARY KEY(username, organization),
--- removed years_experience INT,
--- removed event_join_date DATE,
+organization VARCHAR(25) REFERENCES ORGANIZATION([name]),
+PRIMARY KEY(username),
 );
 
 -- redefined event_type
 CREATE TABLE EVENT_STAFF_ROLE (
 username VARCHAR(25),
-organization VARCHAR(25),
 [role] VARCHAR(30),
-PRIMARY KEY(username, organization, [role])
+PRIMARY KEY(username)
 );
 -- update event_type
-ALTER TABLE EVENT_STAFF_ROLE ADD FOREIGN KEY (username, organization) REFERENCES EVENT_STAFF(username, organization) ON DELETE CASCADE
+ALTER TABLE EVENT_STAFF_ROLE ADD FOREIGN KEY (username) REFERENCES EVENT_STAFF(username) ON DELETE CASCADE
+
+CREATE TABLE SUPER_EVENT_STAFF (
+username VARCHAR(25) PRIMARY KEY REFERENCES EVENT_STAFF(username),
+super_username VARCHAR(25),
+)
+
+ALTER TABLE SUPER_EVENT_STAFF ADD FOREIGN KEY (super_username) REFERENCES EVENT_STAFF(username) ON DELETE CASCADE
 
 CREATE TABLE TOURNAMENT (
 [name] VARCHAR(50) PRIMARY KEY,

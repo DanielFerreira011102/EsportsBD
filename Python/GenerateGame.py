@@ -14,7 +14,3 @@ def generateGames():
             lst2.append([games[i], j])
 
     return lst1, lst2
-
-
-r1,r2 = generateGames()
-print(r2)
