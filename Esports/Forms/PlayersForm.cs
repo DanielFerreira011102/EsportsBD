@@ -2,6 +2,7 @@
 using System.Data.SqlClient;
 using Esports.Classes;
 using System.Diagnostics;
+using System.Globalization;
 
 namespace Esports.Forms
 {
@@ -93,6 +94,12 @@ namespace Esports.Forms
                 String? IGN = reader["IGN"].ToString();
                 String? team = reader["name"].ToString();
                 String? country = reader["country"].ToString();
+
+                if (!string.IsNullOrEmpty(country))
+                {
+                    RegionInfo myRI1 = new RegionInfo(country);
+                    country = myRI1.EnglishName;
+                }
 
                 item.SubItems.Add(IGN);
                 item.SubItems.Add(team);
