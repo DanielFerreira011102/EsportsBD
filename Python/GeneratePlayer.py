@@ -16,11 +16,8 @@ def getTeamsList(number):
 
     for game in games:
         lst = GetSQLDataStandard(query, [game])
-        if len(lst) < number//2.5:
-            nnum = len(lst)
-        else:
-            nnum = number//2.5
-        dict_[game] = random.sample(GetSQLDataStandard(query, [game]), nnum)
+
+        dict_[game] = random.choices(lst, k=number)
 
     return dict_
 
@@ -121,16 +118,24 @@ def generatePlayerNames(number):
     igns = []
     realnames = []
     countrycodes = []
-
+    count = 1
     with open('players.txt', 'r', encoding='utf8') as f:
-        for team in f:
-            data = team.strip().replace('\n', '').split(',')
-            igns.append(data[0])
-            if data[1] == "- -":
+        for player in f:
+            data = player.strip().replace('\n', '').split(',')
+            if len(data[0]) > 25:
+                igns.append("SecretAgent" + str(count))
+                count += 1
+            else:
+                igns.append(data[0])
+            if data[1] == "- -" or len(data[1]) > 30:
                 realnames.append(None)
             else:
                 realnames.append(data[1])
-            countrycodes.append(data[2])
+
+            if len(data[2]) <= 10:
+                countrycodes.append(data[2])
+            else:
+                countrycodes.append(None)
 
     return random.sample(list(set(igns)), number), random.sample(realnames, number), random.sample(countrycodes, number)
 

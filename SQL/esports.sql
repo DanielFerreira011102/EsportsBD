@@ -51,7 +51,6 @@ captain VARCHAR(25),
 
 CREATE TABLE TEAM_STAFF (
 username VARCHAR(25) PRIMARY KEY REFERENCES [USER](username) ON DELETE CASCADE,
-twitter_url VARCHAR(500),
 years_experience INT,
 team_join_date DATE,
 real_name VARCHAR(30),

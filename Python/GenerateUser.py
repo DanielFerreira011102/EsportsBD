@@ -103,6 +103,3 @@ def generateUser(number) -> list[list]:
 
     return users
 
-print(generateUser(10))
-
-

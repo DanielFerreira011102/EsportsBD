@@ -28,86 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.RegionSelect = new Esports.Components.CustomComboBox();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.PlayerLbl = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.GameSelect = new Esports.Components.CustomComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.PlayerList = new System.Windows.Forms.ListView();
-            this.Username1 = new System.Windows.Forms.ColumnHeader();
-            this.Age1 = new System.Windows.Forms.ColumnHeader();
-            this.Region1 = new System.Windows.Forms.ColumnHeader();
-            this.Gender1 = new System.Windows.Forms.ColumnHeader();
-            this.panel10.SuspendLayout();
+            this.rank = new System.Windows.Forms.ColumnHeader();
+            this.IGN = new System.Windows.Forms.ColumnHeader();
+            this.Team = new System.Windows.Forms.ColumnHeader();
+            this.Country = new System.Windows.Forms.ColumnHeader();
             this.SuspendLayout();
-            // 
-            // RegionSelect
-            // 
-            this.RegionSelect.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.RegionSelect.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.RegionSelect.BackColor = System.Drawing.SystemColors.Control;
-            this.RegionSelect.BorderColor = System.Drawing.Color.Transparent;
-            this.RegionSelect.BorderSize = 1;
-            this.RegionSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.RegionSelect.Font = new System.Drawing.Font("Quicksand", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RegionSelect.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.RegionSelect.IconColor = System.Drawing.Color.DodgerBlue;
-            this.RegionSelect.Items.AddRange(new object[] {
-            "Asia-Pacific North",
-            "Asia-Pacific South",
-            "Brazil",
-            "China",
-            "Europe",
-            "Korea",
-            "Middle East",
-            "North Africa",
-            "North America",
-            "Oceania",
-            "South America",
-            "Sub-Saharan Africa",
-            "Turkey",
-            "World"});
-            this.RegionSelect.ListBackColor = System.Drawing.Color.AliceBlue;
-            this.RegionSelect.ListTextColor = System.Drawing.SystemColors.WindowText;
-            this.RegionSelect.Location = new System.Drawing.Point(317, 65);
-            this.RegionSelect.MinimumSize = new System.Drawing.Size(0, 30);
-            this.RegionSelect.Name = "RegionSelect";
-            this.RegionSelect.Padding = new System.Windows.Forms.Padding(1);
-            this.RegionSelect.Size = new System.Drawing.Size(283, 38);
-            this.RegionSelect.TabIndex = 40;
-            this.RegionSelect.Texts = "";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panel10.Controls.Add(this.panel1);
-            this.panel10.Location = new System.Drawing.Point(317, 102);
-            this.panel10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(296, 1);
-            this.panel10.TabIndex = 43;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 1);
-            this.panel1.TabIndex = 44;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panel2.Location = new System.Drawing.Point(15, 102);
+            this.panel2.Location = new System.Drawing.Point(22, 102);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(258, 1);
+            this.panel2.Size = new System.Drawing.Size(601, 1);
             this.panel2.TabIndex = 45;
             // 
             // PlayerLbl
@@ -123,21 +63,11 @@
             this.PlayerLbl.Text = "Players";
             this.PlayerLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Quicksand SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(317, 19);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 34);
-            this.label4.TabIndex = 46;
-            this.label4.Text = "Region";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Quicksand SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(15, 19);
+            this.label5.Location = new System.Drawing.Point(22, 19);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 34);
             this.label5.TabIndex = 47;
@@ -163,13 +93,14 @@
             "Valorant"});
             this.GameSelect.ListBackColor = System.Drawing.Color.AliceBlue;
             this.GameSelect.ListTextColor = System.Drawing.SystemColors.WindowText;
-            this.GameSelect.Location = new System.Drawing.Point(15, 65);
+            this.GameSelect.Location = new System.Drawing.Point(22, 65);
             this.GameSelect.MinimumSize = new System.Drawing.Size(0, 30);
             this.GameSelect.Name = "GameSelect";
             this.GameSelect.Padding = new System.Windows.Forms.Padding(1);
-            this.GameSelect.Size = new System.Drawing.Size(245, 38);
+            this.GameSelect.Size = new System.Drawing.Size(588, 38);
             this.GameSelect.TabIndex = 48;
             this.GameSelect.Texts = "";
+            this.GameSelect.OnSelectedIndexChanged += new System.EventHandler(this.GameSelect_OnSelectedIndexChanged);
             // 
             // panel3
             // 
@@ -193,10 +124,10 @@
             // 
             this.PlayerList.BackColor = System.Drawing.Color.AliceBlue;
             this.PlayerList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Username1,
-            this.Age1,
-            this.Region1,
-            this.Gender1});
+            this.rank,
+            this.IGN,
+            this.Team,
+            this.Country});
             this.PlayerList.Font = new System.Drawing.Font("Quicksand", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerList.ForeColor = System.Drawing.Color.White;
             this.PlayerList.FullRowSelect = true;
@@ -212,26 +143,26 @@
             this.PlayerList.DrawItem += new System.Windows.Forms.DrawListViewItemEventHandler(this.justToCheck);
             this.PlayerList.SelectedIndexChanged += new System.EventHandler(this.PlayerList_SelectedIndexChanged);
             // 
-            // Username1
+            // rank
             // 
-            this.Username1.Tag = "Numeric";
-            this.Username1.Text = "Username";
-            this.Username1.Width = 179;
+            this.rank.Tag = "";
+            this.rank.Text = "Rank";
+            this.rank.Width = 179;
             // 
-            // Age1
+            // IGN
             // 
-            this.Age1.Text = "Age";
-            this.Age1.Width = 179;
+            this.IGN.Text = "IGN";
+            this.IGN.Width = 179;
             // 
-            // Region1
+            // Team
             // 
-            this.Region1.Text = "Region";
-            this.Region1.Width = 179;
+            this.Team.Text = "Team";
+            this.Team.Width = 179;
             // 
-            // Gender1
+            // Country
             // 
-            this.Gender1.Text = "Gender";
-            this.Gender1.Width = 179;
+            this.Country.Text = "Country";
+            this.Country.Width = 179;
             // 
             // PlayersForm
             // 
@@ -244,36 +175,28 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.GameSelect);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.panel10);
-            this.Controls.Add(this.RegionSelect);
             this.Controls.Add(this.PlayerLbl);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "PlayersForm";
             this.Text = "PlayersForm";
             this.Load += new System.EventHandler(this.PlayersForm_Load);
-            this.panel10.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private Components.CustomComboBox RegionSelect;
-        private Panel panel10;
-        private Panel panel1;
         private Panel panel2;
         private Label PlayerLbl;
-        private Label label4;
         private Label label5;
         private Components.CustomComboBox GameSelect;
         private Panel panel3;
         private Label label2;
         private ListView PlayerList;
-        private ColumnHeader Username1;
-        private ColumnHeader Age1;
-        private ColumnHeader Region1;
-        private ColumnHeader Gender1;
+        private ColumnHeader rank;
+        private ColumnHeader IGN;
+        private ColumnHeader Team;
+        private ColumnHeader Country;
     }
 }

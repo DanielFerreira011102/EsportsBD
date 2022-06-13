@@ -1,6 +1,7 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
 using Esports.Classes;
+using System.Diagnostics;
 
 namespace Esports.Forms
 {
@@ -55,22 +56,31 @@ namespace Esports.Forms
             this.PlayerList.ListViewItemSorter = lvwColumnSorter;
 
             PlayerList.GridLines = true;
-            LoadBDContacts();        
+            GameSelect.SelectedItem = "CS:GO";
+            LoadBDPlayers();        
         }
 
         private void PlayersForm_Load(object sender, EventArgs e)
         {
-            GameSelect.SelectedItem = "CS:GO";
-            RegionSelect.SelectedItem = "World";
+            lvwColumnSorter.SortColumn = 0;
+            lvwColumnSorter.Order = System.Windows.Forms.SortOrder.Ascending;
+            // Perform the sort with these new sort options.
+            this.PlayerList.Sort();
         }
 
-        private void LoadBDContacts()
+        private void LoadBDPlayers()
         {
             if (!verifySGBDConnection())
                 return;
 
+            if (GameSelect.SelectedIndex == -1)
+                GameSelect.SelectedItem = "CS:GO";
+
+            Debug.WriteLine(GameSelect.SelectedItem);
             // DOING WITH USER RN BUT I WANT PLAYERS
-            SqlCommand cmd = new SqlCommand("SELECT * FROM [USER]", cn);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM getGamePlayerData(@Game)", cn);
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("@Game", GameSelect.SelectedItem);
             SqlDataReader reader = cmd.ExecuteReader();
 
             PlayerList.Items.Clear();
@@ -78,10 +88,17 @@ namespace Esports.Forms
             while (reader.Read())
             {
 
-                ListViewItem item = new(reader["username"].ToString());
+                ListViewItem item = new(reader["ranking"].ToString());
 
-                String? birthday = reader["birthday"].ToString();
+                String? IGN = reader["IGN"].ToString();
+                String? team = reader["name"].ToString();
+                String? country = reader["country"].ToString();
 
+                item.SubItems.Add(IGN);
+                item.SubItems.Add(team);
+                item.SubItems.Add(country);
+
+                /*
                 if (string.IsNullOrEmpty(birthday))
                 {
                     item.SubItems.Add(birthday);
@@ -94,8 +111,6 @@ namespace Esports.Forms
                     item.SubItems.Add(age < 0? "0" : age.ToString());
                 }
 
-                item.SubItems.Add(reader["region"].ToString());
-
                 String? gender = reader["gender"].ToString();
                 if (string.IsNullOrEmpty(gender))
                 {
@@ -105,6 +120,8 @@ namespace Esports.Forms
                 {
                     item.SubItems.Add(gender == "F"? "Female" : "Male");
                 }
+                */
+
 
                 foreach (ListViewItem.ListViewSubItem sub in item.SubItems)
                 {
@@ -135,24 +152,6 @@ namespace Esports.Forms
             return age;
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PlayerList_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            if (PlayerList.SelectedIndices.Count > 0)
-            {
-                string user = PlayerList.SelectedItems[0].SubItems[0].Text;
-                string age = PlayerList.SelectedItems[0].SubItems[1].Text;
-                string region = PlayerList.SelectedItems[0].SubItems[2].Text;
-                string gender = PlayerList.SelectedItems[0].SubItems[3].Text;
-
-                currentUser = new User(user, age, region, gender);
-                //textBox2.Text = currentUser.Username;
-            }
-        }
 
         private void sortByColumn(object sender, ColumnClickEventArgs e)
         {
@@ -196,7 +195,20 @@ namespace Esports.Forms
 
         private void PlayerList_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (PlayerList.SelectedIndices.Count > 0)
+            {
+                string rank = PlayerList.SelectedItems[0].SubItems[0].Text;
+                string ign = PlayerList.SelectedItems[0].SubItems[1].Text;
+                string team = PlayerList.SelectedItems[0].SubItems[2].Text;
+                string country = PlayerList.SelectedItems[0].SubItems[3].Text;
 
+                //textBox2.Text = currentUser.Username;
+            }
+        }
+
+        private void GameSelect_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadBDPlayers();
         }
     }
 }
