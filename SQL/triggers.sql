@@ -1,14 +1,34 @@
+USE Esports
 DROP PROCEDURE IF EXISTS createTranslator
 GO
 DROP PROCEDURE IF EXISTS deleteTranslator
 GO
 DROP TRIGGER IF EXISTS superRole
 GO
-
-USE Esports
-
-/*
+DROP TRIGGER IF EXISTS dontInsertIfTeamsFilled
 GO
+
+CREATE TRIGGER dontInsertIfTeamsFilled
+ON PARTICIPATES_IN INSTEAD OF INSERT 
+AS
+BEGIN
+	DECLARE @count INT
+	DECLARE @tournament VARCHAR(50)
+	DECLARE @numberOfTeams INT
+
+	SELECT @tournament = tournament FROM INSERTED
+	
+	SELECT @count = COUNT(*) FROM PARTICIPATES_IN WHERE @tournament = tournament
+	SELECT @numberOfTeams = number_teams FROM TOURNAMENT WHERE @tournament = [name]
+	
+	IF @count >= @numberOfTeams
+		RAISERROR('Tournament slots are already filled.',16,1)
+	ELSE
+		INSERT INTO PARTICIPATES_IN SELECT * FROM INSERTED
+END
+GO
+
+/*GO
 CREATE PROCEDURE createTranslator
 AS
 BEGIN
@@ -70,5 +90,4 @@ BEGIN
 		END
 	EXEC deleteTranslator
 END
-GO
-*/
+GO*/

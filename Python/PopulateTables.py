@@ -41,6 +41,30 @@ def insert_statement(table: str):
         VALUES {MyVal}
         """.format(MyTable=table, MyVal=values_str)
 
+def execute(query):
+    try:
+        conn = odbc.connect(conn_string)
+    except Exception as e:
+        print(e)
+        print('task is terminated')
+        sys.exit()
+    else:
+        cursor = conn.cursor()
+
+    try:
+        cursor.execute(query)
+    except Exception as ex:
+        cursor.rollback()
+        print(ex.value)
+        print('transaction rolled back')
+    else:
+        print('update was successful')
+        cursor.commit()
+        cursor.close()
+    finally:
+        if conn.connected == 1:
+            print('connection closed')
+            conn.close()
 
 def insert(table: str, records: list):
 
@@ -109,6 +133,8 @@ def insert(table: str, records: list):
 # insert('SUPER_EVENT_STAFF', records3)
 
 """ INSERT EVENT AND TEAMS IN EVENT """
-records1, records2 = generateRandomEvents(500)
-insert('TOURNAMENT', records1)
-insert('PARTICIPATES_IN', records2)
+# records1, records2 = generateRandomEvents(500)
+# insert('PARTICIPATES_IN', records2)
+# insert('TOURNAMENT', records1)
+# execute('INSERT INTO TOURNAMENT_WINNER SELECT [name], team_id FROM TOURNAMENT, PARTICIPATES_IN WHERE tournament=[name] AND placement=1')
+
