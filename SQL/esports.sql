@@ -107,7 +107,6 @@ CREATE TABLE TOURNAMENT (
 [name] VARCHAR(50) PRIMARY KEY,
 [format] VARCHAR(30) NOT NULL,
 -- 'Single Elimination' 'Double Elimination' 'Multilevel' 'Round Robin' 'Swiss System'
-prize_pool INT,
 [start_date] DATETIME NOT NULL,
 [end_date] DATETIME NOT NULL,
 region VARCHAR(20),
@@ -115,6 +114,7 @@ number_teams INT NOT NULL,
 game VARCHAR(25) REFERENCES GAME([name]),
 organization VARCHAR(25) REFERENCES ORGANIZATION([name]) ON DELETE CASCADE,
 [status] VARCHAR(20) DEFAULT 'UPCOMING',
+prize_pool FLOAT,
 );
 
 CREATE TABLE PARTICIPATES_IN (
