@@ -1,7 +1,7 @@
 import pypyodbc as odbc
 import sys
 
-def GetSQLDataStandard(query, argument=False, asList=True):
+def GetSQLDataStandard(query, argument=False, asList=True, newSetup=False):
     DRIVER = 'SQL Server'
     SERVER_NAME = 'LAPTOP-C8296JRI\\SQLEXPRESS'
     DATABASE_NAME = 'Esports'
@@ -28,6 +28,11 @@ def GetSQLDataStandard(query, argument=False, asList=True):
         cursor.execute(query, argument)
 
     columns = [item[0] for item in cursor.description]
+    if newSetup:
+        results = []
+        for tuple_ in cursor.fetchall():
+            results.append(tuple_)
+        return results
     if asList:
         results = [item for tuple_ in cursor.fetchall() for item in tuple_]
     else:

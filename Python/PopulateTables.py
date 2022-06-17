@@ -9,6 +9,7 @@ from GenerateOrganization import *
 from GenerateTeamCaptain import *
 from GenerateEventStaff import *
 from GenerateEvent import *
+from GenerateMatch import *
 
 """ --------- CONSTANTS --------- """
 
@@ -134,7 +135,13 @@ def insert(table: str, records: list):
 
 """ INSERT EVENT AND TEAMS IN EVENT """
 # records1, records2 = generateRandomEvents(500)
-# insert('PARTICIPATES_IN', records2)
 # insert('TOURNAMENT', records1)
+# insert('PARTICIPATES_IN', records2)
 # execute('INSERT INTO TOURNAMENT_WINNER SELECT [name], team_id FROM TOURNAMENT, PARTICIPATES_IN WHERE tournament=[name] AND placement=1')
+
+""" INSERT MATCH AND PLAYING TEAMS AND WINNERS/SCORE """
+# records1, records2, records3 = generateRandomMatches()
+# insert('SERIES', records1)
+# insert('TEAM_PLAYS', records2)
+# insert('SERIES_RESULT', records3)
 

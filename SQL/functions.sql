@@ -36,6 +36,12 @@ DROP FUNCTION IF EXISTS getEventInfo;
 GO
 DROP FUNCTION IF EXISTS getWinner;
 GO
+DROP FUNCTION IF EXISTS getMatchData;
+GO
+DROP FUNCTION IF EXISTS getMatchInfo;
+GO
+DROP FUNCTION IF EXISTS getMatchWinner;
+GO
 DROP VIEW IF EXISTS getNewID
 
 GO
@@ -251,7 +257,37 @@ AS
 	RETURN (SELECT [name] FROM TOURNAMENT_WINNER AS TW, TEAM AS T WHERE TW.[tournament]=@name AND T.id = TW.team_id)
 GO
 
+CREATE FUNCTION getMatchData(@GAME VARCHAR(25))
+RETURNS TABLE
+AS
+	RETURN (
+		SELECT T.[name], S.id, S.[date], S.[status] FROM SERIES AS S, TOURNAMENT AS T WHERE T.game=@GAME AND S.tournament = T.[name]
+	)
+GO
 
+CREATE FUNCTION getMatchInfo(@id INT, @Tournament VARCHAR(50))
+RETURNS TABLE
+AS
+	RETURN (
+	SELECT * FROM
+		(SELECT organization FROM TOURNAMENT WHERE @Tournament = [name]) AS R,
+		(SELECT best_of, [name], logo_url FROM SERIES AS S, TEAM_PLAYS AS TP, TEAM AS T WHERE S.id = @id AND S.id = TP.match_id AND T.id = TP.team_id) AS N
+		)
+GO
 
+GO
+CREATE FUNCTION getMatchWinner(@id INT)
+RETURNS @t TABLE(winner VARCHAR (25), score_team1 INT, score_team2 INT)
+AS
+BEGIN
+	DECLARE @winner INT
+	SELECT @winner = winner FROM SERIES_RESULT AS SR WHERE SR.match_id = @id
+	IF @winner != NULL
+		INSERT INTO @t SELECT [name], score_team1, score_team2 FROM SERIES_RESULT AS SR, TEAM AS T WHERE SR.match_id = @id AND T.id = SR.winner
+	ELSE
+		INSERT INTO @t SELECT NULL, score_team1, score_team2 FROM SERIES_RESULT AS SR WHERE SR.match_id = @id
+	RETURN
+END
+GO
 
 

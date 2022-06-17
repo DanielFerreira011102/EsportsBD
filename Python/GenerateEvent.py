@@ -91,10 +91,11 @@ def generateRandomDate(number):
         delta = end - start
         int_delta = (delta.days * 24 * 60 * 60) + delta.seconds
         random_second = random.randrange(int_delta)
-        lst2.append(start + timedelta(seconds=random_second))
-        if datetime.now() > lst2[i]:
+        end = start + timedelta(seconds=random_second)
+        lst2.append(end)
+        if datetime.today() > end:
             lst3.append("FINISHED")
-        elif lst1[1] < datetime.now() < lst2[i]:
+        elif start <= datetime.today() <= end:
             lst3.append("ONGOING")
         else:
             lst3.append("UPCOMING")

@@ -175,7 +175,7 @@ namespace Esports.Forms
                 GameLbl.Text = GameSelect.SelectedItem.ToString();
                 FormatLbl.Text = EventsList.SelectedItems[0].SubItems[1].Text;
                 RegionLbl.Text = EventsList.SelectedItems[0].SubItems[2].Text;
-                PrizeLbl.Text = EventsList.SelectedItems[0].SubItems[3].Text;
+                PrizeLbl.Text = '$' + EventsList.SelectedItems[0].SubItems[3].Text;
 
                 SqlCommand cmd = new SqlCommand("SELECT * FROM getEventInfo(@Name)", cn);
                 cmd.Parameters.Clear();
