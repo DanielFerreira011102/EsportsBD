@@ -1,0 +1,6 @@
+implement linking Player->Team->Player
+implement follow feature
+implement trigger to catch Tournament region
+implement trigger to stop inserting after max nTeam limit
+
+INSERT INTO TOURNAMENT_WINNER SELECT [name], team_id FROM TOURNAMENT, PARTICIPATES_IN WHERE tournament=[name] AND placement=1

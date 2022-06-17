@@ -12,6 +12,47 @@ Team Envy,504391.4
 Hangzhou Spark,425000
 RunAway,420808.84
 Lunatic-hai,320633.66
+A Team
+All Stars
+Amigos
+Avengers
+Bannermen
+Best of the Best
+Bosses
+Champions
+Crew
+Dominators
+Dream Team
+Elite
+Force
+Goal Diggers
+Heatwave
+Hot Shots
+Hustle
+Icons
+Justice League
+Legends
+Lightning
+Maniacs
+Masters
+Monarchy
+Naturals
+Ninjas
+Outliers
+Peak Performers
+Power
+Rebels
+Revolution
+Ringmasters
+Rule Breakers
+Shakedown
+Squad
+Titans
+Tribe
+United
+Vikings
+Warriors
+Wolf Pack
 Boston Uprising,288606
 GC Busan,262117.51
 Washington Justice,250000
@@ -926,3 +967,3020 @@ Alliance,4000
 Marines Esports,3429.6
 British National Team,2500
 Swedish National Team,2500
+The Avengers
+MVP's
+Best in the Game
+The Kings
+Hustlers
+Iconic
+Bulletproof
+The Justice League
+Lightning Legends
+Mister Maniacs
+Born to Win
+Ninja Bros
+The Elite Team
+Dominatrix
+Big Shots
+Unstoppable Force
+Crew X
+Rule Breakers
+The Squad
+United Army
+Pixie Normous
+GodsFavouriteTeam
+Master Spinners
+Basic Boys
+Nans Lads
+Debuggers
+Outliers
+Un-De-Feet-able
+Gone with the Win
+Charging Hulks
+Eagle Eyed
+Rey-eye Beast
+Jets of Giants
+Crispy Fried Chickens
+Pro Performers
+Raven Raiders
+Hawkeye Hornets
+Beast Bulls
+Red Bull Wings
+No Caveat Cavaliers
+Manny Mavericks
+Pringle Pacers
+Unstoppables
+Bookworm Athletes
+Ragin Cajuns
+Wardog Assassins
+Random Access Memory
+Screaming Nimbles
+Uncivilized Bunch
+Lazer Cocoons
+The Real Beatles
+The Warriors
+Silly Bellies
+Blasted Furnaces
+The Order of Phoenix
+Donut Lose
+The Hot List
+Silent Killers
+Goofy Dumplings
+Masked Maniacs
+Coach Man
+The Boxers
+Wolf Gang
+High on Victory
+The Dementors
+The Flow Zone
+Always Benched
+Miracle Makers
+Turf Warnocks
+Restless Rockets
+Red Head Gang
+Royal Army
+Gryffindors
+Mah_Gnomies
+Traitor Joes
+Greek Gods
+Broken Bones
+Tactical Attacks
+Noob Power
+Sulking Hulks
+Pillaging Pirates
+You Need to Calm Down
+Sons of Sun
+Cyborg Droids
+Ping Bombs
+Cool Kids Club
+Blooming Volcanoes
+Thunderous Cats
+No Nonsense Gamers
+TeamWork
+Vulcan Heats
+DeathWish
+Charging Bulls
+Defending Champs
+Chernobylites
+The Atom Bomb
+Gunners
+Blazing Rockets
+Mistborn
+The End Game
+The Ruin
+Soul Crushers
+Gobstoppers
+Renegades
+Man of Stealth
+Samurais
+Rumbled Rockers
+The Untouch-a-Balls
+99 Problems
+Elite Sapiens
+Blood Riders
+Kings Pins
+Chaotic Tornadoes
+Demons Dispatched
+Done with Bullshit
+Tango Twisters
+Terrific Tasks
+Shinobi of Salem
+Grim Minds
+Emo Warriors
+Dropped Shots
+Anaconda
+Black Mambas
+Bald Eagles
+The Real Slim Shadies
+The First Order
+Goal Diggers
+ShareHolders
+Nuns for Runs
+No Hit Sherlock
+Son of Pitches
+Ball of Beauty
+Pitch Masters
+Strikers Arena
+Homerunners
+Ace of Bases
+Only Homeruns
+Friendly Innings
+Balls Avalanches
+Falcon Defenders
+Hammerheads
+Quake Birds
+Red Hawks
+Roadrunners
+Touch The Base
+Blasting Balls
+Silent Assassins
+Viking Pitchers
+The Isotopes
+Blue Badgers
+Cheetah Colonels
+Phantom Bulls
+Crashing Amigos
+Bengal Bisons
+Dashing Devils
+Dazzling Balls
+Flying Squirrels
+Red Typhoons
+Preaching Eagles
+Flying Crusaders
+Razor Rebels
+Raging Backflips
+Bull Riders
+Lady Hawks
+Clubber Langs
+Loose Ends
+Football Heads
+Balls Deep
+Deep Threat
+Slam Dunkers
+Hoops I did it again
+Swish Swish
+Shooting Balls
+3 Pointer Pros
+Tackle and Shackle
+Basket Junkies
+Dunking Dancers
+Warrior Raptors
+Team Power
+Perfecto Scores
+The Red Crushers
+Dancing Dardevills
+Swish and Dunk
+Hack a Shaq
+Young Michael Jordans
+Kobe's Kids
+Six Foot 2's
+Temper Bursts
+Shaquille Oatmeal
+The Kick-ass Team
+Rush Hour
+Flying Balls
+Goal Masters
+Terminators
+Barceloners
+Arsenal Gunners
+Basquets and Gravy
+Dukes of Saves
+Defensive Legends
+Don't_Messi_with_us
+Rooney Tunes
+The Wizard of Ozil
+Ronal-doughnuts
+Zinedine Acid
+Ney Mariota
+Hakuna Juan Mata
+Two's Kompany
+Goals Aloud
+Citizen Kane
+Game of Loans
+Aces
+Assassins
+Armada
+Bandits
+Blaze
+Brute Force
+Chaos
+Chosen Ones
+Conquerors
+Defenders
+Empire
+Extreme
+Gladiators
+High Voltage
+Hitmen
+Inferno
+Intimidators
+Kingsmen
+Lethal Weapons
+Mafia
+Matrix
+No Fear
+Outlaws
+Pistols
+Pulverizers
+Rage
+Renegades
+Riot
+Rumble
+Samurais
+Stealth
+Terminators
+Trouble Makers
+Unbeatable
+Venom
+Weapons of Mass Destruction
+Wrecking Crew
+Adrenaline
+Alliance
+Arsenal
+Badasses
+Blitz
+Brigade
+Calvary
+Collective
+Dothraki
+End Game
+Fuego
+Guardians
+Heathens
+Horsepower
+Impact
+Ironmen
+Keep It 100
+Magic
+Mystery
+No Sympathy
+Obliterators
+Phenomenon
+Phoenix
+Rampage
+Regulators
+Rough Necks
+Savage Joes
+Status Quo
+Thrashers
+Unstoppable
+Vicious
+Wild Things
+Your Worst Nightmare
+A Team Has No Name
+We Tried
+Enter Team Name Here
+No Shame
+Mediocrity At Its Best
+Savage and Average
+Wasted Potential
+Best Team Name
+We Showed Up
+Mandatory Attendance
+Boom Shaka Laka
+Newbies
+Mandatory Fun
+Noobs
+Lovable and Lazy
+Our Uniforms Match
+Minimum Wagers
+Couch Potatoes
+Waiting For Naptime
+Creative Team Name
+Shoes or Lose
+Make Teams Great Again
+Another Team Name
+Cranky Yankees
+Movers and Shakers
+Heartbreakers
+One More Team Name
+2nd Choice of Team Name
+Coffee Addicts
+Cheers For Beers
+Tea Spillers
+Boozy Bunch
+Will Work For Food
+Winos
+Always Hungry
+All Hungover
+Praise Cheeses
+Cereal Killers
+Snack Attack
+Addicted to Cake
+Cupcakes
+Stud Muffins
+No Slice Left Behind
+Sugar Babies
+Sugar Daddies
+Kids R Us
+Teenage Dream
+Plenty of Twenties
+The Roaring Twenties
+Young Bucks
+Dirty Thirty
+Oh Lordy We’re Forty
+50 Shades of Age
+Old Timers
+Eighties Babies
+Baby Boomers
+Millennials
+Generation X
+Generation Z
+0% Risk
+100 percent
+49ers
+76ers
+8th Wonders of World
+99 percenters
+Administration
+Admirals
+Adrenaline
+Advocates
+Aeros
+Aggies
+Aliens
+Alliance
+Alpha Team
+Alphas
+Ambassadors
+American Patriots
+Americans
+Angels
+Animals
+Annihilators
+Anteaters
+Apocalypse
+Archers
+Around The Horn
+Arrows
+Asteroids
+Astronomic
+Astros
+Athletics
+Avalanche
+Aztecs
+Bachelors
+Bad Boys
+Bad Boys 4 Life
+Bad News Bears
+Bad to The Bone
+Bane of Your Existence
+Barbarians
+Barnstormers
+Barons
+Bats
+Battle Buddies
+Battle Hawks
+Bay Bears
+Bean Counters
+Bearcats
+Bears
+Beasts
+Bees
+Belles
+Bengals
+Berets
+Big Bats
+Big Horns
+Bills
+Bisons
+Black Knights
+Black Panthers
+Black Widows
+Blackhawks
+Blades
+Blast
+Blasters
+Blazers
+Blitzkrieg
+Blossoms
+Blue Angels
+Blue Birds
+Blue Collars
+Blue Jackets
+Blue Jays
+Blue Whales
+Blues
+Bobcats
+Bolts
+Bombers
+Bookworms
+Boomers
+Bots
+Boulders
+Braves
+Brewers
+Brewmaster
+Broncos
+Browns
+Bruins
+Buccaneers
+Bucks
+Buffaloes
+Builders
+Bulldogs
+Bulldogs
+Bulletproof
+Bullets
+Bullfighters
+Bulls
+Butchers
+Canucks
+Capitals
+Captains
+Captivators
+Cardinals
+Cavaliers
+Celtics
+Challengers
+Chameleons
+Chaos
+Chargers
+Chasers
+Chiefs
+CIA
+Circus Animals
+Claws
+Clippers
+Cobras
+Code Black
+Code Red
+Collision Course
+Colts
+Comets
+Compadres
+Connected
+Cosmos
+Cougars
+Cowboys
+Coyotes
+Crafty Crew
+Crazy 8’s
+Crunch
+Crusaders
+Crush
+Cubs
+Curve
+Cyclones
+Dangers
+Darkside
+Deal Makers
+Decision-makers
+Deep Pockets
+Delinquents
+Demolition Crew
+Desert Storm
+Desperados
+Destroyers
+Devils
+Diamondbacks
+Diplomats
+Divas
+Divide and Conquer
+Dodgers
+Dolphins
+Dragons
+Dream Crushers
+Drifters
+Drones
+Dropping Bombs
+Duchesses
+Ducks
+Dukes
+Dynamix
+Dynamo
+Dynomite
+Eagles
+Earthquakes
+Eliminators
+Empowered
+Enforcers
+Enigma
+Entrepreneurs
+Eruption
+Eskimos
+Esquires
+Evolution
+Executioners
+Expendables
+Explorers
+Explosion
+Exterminators
+Fairies
+Falcons
+Fast And Furious
+Felons
+Fighters
+Fighting Irish
+Fire
+Fire Starters
+Firebirds
+Fireflies
+Firing Squad
+Firm
+Fisher Cats
+Fixers
+Flames
+Flash
+Flight
+Flight Crew
+Flyers
+Flying Dutchmen
+Flying Monkeys
+Foundation
+Four Horsemen
+Foxes
+Freaks
+Frontline
+Full Effect
+Full Out
+Fusion
+G-Force
+Galaxy
+Gamecocks
+Gargoyles
+Gatling Guns
+Gators
+Generals
+Gentlemen
+Ghost Riders
+Ghosts
+Giants
+Goblins
+Godfathers
+Gold Rush
+Golden Eagles
+Gophers
+Gorillas
+Grave Diggers
+Gravity
+Greyhounds
+Griffins
+Grizzlies
+Growlers
+Gulls
+Gunners
+Guns for Hire
+Hammerheads
+Hawkeyes
+Hawks
+Head Hunters
+Heat
+Hell’s Angels
+Herons
+High Altitude
+High Flyers
+High Rollers
+Hillbillies
+Hit Team
+Hitters
+Hive
+Home Runners
+Homers
+Homies
+Hoodlums
+Hooks
+Hoosiers
+Hornets
+Hurricanes
+Huskies
+Hustlers
+Icehogs
+Ice Wall
+Iconic
+In Style
+Incredibles
+Independence
+Indians
+Infantry
+Influencers
+Insurgents
+Invaders
+Islanders
+Jackrabbits
+Jaguars
+Jalapenos
+Jawbreakers
+Jayhawks
+Jazz
+Jets
+Jocks
+Jokers
+Judges
+Juiced
+Jungle Kings
+Justice Bringers
+Kangeroos
+Kickers
+Killer Whales
+Kingdom
+Kingpins
+Kings
+Kittens
+Knights
+Koalas
+Kryptonite
+Ladies
+Lady Killers
+Lake Hawks
+Lakers
+Laser Beams
+Leaders
+Legacy
+Leopards
+Life Savers
+Lilas
+Lions
+Lobos
+Longhorns
+Lords
+Lost Boys
+Lumberjacks
+Mad Bombers
+Mad Men
+Magicians
+Majors
+Mammoths
+Maple Leafs
+Marauders
+Mariners
+Marines
+Marlins
+Marshalls
+Masons
+Matadors
+Mavericks
+Mean Green
+Mean Machine
+Men In Black
+Men on a Mission
+Mercenaries
+Mermaids
+Meteors
+Mets
+MI6
+Mighty Ducks
+Minutemen
+Mob
+Monarchs
+Money Makers
+Monsters
+Moose
+Mountaineers
+Mud Dogs
+Mud Hens
+Musketeers
+Mustangs
+Nationals
+Neck Breakers
+Nerds
+Nets
+Nirvana
+No Mercy
+No Pain No Gain
+No Rules
+No Way Out
+Northern Lights
+Novastars
+Nuggets
+Occupiers
+Oilers
+Olympians
+Only Contenders
+Orcas
+Orediggers
+Orioles
+Otters
+Over Achievers
+Owls
+Pacers
+Packers
+Padres
+Pandas
+Panthers
+Patriots
+Peacekeepers
+Peacocks
+Penguins
+Perfecto’s
+Phantoms
+Phillies
+Pilots
+Pimps
+Pioneers
+Piranhas
+Pirates
+Pistons
+Pitbulls
+Players
+Polar Bears
+Power House
+Prairie Wolves
+Predators
+Presidents
+Priceless
+Princes
+Princesses
+Prodigies
+Professionals
+Prophets
+Prowlers
+Punishers
+Puppet Masters
+Pups
+Pythons
+Quake
+Quicksilvers
+Racers
+Radicals
+Ragin Cajuns
+Raging Bulls
+Raiders
+RailHawks
+Rams
+Rangers
+Rapids
+Raptors
+Rattlesnakes
+Ravens
+Rays
+Razorbacks
+Reapers
+Rebellion
+Red Bulls
+Red Raiders
+Red Rapids
+Red Rovers
+Red Sox
+Red Wings
+Redbirds
+Redhawks
+Reds
+Redskins
+Republic
+Rescue Team
+Retrievers
+Rhinos
+Rhythm
+Riders
+Ringleaders
+Rip Tide
+River Cats
+River Hounds
+River Rats
+Rivermen
+Robots
+Rock Cats
+Rock Stars
+Rockers
+Rocket Launchers
+Rocketmen
+Rockets
+Rockies
+Rocks
+Roses
+Rough Riders
+Royals
+Royalty
+Saboteurs
+Sabres
+Sailors
+Saints
+Sand Sharks
+Savages
+Scappers
+Scorpions
+Scrappers
+Screamin Demons
+Sea Dogs
+Sea Lions
+Seabirds
+Seahawks
+Security
+Senators
+Shadows
+Shameless
+Shapeshifters
+Sharks
+Sharks in Suits
+Sharp Shooters
+Shield
+Shock and Awe
+Shocks
+Shoguns
+Shooting Stars
+Showboats
+Showrunners
+Sicarios
+Sinners
+Skull Crushers
+Skywalkers
+Slam
+Sledgehammers
+Sliders
+Sluggers
+Snipers
+Soldiers
+Soul Takers
+Sounders
+Sounds
+Spartans
+Special K’s
+Speed Demons
+Spider Monkeys
+Spiders
+Spies
+Spurs
+Squadron
+Stallions
+Stampede
+Stampeders
+Stars
+Statesmen
+Steelers
+Stingrays
+Stone Crushers
+Storm
+Storm Breakers
+Storm Chasers
+Straight Shooters
+Strangers
+Strikers
+Suits
+Sultans
+Suns
+Super Heroes
+Super Humans
+Super Sonics
+Surf
+Swag
+Swagger
+Sweet Heat
+Sweethearts
+Take No Prisoners
+Tar Heels
+Tater Tots
+Tech Attack
+Terrapins
+Terrorizers
+Texans
+Thunder
+Thunder Bolts
+Thunderbirds
+Tidal Waves
+Tide
+Tides
+Tigers
+Timbers
+Timberwolves
+TKOs
+Tomcats
+Torches
+Toreros
+Tornadoes
+Toros
+Trail Blazers
+Trappers
+Travelers
+Tritons
+Trojans
+Tsunamis
+Turtleheads
+Twins
+Unicorns
+Union
+Unknowns
+Unlimited
+Untouchables
+Usual Suspects
+Vampires
+Vandals
+Vaqueros
+Veterans
+Vigilantes
+Viking Raiders
+Vipers
+Volcanoes
+Voyagers
+Vultures
+Wanderers
+War Eagles
+Warlocks
+Warmongers
+Watchers
+Waves
+Weed Wackers
+Whales
+Whammers
+Whirlwinds
+White Collars
+White Sox
+White Walkers
+Whitecaps
+Wild
+Wildcats
+Wildebeests
+Witches
+Wizards
+Wolverines
+Wolves
+Wombats
+Workers Bees
+Wraiths
+X Men
+Yankees
+Yellow Jackets
+Zeniths
+Zephyrs
+Zombies
+Zoo Animals
+Marketing Team
+Creative Team
+Sales Team
+Engineering Team
+Programming Team
+Design Team
+Operations Team
+Project Management Team
+Support Team
+Content Creation Team
+Extra Geek Team
+The Warriors
+United Coders
+Brute Force
+Chaos Crew
+Chosen Ones
+Conquerors
+My Titans
+Brave Squad
+Shakedown
+Rule Breakers
+Ringmasters
+Revolution
+Hey Rebels
+The Power
+Peak Performers
+Only Outliers
+Street Ninjas
+CS Naturals
+Monarchy
+Code Masters
+Peak Tribe
+Lightning Fast
+New Icons
+Hustle Ideas
+The Heatwave
+Goal Drivers
+Extra Force
+Elite Coders
+Dream Team
+Dominators
+Fine Crew
+Five Champions
+Best of the Best
+Three Avengers
+Kamara
+Cheat Sheet
+Bernstein
+Funny Name
+Echo Hawk
+Boston
+Braves
+Fryberg
+United
+K. Dobbins
+Tigers
+Running Back
+Herndon
+Alvin
+Rodgers
+New Orleans
+Saperstein
+Expansion Team
+Black Cats
+Falcons
+Cubs
+Oregon Ducks
+Atlanta Falcons
+Philadelphia Eagles
+Nightingales
+Night Owls
+Minnesota Twins
+Oklahoma City Thunder
+Oakland Athletics
+Buffalo Bills
+Carolina Panthers
+Miami Dolphins
+Seattle Seahawks
+Indiana Pacers
+Capitalist Crew
+Atlanta Warriors
+Capital Stars
+Ragin’ Cajuns
+The Lunatics
+Philadelphia 76ers
+Awesome Dynamos
+Wind Chasers
+Darling Angels
+Winchester
+Bengals Tigers
+The Blinders
+Chernobyl
+Team Enigma
+Shift Team
+Team of Legends
+Easy Brats
+Aqua Marlins
+Lydgate
+Bottom of the Depth
+Ducks
+Awesome Knights
+Win Tribe
+Explosion of Power
+Miami Heat
+Scarlet Coven
+Polar Bears
+The Fabulous Team
+Forgotten Eleven
+Saracens
+Dark Raiders
+Snow Monkeys
+The Amazing Team
+Evil Ninjas
+Beacon Hogs
+Green Lions
+Gold Dragons
+Blue Bayou
+Vikings
+Purple Rain
+Nordic Warriors
+The Fantastic Team
+Justice League
+Star Trek
+Brave Boys
+Scrum and Strummer
+Chattanooga
+Bloom Tech Giants
+African American
+Red Wings
+Preston
+Oriole
+The Predators
+Detroit
+Little Giants
+Regular Season
+Its Business Time
+Kylie
+Dream Makers
+The Visual Spectacle
+Rush Percentage
+Rustic Passion
+Team Concept
+Green Bay Packers
+Career Path
+The Fantastic Four
+Dancing Dragons
+The Royal Court
+Hungry Wolverines
+Grabbing Gorillas
+The White Wings
+Splashy Swimmers
+Jumping Jaguars
+Fast Flyers
+Crazy Racers
+Bold Bears
+Lucky Lions
+Daring Dolphins
+Dizzy Diamonds
+Blossom Flowers
+Heart Warmers
+Singular Player
+Master Minds
+Red Dragons
+Sanders
+Blue Jackets
+Team Intelligence
+Bean Secrets
+State Bird
+Ottawa
+Software Comedians
+The Bottom Line
+Greed Pack
+Vikings
+Class Tribe
+Grilling Developers
+Glam Squad
+Divide and Conquer
+Defenders
+Apple
+Gob Geek lords
+Essentials
+Abstract Connoisseurs
+Connect Tech
+Friendly Offense
+Creative Tech Giants
+Night Owls
+Crazy Coders
+Skylines
+Big Cannons
+Strong Cubs
+Diamondbacks
+Real Dodgers
+Golden Ducks
+Best Eagles
+Flying Falcons
+Firebirds
+Fishy Fish
+Golden Bears
+Grizzlies
+Hawks
+Travis Kelce
+Nick Chubb
+Maple Leafs
+Lightning
+Warriors
+Cheer Up Souls
+Black Box Testers
+Antonio Gibson
+Sultans of Sales
+Fun in the Fog
+Knicks
+Buffalo Bills
+The Tech Warriors
+Bears
+Bruins
+Friendly Ass-Kickers
+Sports Team
+Brain Cells
+Horizontal Line
+Savage
+Baltimore
+Buffalo
+Gallup
+Brown
+Kyler Murray
+Boolean Autocrats
+Berry
+Arizona Cardinals
+The Limos
+The Muffin Makers
+Elastic Tacos
+The Deep Fryers
+Meltdown
+The Twinkies
+Smack Cheese
+Cookie’s Diner
+Pretzel Nation
+Frogs
+The Biscuits
+The Waffles
+California Food
+Atomic Views
+Minnesota
+Ice Angels
+The Squad X
+Florida
+Social Leadership
+Gladiator Riot
+Cool Magicians
+The Penguins
+Golden State Warriors
+Native People
+Schuyler Sisters
+Pretty Committee
+Devils
+Alpha Buds
+Boring Name
+Men in Slacks
+Dessert Storm
+High Schools
+Captivators
+Innovation Skyline
+Bad to The Bone
+Kareem Hunt
+Tomahawk Chop
+Globetrotters
+The Specialists
+Rainbow Warriors
+Houston Roughnecks
+Horned Frogs
+Black Widows
+The Seekers
+Worker Bees
+Passion Pavers
+Matter Catchers
+Colts
+Name Generator
+Personal Information
+Collision Course
+Wild Cats
+The Powerhouse
+Toronto Raptors
+Sterling Shepard
+Amigos
+Avengers
+Software Chasers
+The Capitalists
+Celestial Interface
+Kansas City
+Market Geeks
+Alice
+Home Team
+Kim Poles
+Rangers
+The Capitalist Crew
+Fantasy
+Kings
+Silicon Valley
+Easy Scrum Easy Go
+Advisory Role
+Bugs with Goggles
+Wasted Potential
+Kraken
+The Guardian
+Braindead Zombies
+Pony Tails
+Brain Power Troopers
+Chiefs Crew
+Milky Way
+Angry Gorillas
+Golden Slackers
+Winners
+Underdogs
+Lucky Stars
+Achievers
+Bright Lights
+Chasing Stars
+French Toast
+Social Bonds
+Wide Receiver
+Power Explorers
+Mariners
+Cowboys
+Canucks
+Eagles
+Scrumptious
+Washington Redskins
+Unique Name
+Backup Buddy
+Viking
+Caveman Lawyers
+The Eliminators
+Seven of Diamonds
+Hurricanes
+Golden Hawks
+Black Ice Team
+Goal Diggers
+Sparkle Souls
+Daemon Demons
+Titans
+Kevin
+Cleveland
+Ingram
+Taste Troopers
+Team Antidote
+The Catastrophe
+The Mighty Poopers
+Oregon Ducks
+The Lightening
+The Desperadoes
+The Ninjas
+The Terror Twins
+The Raging Rams
+The Salt and Peppers
+The Crazy Crows
+The Risen Raiders
+The Golden Knights
+The Super Fades
+The Wright Riders
+The Pinstripe Patriots
+The Mighty Knights
+Epic Win
+Lamar
+Cornerstone Issues
+Carl Guardian
+Yankees
+Anteaters
+Road Warriors
+Dallas
+Concept Creators
+Dynamic Developers
+Elmira
+Melvin Gordon
+Runtime Terror
+Senator
+Butchers
+Callback Cats
+Scrum Lords
+Sutton
+Disco Ninjas
+Red Zone
+Perfect Name
+Rockets
+Philadelphia
+Genera
+Brady
+Visionary People
+Team Perseverance
+Insight Stars
+Resilience People
+Unity Matters
+Determination Squad
+Efficiency Hero’s
+The Polarity
+Para Troop
+Brute Force
+Big Battalion
+Zombie Squad
+Points Per Game
+Chicken
+Crystal Gems
+Smith
+Patriots
+Jets
+Staff Tool
+Hawk Eyes
+Theory of Perfection
+Avalanche
+Texans
+Innovation Geeks
+Business Preachers
+Tampa
+Team Members
+Awkward Turtles
+Chosen Ones
+Skilled Fighters
+Dreadful Dragons
+Keyword Ala King
+Hypertext Assassins
+Seahawks
+Abbreviated Group
+Sugar and Spice
+The Pink Ladies
+Team Diva
+The Golden Gals
+Lady Dragons
+The Kittens
+Sassy Cats
+Ladybugs
+The Golden Girls
+Ladybugs
+The Spy Cats
+Lady Cats
+Disco Divas
+Chicago
+Cleveland Cavaliers
+Chargers
+Vision Quest
+Zack Moss
+Team Innovation
+Cleveland Indians
+Comic Fanatics
+Golden Rule
+Handsome Buzzers
+Quest Desk
+Ravens
+Sly Pretenders
+Polar Bears
+Horizontal Distance
+Talented Player
+Tennessee
+Beta Bots
+Marketing Maniacs
+Dolphins
+Code Fellas
+Star Catchers
+Campbell
+The Boomers
+Fragile Management
+Fighting Felines
+Friendly Foxes
+Mighty Minx
+Lovely Lynx
+Mischievous Monkeys
+Sneaky Snakes
+Huntress Hares
+Playful Ponies
+Smart Sparrows
+Terrific Tigers
+Excited Equines
+Noble Otters
+Crazy Coyotes
+Fearless Ferrets
+Incredible Iguanas
+Powerful Pandas
+Athletic Ant
+Chaser Express
+Plugs for a Penny
+Tight End
+The Achievers
+Minshew
+Allen
+Taste Bud Hub
+Chaos
+The Champions
+Team Extreme
+Carson
+Dream Team
+Boomerangs
+Central Poles
+Cronos
+Chubb
+Brute Force
+Lemon Drops
+Demolition Crew
+Miami
+Kansas City Chiefs
+Dalvin Cook
+Dark Thunder
+Technical Wizards
+The Knights
+The Soviet Union
+The Dukes of Hazzard
+The Gals of Gotham
+The Six Million Dollar Man
+The Bowery Boys
+The South Parkers
+The Supervillains
+The Aristocrats
+Board to Death
+The Wizard of Oz
+The Axe Murderers
+Everybody Down
+The Bourne Supremes
+The Mind Benders
+Team Rogue
+The Walking Dead
+The Double Black Diamond
+Politicians Anonymous
+Scooby Doo
+The Mob
+The Band
+The Scoobies
+The Geek Squad
+Hell’s Angels
+Thunder and Lightning
+Loud and Clear
+Team Hot and Bothered
+Spicy and Flirty
+Love and Lust
+Trouble and Strife
+Saved by the Bell
+Ace and Queen
+North and South
+Supreme and Fierce
+Curves and Thighs
+Ace and King
+High and Low
+Hot and Heavy
+Day and Night
+Day and Night
+North and South
+Top and Bottom
+Yin and Yang
+Swan Lake Dancers
+Mountain Belles
+Pac Man
+Hurricanes of Fun
+Hillbillies From Hell
+Twisters
+Fish Warrior
+Boom Bullet
+Fireballs
+Elks
+Coco Monkeys
+Chocolate Cuddlers
+Almond Achievers
+Concept Squad
+Diggs
+Fans of the Boss
+Black Panthers
+CAMA Chronicles
+Bottom Line
+Orange County
+Racial Justice
+Executive Stockers
+Flames
+Fantasy Industry
+Football Team
+Left Right
+Lewis
+Blitzkrieg
+Dynamic Energy
+Lindor
+Seattle
+Jared Cook
+Honorable Ducks
+Bracket Edit
+The Warriors
+Second Half
+Lace Sunset
+Virtue and Vice
+Cape of Woe
+Vantage Point
+Ernie and Bert
+The Deadly Dozen
+Flying Tiger
+The Flamingos
+The Flaming Chariots
+The Flamingoes
+The Flying Fleas
+The Flying Fish
+The Flying Monkeys
+The Flying Snails
+The Flying Zebras
+The Flying Tigers
+The Food Fighters
+The Force
+The Force Awakens
+The Foxes
+The Fresh Fish
+The Frontiersmen
+The Fuddle-Duddles
+Cheesy Sidekicks
+Fudgy Lumps
+Cows in the Fishbowl
+The Locals
+Sparkling Teapots
+Live the Dream
+Spicy Chili
+Vinnie’s Sausage
+Club Elf
+Crazy Cow
+Fishbowl
+Fizzy Fuzzy
+Cheesy Sidekicks
+Sparkling Teapots
+Live the Dream
+The Naughty Lovers
+Hit and Miss
+Kettle and Pot
+Armed and Dangerous
+Happy and Estranged
+Friends and Foes
+House and House
+Shaken and Stirred
+Skinny and Wiry
+Joint and Joint
+Lager and Chips
+Rag and Bone
+Damp and Let Dry
+The Crown Jewel
+The Royal Roses
+The Diamond Dolls
+The Fashionistas
+The Class Act
+A Rose Among Thorns
+Love Joy and Pain
+The Queens
+All the Good Things
+Royal Bitches
+The Ladies
+The Billabong Betties
+The Tampon Troop
+The Top Hats
+The Kitty Kat Girls
+The Tiger Beat
+The Pin Curlers
+The Sunset Dancers
+Feinstein
+The Brainy Fools
+Screaming Eagles
+Complex Subjects
+Bronco
+Annihilators
+Technocratic Dynamos
+The Leadership Group
+Native Mascot
+Passing Game
+School Names
+Golden Projects
+Miracle Workers
+Help Desks
+Glam Pack
+Initial Font
+Desert Storm
+Harlem Globetrotters
+Broncos
+Fashion Divas
+FrontPage Freebirds
+Prairie Wolves
+Prosper Gurus
+Knuckleheads
+The Red Coats
+The Bruisers
+Fighting Irish
+The Champs
+Angry Claws
+The Rangers
+The Soldiers
+Golden Boys
+The Chinooks
+Golden Arrows
+The Hurricanes
+Fighting Tigers
+The Fighters
+The Kings
+Waterloo Warriors
+The Warriors
+The Bulldogs
+The Champions
+The Squeakers
+The Champions
+The Wildcats
+The Red Devils
+The Dragons
+The Ravens
+The Favorite Group
+Fantasy Football
+Deep Bench
+Penguins
+Scrum of the Earth
+Schmidt
+Generation Z
+Gordon
+No Name
+Orange Dots
+The Lions
+Crystal Echo Hawk
+Dallas Renegades
+Murder
+Sixers
+Dream Crushers
+Tampa Bay Vipers
+Marvelous Mermaids
+Daring Dinosaurs
+Harlem
+White Sock
+Browns
+Drive Me Sane
+Cardinals
+Thomas
+Twitter
+Los Angeles
+Data Pirates
+No One
+Tom Brady
+Crazy Clowns
+Death Metal Jaws
+Panda Patrol
+Equestrian Force
+Saffron Squad
+The Placentas
+Crimson Squadron
+Congo Division
+Pendleton Quicksand’s
+Generation X
+Gardner
+Thunder
+Charming Chicks
+Denver
+Ken Wachter
+Spurs
+Devante Parker
+Maple
+Green Bay
+Getty
+Lucky Charms
+Edmonds
+Ontario
+Chase Edmonds
+Penguin
+Fighting Chickens
+Fantasy Points
+Seventeen
+Saints
+Power Seekers
+Flyers
+Drake
+Inside Joke
+Stars
+Pelicans
+Yellow Lizards
+Pats
+Raiders
+Jaguars
+Racial Slur
+Left Edge
+Catalogue
+Vertical Distance
+Incredibles
+Block and Save
+Chafing the Dreams
+Eye for an Eye
+Win or Booze
+I'm the king of the Pitch
+There's no place like hoop
+Baby one more time
+No more Drop Shots
+Point Theft is no Joke
+No Love
+Chicken and Quaffles
+Run's and Loses
+Score for DAYS
+Pacemaker
+Lord of sets
+Backhand Bitches
+I am Dino-sore
+Bowlers and Batman
+Win Direction
+The Bleachers
+The Beanie Squad
+In with Innings
+No Spoils Left
+Mud Runners
+Fools of Masquerade
+Booger Army
+Death Squad
+No Fouls
+White Sox
+Astro Assassins
+Beach Balls
+Bumping Ugos
+Jolly Volleys
+Spiked Punches
+Ball Hitters
+Sore Hands
+Serving Legends
+Showed up and Scored
+10000 Hours of Volley
+Notorious D.I.G
+Sneak Attacks
+Go Net it
+Hard Hits
+Kiss My Ace
+Jump and Hit
+Free Ballin'
+You Got Served
+Ms. Volley
+BlockBusters
+Net-Results
+Canoodling Cats
+Heels from Hell
+Space Angels
+Pink Fury
+Ladybug Army
+Clash with the babes
+Comet's Tail
+Mad Mammals
+Huggable Kittens
+Pixie Dixies
+Most Valuable Players
+Kawai Kats
+The Resistance
+Pokemon Gang
+Frozen Bullets
+Dreamblast Order
+Vicious Thrills
+Donut Disturb
+Pastel Skies
+Godzillary
+Nacho Kings
+McPerfect
+Arizona Cardinals
+Atlanta Falcons
+Baltimore Ravens
+Buffalo Bills
+Carolina Panthers
+Chicago Bears
+Cincinnati Bengals
+Cleveland Browns
+Dallas Cowboys
+Denver Broncos
+Detroit Lions
+Green Bay Packers
+Houston Texans
+Indianapolis Colts
+Jacksonville Jaguars
+Kansas City Chiefs
+Los Angeles Chargers
+Los Angeles Rams
+Miami Dolphins
+Minnesota Vikings
+New England Patriots
+New Orleans Saints
+New York Giants
+New York Jets
+Oakland Raiders
+Philadelphia Eagles
+Pittsburgh Steelers
+San Francisco 49ers
+Seattle Seahawks
+Tampa Bay Buccaneers
+Tennessee Titans
+Washington Redskins
+Atlanta Hawks
+Boston Celtics
+Brooklyn Nets
+Charlotte Hornets
+Chicago Bulls
+Cleveland Cavaliers
+Dallas Mavericks
+Denver Nuggets
+Detroit Pistons
+Golden State Warriors
+Houston Rockets
+Indiana Pacers
+LA Clippers
+Los Angeles Lakers
+Memphis Grizzlies
+Miami Heat
+Milwaukee Bucks
+Minnesota Timberwolves
+New Orleans Pelicans
+New York Knicks
+Oklahoma City Thunder
+Orlando Magic
+Philadelphia 76ers
+Phoenix Suns
+Portland Trail Blazers
+Sacramento Kings
+San Antonio Spurs
+Toronto Raptors
+Utah Jazz
+Washington Wizards
+Arizona Diamondbacks
+Atlanta Braves
+Baltimore Orioles
+Bostons Red Sox
+Chicago Cubs
+Chicago White Sox
+Cincinnati Reds
+Cleveland Indians
+Colorado Rockies
+Detroit Tigers
+Houston Astros
+Kansas City Royals
+Los Angeles Angels
+Los Angeles Dodgers
+Miami Marlins
+Milwaukee Brewers
+Minnesota Twins
+New York Mets
+New York Yankees
+Oakland Athletics
+Philadelphia Phillies
+Pittsburgh Pirates
+San Diego Padres
+San Francisco Giants
+Seattle Mariners
+St. Louis Cardinals
+Tampa Bay Rays
+Texas Rangers
+Toronto Blue Jays
+Washington Nationals
+Anaheim Ducks
+Boston Bruins
+Buffalo Sabres
+Calgary Flames
+Carolina Hurricanes
+Chicago Blackhawks
+Colorado Avalanche
+Columbus Blue Jackets
+Dallas Stars
+Detroit Red Wings
+Edmonton Oilers
+Florida Panthers
+Los Angeles Kings
+Minnesota Wild
+Montreal Canadiens
+Nashville Predators
+New Jersey Devils
+New York Islanders
+New York Rangers
+Ottawa Senators
+Philadelphia Flyers
+Phoenix Coyotes
+Pittsburgh Penguins
+Saint Louis Blues
+San Jose Sharks
+Tampa Bay Lighting
+Toronto Maple Leafs
+Vancouver Canucks
+Vegas Golden Knights
+Washington Capitals
+Winnipeg Jets
+Atlanta Dream
+Chicago Sky
+Connecticut Sun
+Dallas Wings
+Indiana Fever
+Las Vegas Aces
+Los Angeles Sparks
+Minnesota Lynx
+New York Liberty
+Phoenix Mercury
+Seattle Storm
+Washington Mystics
+FC Augsburg
+Hertha BSC
+Union Berlin
+Werder Bremen
+Borussia Dortmund
+Fortuna Dusseldorf
+Eintracht Frankfurt
+SC Freiburg
+1899 Hoffenheim
+1. FC Koln
+RB Leipzig
+Bayer Leverkusen
+Mainz 05
+Borussia Monchengladbach
+Bayern Munich
+SC Paderborn
+Schalke 04
+VfL Wolfsburg
+Air Force Falcons
+Akron Zips
+Alabama Crimson Tide
+UAB Blazers
+Appalachian State Mountaineers
+Arizona Wildcats
+Arizona State Sun Devils
+Arkansas Razorbacks
+Arkansas State Red Wolves
+Army Black Knights
+Auburn Tigers
+Ball State Cardinals
+Baylor Bears
+Boise State Broncos
+Boston College Eagles
+Bowling Green Falcons
+Buffalo Bulls
+BYU Cougars
+California Golden Bears
+UCLA Bruins
+UCF Knights
+Central Michigan Chippewas
+Charlotte 49ers
+Cincinnati Bearcats
+Clemson Tigers
+Coastal Carolina Chanticleers
+Colorado Buffaloes
+Colorado State Rams
+Connecticut Huskies
+Duke Blue Devils
+Eastern Michigan Eagles
+East Carolina Pirates
+FIU Panthers
+Florida Gators
+Florida Atlantic Owls
+Florida State Seminoles
+Fresno State Bulldogs
+Georgia Bulldogs
+Georgia Southern Eagles
+Georgia State Panthers
+Georgia Tech Yellow Jackets
+Hawai’i Rainbow Warriors
+Houston Cougars
+Illinois Fighting Illini
+Indiana Hoosiers
+Iowa Hawkeyes
+Iowa State Cyclones
+Kansas Jayhawks
+Kansas State Wildcats
+Kent State Golden Flashes
+Kentucky Wilcats
+LSU Tigers
+Louisiana Tech Bulldogs
+Louisiana-Lafayette Ragin’ Cajuns
+Louisiana-Monroe Warhawks
+Louisville Cardinals
+Marshall Thundering Herd
+Maryland Terrapins
+Massachusetts Minutemen
+Memphis Tigers
+Miami Hurricanes
+Miami (OH) RedHawks
+Michigan Wolverines
+Michigan State Spartans
+Middle Tennessee Blue Raiders
+Minnesota Golden Gophers
+Ole Miss Rebels
+Mississippi State Bulldogs
+Missouri Tigers
+Navy Midshipmen
+Nebraska Cornhuskers
+Nevada Wolf Pack
+UNLV Rebels
+New Mexico Lobos
+New Mexico State Aggies
+North Carolina Tar Heels
+NC State Wolfpack
+North Texas Mean Green
+NIU Huskies
+Northwestern Wildcats
+Notre Dame Fighting Irish
+Ohio Bobcats
+Ohio State Buckeyes
+Oklahoma Sooners
+Oklahoma State Cowboys
+Old Dominion Monarchs
+Oregon Ducks
+Oregon State Beavers
+Penn State Nittany Lions
+Pittsburgh Panthers
+Purdue Boilermakers
+Rice Owls
+Rutgers Scarlet Knights
+San Diego State Aztects
+San Jose State Spartans
+South Alabama Jaguars
+South Carolina Gamecocks
+South Florida Bulls
+USC Trojans
+SMU Mustangs
+Southern Miss Golden Eagles
+Stanford Cardinal
+Syracuse Orange
+TCU Horned Frogs
+Temple Owls
+Tennessee Volunteers
+Texas Longhorns
+Texas A&M Aggies
+Texas State Bobcats
+Texas Tech Red Raiders
+UTEP Miners
+UTSA Roadrunners
+Toledo Rockets
+Troy Trojans
+Tulane Green Wave
+Tulsa Golden Hurricane
+Utah Utes
+Utah State Aggies
+Vanderbilt Commodores
+Virginia Cavaliers
+Virginia Tech Hokies
+Wake Forest Demon Deacons
+Washington Huskies
+Washington State Cougars
+West Virginia Mountaineers
+Western Kentucky Hilltoppers
+Western Michigan Broncos
+Wisconsin Badgers
+Wyoming Cowboys
+Cincinnati Bearcats
+Connecticut Huskies
+East Carolina Pirates
+Houston Cougars
+Memphis Tigers
+Navy Midshipmen
+SMU Mustangs
+South Florida Bulls
+Temple Owls
+Tulane Green Wave
+Tulsa Golden Hurricane
+UCF Knights
+Boston College Eagles
+Clemson Tigers
+Duke Blue Devils
+Florida State Seminoles
+Georgia Tech Yellow Jackets
+Louisville Cardinals
+Miami Hurricanes
+North Carolina Tar Heels
+North Carolina State Wolfpack
+Pittsburgh Panthers
+Syracuse Orange
+Virginia Cavaliers
+Virginia Tech Hokies
+Wake Forest Demon Deacons
+Baylor Bears
+Iowa State Cyclones
+Kansas Jayhawks
+Kansas State Wildcats
+Oklahoma Sooners
+Oklahoma State Cowboys
+TCU Horned Frogs
+Teas Longhorns
+Texas Tech Red Raiders
+West Virginia Mountaineers
+Army Black Knights
+BYU Cougars
+Liberty Flames
+Massachusetts Minutemen
+New Mexico State Aggies
+Notre Dame Fighting Irish
+The Bad News Bears
+The Little Giants
+Chicks With Kicks
+Not Fast Just Furious
+The Ball Busters
+Go Ham or Go Home!
+The Underdawgs
+The Untouchables (or The Unbeatables)
+Couch Sweet Potatoes
+Murder of Crows
+The Thundercats
+Thunder Buddies (or Thunderellas)
+The Boys in Blue
+The Mighty Ducks
+The Sandlot
+Red Ribbon FC
+The Greyhounds
+The Monstars
+No Talent Ass Clowns
+Sick Day University
+Tough Guys United
+The Bad Seeds
+The Geriatric Whores of War
+The World of Warcraft Warriors
+The Angry Beavers
+Wombats on a Plane!
+The Fart Smellers
+The Ducks of Death
+King's Row
+Avengers Assemble!
+The Assassination Bureau
+The Incompetent Swine
+The Jelly Donuts
+Tropic Thunder All Stars!
+All American Assholes
+The Down and Outs
+Miserable Failure Incorporated
+Operation: Enduring Idiocy
+The Underwhelming Monikers
+The Keg Slayers
+The Mighty Morphin Dudes
+The Thunder Buddies!
+The Asshatted Tax Dodgers
+The Mighty Cocks of Salvation
+Torture Incorporated
+The Sodomizers of Alexandria!
+Dangerous Dicks Unlimited
+We Do Danger
+Band of Brothers
+The Lucky Charms
+Squeaky Clean Crew
+Scared Hitless
+The Broken Bat Boys
+The Bored of Education
+The Boring Beavers
+The Battered Bastards of Baseball
+Bored and Dangerous
+One Hit Wonders
+Ruthless Rookies
+The Book Worms
+The Baddest Beavers Boys
+The Dirty Ducks
+The Blue Diamonds
+Gold Diggers
+Steroids and Chainsaws
+The Odd Ballers
+Macho Maniacs
+We're Not That Bad
+Little Big Men
+The Red Hots
+The Bad News Bears
+The Dirty Dandies
+Diving for Pills
+Bend It Like Beckham
+The Thugs
+High Tops and Dirty Jeans
+The Cocoa Puffs
+The Rotten Apples
+Pitch Slap
+We Don't Lose Often
+The Victorious Secret
+The Big Whammo's
+Totally Rad
+The No Big Woop's
+The Marvelous Team
+Team Magician
+The Final Countdown
+The Running Herd
+The Young and the Restless
+Forgetting Sarah Marshall
+The Brute Squad
+The Great White Hype's
+The Power Rangaz
+The Furnace Masters
+The Bad News Beers
+The Winning Team's
+The Sticky Bandits'
+The High Five's
+The Four Horsemen
+The Super Sonic's
+The Hotshots
+The Superfly's
+The Boppin' Boggies
+The Thugz
+Team 20/20
+Rip Tide Clobbers
+The Flaming Trolleys
+The Foul Balls
+The Lazy Daze
+The Fighting Firemen
+Thunderstruck
+The Flying Monkeys
+Balls To The Wall
+The Quaffing Q's
+The Dukes of Hazard
+Super Bad Company
+C0CK
+Kung Fu Pandas
+The Rhythms
+Panic Mash
+Tornadoes
+Zombie Warfare
+Four Kings
+romania
+Jokers Wild
+Stark Imperial
+Purple Mafia
+Handymen
+Charlie’s Angels
+Tiger Commandos
+Tyrannosaurus
+Melodic Execution
+Z Light Admirals
+Beer Pressure
+Desk Demons
+Mad Max
+Finish Bureau
+Hellacious Hackers
+The Mob
+Mad Dog
+Wipeout Punks
+Math Mavericks
+Alpha Bravo
+Calm Outlaws
+Bingo Wives
+Rubble
+Sigma Demons
+Free Birds
+Frag Squad
+Graveyard Grind
+Snack Attack
+Society of the Rotten
+The Vixens
+Melodic Execution
+Mad Thrashers
+Proud Fathers
+Epic Breed
+Celestial Butchers
+Dearest Sisters
+Reflective Coercion
+Divergent Madness
+Dearest Sisters
+Calm Outlaws
+Karma Poets
+Hustle & Flo
+10 hearts 1 beat
+Slaughter Bot Domain
+Evil Wiggle
+Napoleons
+Angry Apes
+Elegant Death Squad
+Unquenchable Overkill
+Ironic Q
+Dopaminers
+Invincibles
+Bloodbath and Beyond
+Reaper
+Team Garbage
+Ancient Myth
+Delightful Vandals
+Former Miss Worlds
+Bromania
+Catalysts
+Knuckles
+Loon Messiahs
+Broflakes
+Your Pace or Mine?
+Beige Overkill
+Vengeance of the faithful
+Angry Apes
+Benchwarmers United
+Poetic Death Attack
+Sales R Us.
+Hospitable Violence
+Goal Diggers
+Wild Stallions
+Ferocious Killers
+Bad Company
+Shallow Invincible
+Headrush Pirates
+Finish Bureau
+Those Guys
+Defending Champs
+Bravehearted
+Beyond Mayhem
+Trigger Head Kill
+Ironic Q
+Dopaminers
+Four Kings
+The Credit Crush.
+That Better Team.
+My Bros
+Society of the Rotten
+Demented
+Greasy Dishes
+Silent Assassins
+The Mongols
+Stacks
+Cannon
+Lunatic Assassins
+10 hearts 1 beat
+Pollos Hermanos
+Elegant Death Squad
+Evil Wiggle
+Angry Apes
+Napoleons
+Geronimo
+Dearest Sisters
+Calm Outlaws
+Karma Poets
+Ancient Myth
+Panic Mash
+The Baha Badboys.
+Twisted Minds
+Bromania
+The Muffin Tops
+Ballistic Preachers
+Bad Companym n
+Sinister Epic
+Team Garbage
+Cobra
+Kung Fu Pandas
+Math Mavericks.
+The Vixens
+Snickerdoodles
+Reflective Coercion
+The Skeptics.
+Red rats
+Hustle & Flo
+Divergent Madness
+Diamond Girls
+Geronimo
+Rot Kill Squad
+Melodic Execution
+Yager Bombers
+Dynamic Assailants
+Skill Volt Theory
+Pivotal Trip
+The Crew
+Mad Thrashers.
+Your Pace or Mine?
+Mellow Bone Mash
+Death Brigade
+The “B” Squad.
+Proud Fathers
+Slaughter Bot Domain
+Recreational Hazard
+The Game
+Finish Bureau
+Trigger Happy Bunnies
+Purple Mafia
+Poltergeist Kill
+Rot Kill Squad
+Charismatic Sharpshooters
+Steadfast Commandos
+Riot Privilege
+Malicious Black
+Shadow Thugs
+Team Will Smith
+Bloodbath Architects
+Evanescent Death Shield
+Noob Guerrillas
+Kung Fu Pandas
+Smush Vikings
+Tiger Commando Squad
+Soul Bloodbath
+Team Spray'n Pray
+Sonic Bone Mash
+Endurable Kill Thing
+Skull Take Away
+Death Brigade
+Trigger Brain Warriors
+Yaku Bloodbath
+iRobots
+Mute Assassins
+Mute Kill Crusaders
+Placid Destroyers
+Tyrannical Teabaggers
+Bloodbath Punks
+Kamikaze Serenade
+Reflective Coercion
+Spoof Mash Assassins
+Peaceful Hooligans
+Advertisement
+Trigger Head Kill
+Team Sinister
+Dapper Dundee Kill
+Silent Assassins
+Beyond Mayhem
+Diabolic Destroyers
+Thing Called Deadly
+Poetic Splatter
+Frag Magnets
+Lunatic Assassins
+Supreme Skull Krushers
+Antagonist Dreak Kill
+Enigmatic Slayers
+Team Garbage
+Kamikaze Masters
+Ironic Q
+Mind Kill Execution
+Feigned Anatomy
+Calm Outlaws
+Poetic Havoc
+Slit Delinquents
+Team Target
+Stand-by Shooters
+Pivotal Trip
+Unquenchable Overkill
+Poetic Death Attack
+The Muffin Tops
+Pill Brain Demons
+Vicious Noobs
+Melodic Execution
+Skill Volt Theory
+Unbiased Executioners
+Rustic Demonsteal
+Abject Curve
+Slaughter Bot Domain
+Dynamic Assailants
+Lords of Absurd
+Aberrant Abstract Demons
+Yager Bombers
+Diligent Kill Squad
+Green Moguls
+Unknown Assassins
+Splatter Demons
+Venomous Death Punch
+Nutshell Domination
+Team Frenzy
+Tranquil Kill Bunnies
+Team Synergy
+Daydream Death Slay
+Loon Squad
+Deliberate Death Kool
+Theory of Extermination
+Merciful Death Magnets
+Elegant Death Squad
+Bands Named After Books
+Awesome Team Names
+Easy Party Themes
+Tiger Commandos
+Infamous Assassins
+Sinister Epic
+Bloodbath Poets
+Four Kings
+Kill Bunny Fever
+Blue Death Cadets
+Bloodbath and Beyond
+Freak Streak Machine
+The Celestial Butchers
+Spiffy Rebels
+Viscious and Delicious
+The Other Dimension
+Bolus of Pain
+Vague Death Poets
+Bashful Blend
+Rogue Warriors
+Divergent Madness
+Top Guns
+Manic Scream
+Z Light Admirals
+Pain of Exile
+Cult Assassins
+Delightful Vandals
+The Lint LickerZ
+Liquid Demons
+Frag Squad
+Team Solid
+Gold 2
+Nice Genius
+Innovative
+Meaningful
+Noob Power
+Hospitable Kill
+Silent Kill Drone
+Mind Kill Crusaders
+Calm Carnage
+Purple Stomp
+Swish Kill Chillers
+Biotica Delusion
+Theocratic Gremlins
+Altersky Matter
+Stomp Poets
+Bone Crush Aliens
+Chromawind Zombies
+Celestial Geoforce Apocalypse
+Demoncore Apocalypse
+Battlescape Bombers
+Swish Legend Apocalypse
+Former Miss Worlds
+Vandelay Industries.
+Tiger Commandos
+Tyrannosaurus
+Bad Company
+Shallow Invincible
+Skill Volt Theory
+Sinister Epic
+The Muffin Tops
+Four Kings
+Reflective Coercion
+Golden Eagles
+The Warriors
+Pride of Lions
+Black Antelopes
+Crass Interference
+Soul Takers
+Optic Sports
+We Don’t Lose
+Wings Gaming
+The Crystal Angels
+Absolute Legends
+Yoe Flash Wolves
+Team Allegiance
+Eyes on Fire
+Lords of Absurd
+Prank Masters
+Defending Champs
+Spiffy Rebels
+Donkey Kong Killers
+Awesome Blossoms
+The “B” Squad
+Revenging Angels
+Sole Survivors
+Evil Wiggle
+Death Squad
+Dick Minister
+Cock Riders
+A$$
+Epic Breed
+Reaper
+Mania
+Dearest Sisters
+Those Guys
+Last Place Champions
+Delightful Vandals
+P&L Ponies
+Wild Stallions
+Unquenchable Overkill
+Former Miss Worlds
+The Game
+Bromagination
+Celestial Butchers
+iRobots
+Nuestra Familia
+The Still Trip
+Blaze of darkness
+LeonidaS
+MILF
+DILF
+Sadge
+PeepeWin
+Losers
+YOMEGALULRU
+Blaze of darkness
+The Fixers
+Overconfident
+Abject Curve
+Jesse James
+Prank Masters
+Maximus
+Infamous Assassins
+Wonder Women
+Immovables
+Dapper Dundee Kill
+Vigor Things
+The Baha Badboys
+SEXY GALS
+Guild
+FOKUS
+Soniqs
+AGO
+ALTERNATE aTTaX
+Astralis
+AVANGAR
+BIG
+Chiefs
+Cloud9
+Complexity
+Copenhagen
+Dignitas
+ENCE
+Endpoint
+Envy
+Epsilon
+FaZe
+FlipSid3
+forZe
+FURIA
+G2
+Gambit
+GamerLegion
+GODSENT
+HAVU
+HellRaisers
+Heroic
+Isurus
+Izako Boars
+Kinguin
+LDLC
+Moist Esports
+Luminosity
+MIBR
+MOUZ
+Movistar
+Natus Vincere
+Nemiga
+Nexus
+NIP
+North
+NRG
+OpTic Gaming
+ORDER
+PACT
+PENTA
+Renegades
+Singularity
+SJ
+SK Gaming
+SKADE
+Space Soldiers
+Spirit
+Sprout
+TeamOne
+Tricked
+ViCi
+Virtus.pro
+Vitality
+NAVIGATION
+Overview
+Players
+Teams
+Overview
+FTU
+Pistol rounds
+Alcohooligans
+The Vixens
+Catalysts
+Liquid Demons
+Spiffy Rebels
+In Style
+BIG JUICY HAWKS
+OFFSET
+AFoxx
+Professional gamers
+Team Team
+Team Condensed
+MMO
+PUSSY SLAYERS
+YOINK
+BONKAR
+The United State of Ohio
+God
+Guild X
+TenZ and friends
+Derke i wuv u
+Kaka
+SEWYYY
+NUMBER 7
+TOP GALS
+MASSIVE
+3inches
+Dogwater
+xqcL
+Big guy
+JAMBO
+Monkey Pot
+Covid
+The Anti-Taxers
+Sunday
+McDonalds Gaming
+World
+Aliens
+MESSY
+Ducklings
+Query
+SQL Server
+University of Aveiro
+Nivalis' Team
+The GOATs
+XxTentacionxX
+Zebra
+Penguins are cute
+Social Credits
+Hawngha
+Pot
+Drugs
+Miami Bitch
+Alabama
+Pork tastes good
+Gummy Bears
+NoFAP Gaming
+Senior Citizens
+Omiochi
+Anime Girls
+Kuroooo
+Speed Gaming
+Blacky
+Femboys United
+Konihiw
+Soviet Union
+Gobiru
+Mimi Lollipop
+Pantie Sniffers
+Boe Jiden Gaming
+Molotov
+The Skeptics
+Skyhook Gravity
+Bromania
+The Daily Wire
+Smush Vikings
+Those Guys
+Rockstar Lifestyle
+Warglaive
+Cult Cuts
+Endurable Kill Thing
+The Fixers
+Not Fast But Furious
+Spiffy Rebels
+Poltergeist Kill
+Digital Divas
+Son of Pitch
+Mirage Death
+Trooper
+Hangover
+Taskforce
+Z Light Admirals
+Antagonist Dreak Kill
+Land Sharks
+Gunslingers
+The Might Thrill
+Panic Wriggle
+Pain of Exile
+Catalysts
+Feigned Anatomy
+Lords of Absurd
+Flack
+Man-archy
+Riot Privilege
+Lords of Absurd
+Breast Friends
+Workout Divas
+Insurgent
+Bromosapiens
+Supreme Skull Krushers
+Frag Squad
+Proud Fathers
+The Pace Makers
+Skill Volt Theory
+Lightning
+Fly Fellas
+Endurable Kill Thing
+The Mighty Midgets
+Geeks and Freaks
+Chick Magnets
+Diabolic Destroyers
+Stacks
+Kamikaze Serenade
+Bashful Blend
+Twisted Blisters
+Handymen
+Sinister Breed
+Skinner
+Wild Stallions
+Vicious Noobs
+Tropical Storm
+Handlebars
+Rebellion
+Mauve Death
+Vicious Midgets
+All Men’s Club
+Ironclad
+Bloodbath and Beyond
+Veins
+Notorious Dudes
+Mad Thrashers
+Broneliness
+Fisheye
+Charismatic Sharpshooters
+Tornadoes
+The Rhythms
+Hashtags
+Fly Fellas
+Number Crunchers
+Slime Demons
+Bloodbath Poets
+Greasy Dishes
+Masters of Mayhem
+Team Synergy
+Mute Assassins
+The Rhythms
+Courageous
+Sinister Breed
+The Waiver Wire
+Vendetta
+Bone Crush Vigor
+Crunch Puppets
+Brew Masters
+Fallen Angels
+Sabotage
+Diligent Kill Squad
+We Talk A Lot.
+Those Guys
+Kevlars
+Kamikaze Masters
+That Better Team
+Havoc
+Melodic Execution
+Shadow Thugs
+Chunky Monkees
+Close Shave
+Kamikaze Masters
+Karma Synergy
+Unbiased Executioners
+The MudkipZ
+The Mob
+Loon Messiahs
+Justice of the Joyful
+Angry Apes
+Recreational Hazard
+The Lint LickerZ
+Junk In The Trunk
+Karma Synergy
+Empresses
+The MudkipZ
+Pollos Hermanos
+Indominus
+Pollos Hermanos
+Panic Mash
+Snickerdoodles
+Rot Kill Squad
+Trigger Head Kill
+Bad Companym n
+The Skeptics
+Twisted Minds
+The Game
+Four Kings
+The Baha Badboys
+Skill Volt Theory
+Sinister Epic
+Wild Stallions
+P&L Ponies.
+Yager Bombers
+Dynamic Assailants
+Diamond Girls
+Silent Assassins
+Cannon
+My Bros
+Last Place Champions
+Bullets
+Geronimo
+Lunatic Assassins
+Your Pace or Mine?
+Those Guys
+Cobra
+The Crew
+Demented
+Ballistic Preachers
+Mania
+Mellow Bone Mash
+The Credit Crush
+Nuestra Familia
+Red rats
+The “B” Squad
+Stacks
+Math Mavericks
+iRobots
+Geronimo
+The Mongols
+The Muffin Tops
+Four Kings
+Recreational Hazard
+Bromagination
+Pivotal Trip
+Kung Fu Pandas
+Death Brigade
+Greasy Dishes
+That Better Team
+Feisty Females
+Whiskey Business
+Top Guns
+Team Target
+Titanium
+Former Miss Worlds
+Vandelay Industries
+Gonzo Wolfpack
+Vague Death Poets
+Son of Pitch
+Bloodbath Architects
+Sinister Epic
+Feisty Females
+The Big Egos
+Rot Kill Squad
+Optimistic Geeks
+Purple Mafia
+Bromagination
+Endzone Matter
+Crew of honored
+Trojans
+Feigned Anatomy
+Lords of Absurd
+The Rhythms
+Close Shave
+The Human Targets
+Beige Overkill
+The AA Book Club
+Sonic Bone Mash
+
+Dominators
+Superstars
+Goal Diggers
+Super Bowls
+Olympians
+Peak Performers
+Rule Breakers
+All-Stars
+Rising Stars
+Team Awesome
+Weapons of Mass Destruction
+High Flyers
+Dream Makers
+Quad Squad
+Crew Cut
+Tacticians
+Wrecking Crew
+Golden Girls
+Super Bowls
+Lethal Weapons
+Kings and Queens
+MVPs
+Mighty Ducks
+Titans
+MVPs
+Knights and Queens
+Scorers
+Playmakers
+Unstoppables
+Kings
+Golden Hawks
+Firebirds
+Raging Bulls
+Criminals
+Champions
+Sonic Speeders
+Bruisers
+Cavaliers
+Titans
+Knights
+Wizards
+Incredible Hulks
+Bad Boys
+The Mighty Ducks
+The Jokers Wild
+Misfits
+Raging Bulls
+Crypto fries
+The Potato Sacks
+Tequila on Oats
+Corny Corn Dogs
+The Pizza Party
+Food Critics
+Apple_Pen_Pineapple_Pen
+Chunky Dunkers
+Stoned Cookies
+Dumb Dumplings
+Smoked Salmons
+Snack Attacks
+Stud Potatoes
+Addicted to Cookies
+Cheeses and Chips
+Boozed Boys
+Give_us_booze
+Hung&Over
+Team Liquid,1171500
+NaVi,1046500
+T1,1045700
+DGW Kia,1009500
+G2 Esports,1000900
+EVOS,985600
+Rex Requm Qeon,848600
+Fnatic,772100
+Gambit Esports,766500
+ONIC Esports,733000

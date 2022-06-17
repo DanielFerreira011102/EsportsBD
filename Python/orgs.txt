@@ -60,7 +60,7 @@ Dr. Panda
 Edmund McMillen
 Elixir Studios
 Eurocom
-"Evony
+Evony
 Facepunch Studios
 Firefly Studios
 Flying Wild Hog
@@ -93,7 +93,7 @@ Invictus Games
 Jagex
 Jason Rohrer
 Jonas Kyratzes
-"Jonatan ""Cactus"" Söderström
+Jonatan Cactus Söderström
 Jph Wacheski
 Keen Software House
 Klei Entertainment
@@ -188,7 +188,7 @@ Vectorpark
 Vlambeer
 VoxelStorm
 Wadjet Eye Games
-"WayForward Technologies
+WayForward Technologies
 Wolfire Games
 Xona Games
 XMG Studio
@@ -230,7 +230,7 @@ Akella
 Alfa System
 AlphaDream
 Amazon Game Studios
-"Amazon Game Studios
+Amazon Game Studios
 Ambrella
 Amusement Vision
 Ancient
@@ -246,7 +246,7 @@ Arkane Studios
 Arkedo Studio
 ArenaNet
 Arika
-"Art Co.
+Art Co.
 Artdink
 ArtePiazza
 Artificial Studios

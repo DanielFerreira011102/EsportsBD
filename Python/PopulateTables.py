@@ -8,6 +8,7 @@ from GenerateTeamStaff import *
 from GenerateOrganization import *
 from GenerateTeamCaptain import *
 from GenerateEventStaff import *
+from GenerateEvent import *
 
 """ --------- CONSTANTS --------- """
 
@@ -72,7 +73,7 @@ def insert(table: str, records: list):
 """ --------- TEST --------- """
 
 """ INSERT USERS """
-# records = generateUser(50)
+# records = generateUser(5000)
 # insert('[USER]', records)
 
 """ INSERT GAMES AND TYPE """
@@ -81,28 +82,33 @@ def insert(table: str, records: list):
 # insert('GAME_TYPE', records2)
 
 """ INSERT TEAMS """
-# records = generateRandomTeams(280)
+# records = generateRandomTeams(3000)
 # insert('TEAM', records)
 
 """ INSERT PLAYERS """
-# records = generateRandomPlayers(800)
+# records = generateRandomPlayers(15000)
 # insert('PLAYER', records)
 
 """ INSERT TEAM STAFF AND ROLE """
-# records1, records2 = generateRandomTeamStaff(200)
+# records1, records2 = generateRandomTeamStaff(5000)
 # insert('TEAM_STAFF', records1)
 # insert('TEAM_STAFF_ROLE', records2)
 
 """ INSERT ORGANIZATION """
-# records = generateRandomOrgs(100)
+# records = generateRandomOrgs(500)
 # insert('ORGANIZATION', records)
 
 """ INSERT TEAM CAPTAIN """
-# records = generateRandomTeamCaptain(200)
+# records = generateRandomTeamCaptain(3000)
 # insert('TEAM_CAPTAIN', records)
 
 """ INSERT EVENT STAFF AND ROLE AND SUPER """
-# records1, records2, records3 = generateRandomEventStaff(350)
+# records1, records2, records3 = generateRandomEventStaff(5000)
 # insert('EVENT_STAFF', records1)
 # insert('EVENT_STAFF_ROLE', records2)
 # insert('SUPER_EVENT_STAFF', records3)
+
+""" INSERT EVENT AND TEAMS IN EVENT """
+records1, records2 = generateRandomEvents(500)
+insert('TOURNAMENT', records1)
+insert('PARTICIPATES_IN', records2)

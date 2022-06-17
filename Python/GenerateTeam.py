@@ -128,8 +128,12 @@ def generateTeamNames(number):
             data = team.strip().replace('\n', '').split(',')
             if len(data[0]) <= 25:
                 teams.append(data[0])
-                earnings.append(data[1])
-    return random.sample(list(set(teams)), number), random.sample(list(set(earnings)), number)
+                if len(data) > 1:
+                    earnings.append(data[1])
+                else:
+                    earnings.append(round(random.randint(5000, 250000)))
+    print(len(list(set(teams))))
+    return random.sample(list(set(teams)), number), random.choices(earnings, k=number)
 
 
 def generateRandomTeams(number) -> list[list]:

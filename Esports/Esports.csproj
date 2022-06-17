@@ -13,6 +13,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Forms\OrgsForm - Copy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\PlayersForm - Copy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\TeamsForm - Copy.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

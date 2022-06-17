@@ -2,6 +2,26 @@ import random
 from datetime import datetime, timedelta
 from GetSQLData import *
 
+firstnames = []
+lastnames = []
+
+with open('firstnames.txt', 'r', encoding='utf8') as f:
+    for first in f:
+        data = first.strip().replace('\n', '')
+        firstnames.append(data)
+
+with open('lastnames.txt', 'r', encoding='utf8') as f:
+    for last in f:
+        data = last.strip().replace('\n', '')
+        lastnames.append(data)
+
+def getRandomRealName():
+    name = random.choice(firstnames) + " " + random.choice(lastnames)
+    if len(name) <= 30:
+        return name
+    else:
+        return None
+
 def getUsersNotPlayers(number):
 
     query = "SELECT * FROM getUsersNotPlayers()"
@@ -114,6 +134,17 @@ def generateRandomGame(number) -> list:
 
     return lst
 
+countries = []
+with open('countries.txt', 'r', encoding='utf8') as f:
+    for c in f:
+        data = c.strip().replace('\n', '').split(',')
+        if len(data[1]) <= 10:
+            countries.append(data[1])
+
+def generateRandomCountryCode():
+    return random.choice(countries)
+
+
 def generatePlayerNames(number):
     igns = []
     realnames = []
@@ -122,20 +153,29 @@ def generatePlayerNames(number):
     with open('players.txt', 'r', encoding='utf8') as f:
         for player in f:
             data = player.strip().replace('\n', '').split(',')
-            if len(data[0]) > 25:
-                igns.append("SecretAgent" + str(count))
-                count += 1
-            else:
-                igns.append(data[0])
-            if data[1] == "- -" or len(data[1]) > 30:
-                realnames.append(None)
-            else:
-                realnames.append(data[1])
+            if len(data) > 1:
+                if len(data[0]) > 25:
+                    igns.append("SecretAgent" + str(count))
+                    count += 1
+                else:
+                    igns.append(data[0])
+                if data[1] == "- -" or len(data[1]) > 30:
+                    realnames.append(None)
+                else:
+                    realnames.append(data[1])
 
-            if len(data[2]) <= 10:
-                countrycodes.append(data[2])
+                if len(data[2]) <= 10:
+                    countrycodes.append(data[2])
+                else:
+                    countrycodes.append(None)
             else:
-                countrycodes.append(None)
+                if len(data[0]) > 25:
+                    igns.append("SecretAgent" + str(count))
+                    count += 1
+                else:
+                    igns.append(data[0])
+                realnames.append(getRandomRealName())
+                countrycodes.append(generateRandomCountryCode())
 
     return random.sample(list(set(igns)), number), random.sample(realnames, number), random.sample(countrycodes, number)
 

@@ -2,12 +2,28 @@ import random
 import string
 from datetime import datetime, timedelta
 
+from GetSQLData import GetSQLDataStandard
+
+def getUserEmailList():
+
+    query = "SELECT email FROM [USER]"
+
+    return GetSQLDataStandard(query)
+
+def getUserList():
+
+    query = "SELECT username FROM [USER]"
+
+    return GetSQLDataStandard(query)
+
+
 def generateRandomUsername(number) -> list:
     lst = []
     with open('users.txt', 'r', encoding='utf8') as f:
         for username in f:
             lst.append(username.replace('\n', ''))
-    return random.sample(list(set(lst)), number)
+    lst = list(set(lst) - set(getUserList()))
+    return random.sample(lst, number)
 
 
 def generateRandomEmail(number) -> list:
@@ -16,6 +32,8 @@ def generateRandomEmail(number) -> list:
     digit = list(string.digits)
     special = ['.', '-', '_']
     letters = alpha + digit + special
+    mails = getUserEmailList()
+    pastemails = [x.lower() for x in mails]
     lst = []
 
     def get_one_random_domain():
@@ -23,7 +41,7 @@ def generateRandomEmail(number) -> list:
 
     def get_one_random_name():
         email_name = ''.join(random.choice(alpha))
-        for i in range(random.randint(0, 22)):
+        for i in range(random.randint(0, 25)):
             gen = random.choice(letters)
             if not (gen in special and email_name[-1] in special):
                 email_name = email_name + random.choice(letters)
@@ -31,11 +49,16 @@ def generateRandomEmail(number) -> list:
             email_name = email_name[:-1]
         return email_name
 
-    for email in range(0, number):
+    while len(lst) < number:
         one_name = str(get_one_random_name())
         one_domain = str(get_one_random_domain())
-        lst.append(one_name + "@" + one_domain)
+        email = one_name + "@" + one_domain
+        if email.lower() not in pastemails:
+            lst.append(email)
+            pastemails.append(email.lower())
 
+    print(lst)
+    print(pastemails)
     return lst
 
 def generateRandomPassword(number) -> list:

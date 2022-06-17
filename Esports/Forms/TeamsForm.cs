@@ -7,7 +7,7 @@ using System.Globalization;
 namespace Esports.Forms
 {
 
-    public partial class PlayersForm : Form
+    public partial class TeamsForm : Form
     {
 
         private SqlConnection cn;
@@ -50,29 +50,28 @@ namespace Esports.Forms
             return cn.State == ConnectionState.Open;
         }
 
-        public PlayersForm()
+        public TeamsForm()
         {
             InitializeComponent();
             cn = getSGBDConnection();
 
             lvwColumnSorter = new ListViewColumnSorter();
-            this.PlayerList.ListViewItemSorter = lvwColumnSorter;
+            this.TeamsList.ListViewItemSorter = lvwColumnSorter;
 
-            PlayerList.GridLines = true;
+            TeamsList.GridLines = true;
             GameSelect.SelectedItem = "CS:GO";
-            IGLStar.BackColor = Color.Transparent;
             LoadBDPlayers();        
         }
 
-        private void PlayersForm_Load(object sender, EventArgs e)
+        private void TeamsForm_Load(object sender, EventArgs e)
         {
             lvwColumnSorter.SortColumn = 0;
             lvwColumnSorter.Order = System.Windows.Forms.SortOrder.Ascending;
             // Perform the sort with these new sort options.
-            this.PlayerList.Sort();
+            this.TeamsList.Sort();
 
-            PlayerList.Items[0].Selected = true;
-            PlayerList.Select();
+            TeamsList.Items[0].Selected = true;
+            TeamsList.Select();
         }
 
         private void LoadBDPlayers()
@@ -85,56 +84,23 @@ namespace Esports.Forms
 
             Debug.WriteLine(GameSelect.SelectedItem);
             // DOING WITH USER RN BUT I WANT PLAYERS
-            SqlCommand cmd = new SqlCommand("SELECT * FROM getGamePlayerData(@Game)", cn);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM getGameTeamData(@Game)", cn);
             cmd.Parameters.Clear();
             cmd.Parameters.AddWithValue("@Game", GameSelect.SelectedItem);
             SqlDataReader reader = cmd.ExecuteReader();
 
-            PlayerList.Items.Clear();
+            TeamsList.Items.Clear();
 
             while (reader.Read())
             {
 
                 ListViewItem item = new(reader["ranking"].ToString());
 
-                String? IGN = reader["IGN"].ToString();
-                String? team = reader["name"].ToString();
-                String? country = reader["country"].ToString();
+                String? name = reader["name"].ToString();
+                String? earns = reader["earnings"].ToString();
 
-                if (!string.IsNullOrEmpty(country))
-                {
-                    RegionInfo myRI1 = new RegionInfo(country);
-                    country = myRI1.EnglishName;
-                }
-
-                item.SubItems.Add(IGN);
-                item.SubItems.Add(team);
-                item.SubItems.Add(country);
-
-                /*
-                if (string.IsNullOrEmpty(birthday))
-                {
-                    item.SubItems.Add(birthday);
-                }
-                else
-                {
-                    DateTime dt = DateTime.ParseExact(birthday.Split(" ")[0], "dd/MM/yyyy", null);
-                    DateTime today = DateTime.Today;
-                    int age = CalculateAge(dt, today);
-                    item.SubItems.Add(age < 0? "0" : age.ToString());
-                }
-
-                String? gender = reader["gender"].ToString();
-                if (string.IsNullOrEmpty(gender))
-                {
-                    item.SubItems.Add(gender);
-                }
-                else
-                {
-                    item.SubItems.Add(gender == "F"? "Female" : "Male");
-                }
-                */
-
+                item.SubItems.Add(name);
+                item.SubItems.Add(earns);
 
                 foreach (ListViewItem.ListViewSubItem sub in item.SubItems)
                 {
@@ -142,7 +108,7 @@ namespace Esports.Forms
                     sub.Font = new System.Drawing.Font("Quicksand", 8, System.Drawing.FontStyle.Regular);
                 }
 
-                PlayerList.Items.Add(item);
+                TeamsList.Items.Add(item);
 
             }
 
@@ -151,6 +117,21 @@ namespace Esports.Forms
 
             cn.Close();
         }
+
+        private int CalculateAge(DateTime birthDate, DateTime now)
+        {
+            int age = now.Year - birthDate.Year;
+
+            // For leap years we need this
+            if (birthDate > now.AddYears(-age))
+                age--;
+            // Don't use:
+            // if (birthDate.AddYears(age) > now) 
+            //     age--;
+
+            return age;
+        }
+
 
         private void sortByColumn(object sender, ColumnClickEventArgs e)
         {
@@ -175,7 +156,7 @@ namespace Esports.Forms
             }
 
             // Perform the sort with these new sort options.
-            this.PlayerList.Sort();
+            this.TeamsList.Sort();
         }
 
         private void changeBackColor(object sender, DrawListViewColumnHeaderEventArgs e)
@@ -198,14 +179,13 @@ namespace Esports.Forms
             if (!verifySGBDConnection())
                 return;
 
-            if (PlayerList.SelectedIndices.Count > 0)
+            if (TeamsList.SelectedIndices.Count > 0)
             {
-                RankLbl.Text = PlayerList.SelectedItems[0].SubItems[0].Text;
-                IGNLbl.Text = PlayerList.SelectedItems[0].SubItems[1].Text;
-                TeamLbl.Text = PlayerList.SelectedItems[0].SubItems[2].Text;
-                CountryLbl.Text = PlayerList.SelectedItems[0].SubItems[3].Text;
+                RankLbl.Text = TeamsList.SelectedItems[0].SubItems[0].Text;
+                NameLbl.Text = TeamsList.SelectedItems[0].SubItems[1].Text;
+                EarningsLbl.Text = '$' + TeamsList.SelectedItems[0].SubItems[2].Text;
 
-                SqlCommand cmd = new SqlCommand("SELECT * FROM getPlayerInfo(@rank, @GAME)", cn);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM getTeamInfo(@rank, @GAME)", cn);
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@rank", Int32.Parse(RankLbl.Text));
                 cmd.Parameters.AddWithValue("@GAME", GameSelect.SelectedItem);
@@ -214,41 +194,19 @@ namespace Esports.Forms
                 while (reader.Read())
                 {
       
-                    UsernameLbl.Text = reader["username"].ToString();
+                    TiesLbl.Text = reader["ties"].ToString();
+
+                    LossesLbl.Text = reader["losses"].ToString();
+                    WinsLbl.Text = reader["wins"].ToString();
+
+                    string? prof = reader["logo_url"].ToString();
+                    try { TeamProfile.Load(prof); }
+                    catch { TeamProfile.Image = Properties.Resources.notfound; }
+                    
 
                     GameLbl.Text = GameSelect.SelectedItem.ToString();
-                    RealNameLbl.Text = reader["real_name"].ToString();
-
-                    string? prof = reader["profile_url"].ToString();
-                    try { PlayerProfile.Load(prof); }
-                    catch { PlayerProfile.Image = Properties.Resources.notfound; }
-                    
-                    twitter = reader["twitter_url"].ToString();
-                    twitch = reader["twitch_url"].ToString();
-
-                    string? dt = reader["team_join_date"].ToString();
-
-                    JoinDateLbl.Text = string.IsNullOrEmpty(dt) ? null : dt.Split(" ")[0];
 
 
-                }
-
-                reader.Close();
-
-                SqlCommand cmd2 = new SqlCommand("SELECT dbo.checkPlayerIGL(@Username)", cn);
-                cmd2.Parameters.Clear();
-                cmd2.Parameters.AddWithValue("@Username", UsernameLbl.Text);
-                Boolean isIGL = (bool)cmd2.ExecuteScalar();
-
-                if (isIGL)
-                {
-                    IGLStar.Image = Properties.Resources.IGL;
-                    IGLStar.BringToFront();
-                }
-                else
-                {
-                    IGLStar.Image = null;
-                    IGLStar.SendToBack();
                 }
             }
 
@@ -256,51 +214,11 @@ namespace Esports.Forms
 
         }
 
-        private void Twitter_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Process.Start(new ProcessStartInfo(twitter) { UseShellExecute = true });
-
-            }
-            catch
-            {
-                if (string.IsNullOrEmpty(twitter))
-                    MessageBox.Show("Twitter url of selected user does not exist!");
-                else
-                MessageBox.Show("Unable to open link that was clicked!");
-            }
-        }
-
         private void GameSelect_OnSelectedIndexChanged(object sender, EventArgs e)
         {
             LoadBDPlayers();
-            PlayerList.Items[0].Selected = true;
-            PlayerList.Select();
-        }
-
-        private void ShowTooltipIGL(object sender, EventArgs e)
-        {
-            if (IGLStar.Image != null)
-            {
-                ToolTip tt = new ToolTip();
-                tt.SetToolTip(IGLStar, "IGL");
-            }
-        }
-
-        private void Twitch_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Process.Start(new ProcessStartInfo(twitch) { UseShellExecute = true });
-            }
-            catch
-            {
-                if (string.IsNullOrEmpty(twitch))
-                    MessageBox.Show("Twitch url of selected user does not exist!");
-                else
-                MessageBox.Show("Unable to open link that was clicked.");
-            }
+            TeamsList.Items[0].Selected = true;
+            TeamsList.Select();
         }
     }
 }

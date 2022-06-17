@@ -27,7 +27,7 @@ def GetSQLDataStandard(query, argument=False, asList=True):
     else:
         cursor.execute(query, argument)
 
-    columns = [item[0] for item in cursor.description ]
+    columns = [item[0] for item in cursor.description]
     if asList:
         results = [item for tuple_ in cursor.fetchall() for item in tuple_]
     else:

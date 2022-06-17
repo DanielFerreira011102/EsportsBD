@@ -35,6 +35,7 @@
             this.helpBtn = new System.Windows.Forms.Button();
             this.orgBtn = new System.Windows.Forms.Button();
             this.EventsBtn = new System.Windows.Forms.Button();
+            this.MatchesBtn = new System.Windows.Forms.Button();
             this.teamBtn = new System.Windows.Forms.Button();
             this.playersBtn = new System.Windows.Forms.Button();
             this.homeBtn = new System.Windows.Forms.Button();
@@ -53,7 +54,6 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
-            this.MatchesBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -161,6 +161,24 @@
             this.EventsBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.EventsBtn.UseVisualStyleBackColor = true;
             this.EventsBtn.Click += new System.EventHandler(this.EventsBtn_Click);
+            // 
+            // MatchesBtn
+            // 
+            this.MatchesBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MatchesBtn.FlatAppearance.BorderSize = 0;
+            this.MatchesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MatchesBtn.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MatchesBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(142)))), ((int)(((byte)(203)))));
+            this.MatchesBtn.Image = ((System.Drawing.Image)(resources.GetObject("MatchesBtn.Image")));
+            this.MatchesBtn.Location = new System.Drawing.Point(0, 393);
+            this.MatchesBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.MatchesBtn.Name = "MatchesBtn";
+            this.MatchesBtn.Size = new System.Drawing.Size(239, 67);
+            this.MatchesBtn.TabIndex = 9;
+            this.MatchesBtn.Text = "Matches";
+            this.MatchesBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.MatchesBtn.UseVisualStyleBackColor = true;
+            this.MatchesBtn.Click += new System.EventHandler(this.MatchesBtn_Click);
             // 
             // teamBtn
             // 
@@ -366,24 +384,6 @@
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(1401, 815);
             this.panelDesktop.TabIndex = 6;
-            // 
-            // MatchesBtn
-            // 
-            this.MatchesBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MatchesBtn.FlatAppearance.BorderSize = 0;
-            this.MatchesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MatchesBtn.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.MatchesBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(142)))), ((int)(((byte)(203)))));
-            this.MatchesBtn.Image = ((System.Drawing.Image)(resources.GetObject("MatchesBtn.Image")));
-            this.MatchesBtn.Location = new System.Drawing.Point(0, 393);
-            this.MatchesBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.MatchesBtn.Name = "MatchesBtn";
-            this.MatchesBtn.Size = new System.Drawing.Size(239, 67);
-            this.MatchesBtn.TabIndex = 9;
-            this.MatchesBtn.Text = "Matches";
-            this.MatchesBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.MatchesBtn.UseVisualStyleBackColor = true;
-            this.MatchesBtn.Click += new System.EventHandler(this.MatchesBtn_Click);
             // 
             // MainForm
             // 

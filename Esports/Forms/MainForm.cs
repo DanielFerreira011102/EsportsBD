@@ -62,7 +62,7 @@ namespace Esports
                 EventsBtn.BackColor = Color.FromArgb(220, 239, 255);
                 HeaderLbl.Text = "Events";
                 this.selectedScreen = EventsBtn;
-                openChildForm(activeForm);
+                openChildForm(new Forms.EventsForm());
             }
         }
 
@@ -77,7 +77,7 @@ namespace Esports
                 teamBtn.BackColor = Color.FromArgb(220, 239, 255);
                 HeaderLbl.Text = "Teams";
                 this.selectedScreen = teamBtn;
-                openChildForm(activeForm);
+                openChildForm(new Forms.TeamsForm());
             }
         }
 
@@ -92,7 +92,7 @@ namespace Esports
                 orgBtn.BackColor = Color.FromArgb(220, 239, 255);
                 HeaderLbl.Text = "Organizations";
                 this.selectedScreen = orgBtn;
-                openChildForm(activeForm);
+                openChildForm(new Forms.OrgsForm());
             }
         }
 
