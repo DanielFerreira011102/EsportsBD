@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MatchesForm));
             this.panel2 = new System.Windows.Forms.Panel();
             this.PlayerLbl = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.GameSelect = new Esports.Components.CustomComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.TourLbl = new System.Windows.Forms.Label();
-            this.OrgLbl = new System.Windows.Forms.Label();
+            this.leftWin = new System.Windows.Forms.PictureBox();
+            this.rightWin = new System.Windows.Forms.PictureBox();
             this.team2Img = new System.Windows.Forms.PictureBox();
             this.team1Img = new System.Windows.Forms.PictureBox();
-            this.rightWin = new System.Windows.Forms.PictureBox();
-            this.leftWin = new System.Windows.Forms.PictureBox();
-            this.StatusLbl = new System.Windows.Forms.Label();
-            this.BestOfLbl = new System.Windows.Forms.Label();
-            this.team2Score = new System.Windows.Forms.Label();
             this.team2Name = new System.Windows.Forms.Label();
             this.team1Name = new System.Windows.Forms.Label();
+            this.OrgLbl = new System.Windows.Forms.Label();
             this.GameLbl = new System.Windows.Forms.Label();
+            this.BestOfLbl = new System.Windows.Forms.Label();
+            this.TourLbl = new System.Windows.Forms.Label();
+            this.team2Score = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.LoginBtn = new System.Windows.Forms.Button();
             this.DateLbl = new System.Windows.Forms.Label();
@@ -53,6 +53,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.StatusLbl = new System.Windows.Forms.Label();
             this.StatusImg = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.TeamsList = new System.Windows.Forms.ListView();
@@ -61,10 +62,10 @@
             this.Status = new System.Windows.Forms.ColumnHeader();
             this.id = new System.Windows.Forms.ColumnHeader();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.leftWin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rightWin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.team2Img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.team1Img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rightWin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leftWin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StatusImg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,18 +133,17 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.TourLbl);
-            this.panel3.Controls.Add(this.OrgLbl);
+            this.panel3.Controls.Add(this.leftWin);
+            this.panel3.Controls.Add(this.rightWin);
             this.panel3.Controls.Add(this.team2Img);
             this.panel3.Controls.Add(this.team1Img);
-            this.panel3.Controls.Add(this.rightWin);
-            this.panel3.Controls.Add(this.leftWin);
-            this.panel3.Controls.Add(this.StatusLbl);
-            this.panel3.Controls.Add(this.BestOfLbl);
-            this.panel3.Controls.Add(this.team2Score);
             this.panel3.Controls.Add(this.team2Name);
             this.panel3.Controls.Add(this.team1Name);
+            this.panel3.Controls.Add(this.OrgLbl);
             this.panel3.Controls.Add(this.GameLbl);
+            this.panel3.Controls.Add(this.BestOfLbl);
+            this.panel3.Controls.Add(this.TourLbl);
+            this.panel3.Controls.Add(this.team2Score);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.LoginBtn);
             this.panel3.Controls.Add(this.DateLbl);
@@ -152,34 +152,32 @@
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.StatusLbl);
             this.panel3.Controls.Add(this.StatusImg);
             this.panel3.Location = new System.Drawing.Point(22, 159);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(615, 609);
             this.panel3.TabIndex = 49;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // TourLbl
+            // leftWin
             // 
-            this.TourLbl.AutoSize = true;
-            this.TourLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TourLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.TourLbl.Location = new System.Drawing.Point(197, 287);
-            this.TourLbl.Name = "TourLbl";
-            this.TourLbl.Size = new System.Drawing.Size(150, 30);
-            this.TourLbl.TabIndex = 31;
-            this.TourLbl.Text = "TOURNAMENT";
+            this.leftWin.Image = ((System.Drawing.Image)(resources.GetObject("leftWin.Image")));
+            this.leftWin.Location = new System.Drawing.Point(18, 27);
+            this.leftWin.Name = "leftWin";
+            this.leftWin.Size = new System.Drawing.Size(50, 50);
+            this.leftWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.leftWin.TabIndex = 28;
+            this.leftWin.TabStop = false;
             // 
-            // OrgLbl
+            // rightWin
             // 
-            this.OrgLbl.AutoSize = true;
-            this.OrgLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OrgLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.OrgLbl.Location = new System.Drawing.Point(197, 242);
-            this.OrgLbl.Name = "OrgLbl";
-            this.OrgLbl.Size = new System.Drawing.Size(160, 30);
-            this.OrgLbl.TabIndex = 30;
-            this.OrgLbl.Text = "ORGANIZATION";
+            this.rightWin.Image = ((System.Drawing.Image)(resources.GetObject("rightWin.Image")));
+            this.rightWin.Location = new System.Drawing.Point(429, 27);
+            this.rightWin.Name = "rightWin";
+            this.rightWin.Size = new System.Drawing.Size(50, 50);
+            this.rightWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rightWin.TabIndex = 29;
+            this.rightWin.TabStop = false;
             // 
             // team2Img
             // 
@@ -200,63 +198,6 @@
             this.team1Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.team1Img.TabIndex = 0;
             this.team1Img.TabStop = false;
-            // 
-            // rightWin
-            // 
-            this.rightWin.Location = new System.Drawing.Point(429, 23);
-            this.rightWin.Name = "rightWin";
-            this.rightWin.Size = new System.Drawing.Size(50, 50);
-            this.rightWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.rightWin.TabIndex = 29;
-            this.rightWin.TabStop = false;
-            // 
-            // leftWin
-            // 
-            this.leftWin.Location = new System.Drawing.Point(19, 27);
-            this.leftWin.Name = "leftWin";
-            this.leftWin.Size = new System.Drawing.Size(50, 50);
-            this.leftWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.leftWin.TabIndex = 28;
-            this.leftWin.TabStop = false;
-            this.leftWin.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // StatusLbl
-            // 
-            this.StatusLbl.AutoSize = true;
-            this.StatusLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.StatusLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.StatusLbl.Location = new System.Drawing.Point(207, 47);
-            this.StatusLbl.MinimumSize = new System.Drawing.Size(200, 0);
-            this.StatusLbl.Name = "StatusLbl";
-            this.StatusLbl.Size = new System.Drawing.Size(200, 30);
-            this.StatusLbl.TabIndex = 26;
-            this.StatusLbl.Text = "STATUS";
-            this.StatusLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // BestOfLbl
-            // 
-            this.BestOfLbl.AutoSize = true;
-            this.BestOfLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BestOfLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BestOfLbl.Location = new System.Drawing.Point(207, 133);
-            this.BestOfLbl.MinimumSize = new System.Drawing.Size(200, 0);
-            this.BestOfLbl.Name = "BestOfLbl";
-            this.BestOfLbl.Size = new System.Drawing.Size(200, 30);
-            this.BestOfLbl.TabIndex = 25;
-            this.BestOfLbl.Text = "BO?";
-            this.BestOfLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // team2Score
-            // 
-            this.team2Score.AutoSize = true;
-            this.team2Score.Font = new System.Drawing.Font("Quicksand Medium", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.team2Score.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.team2Score.Location = new System.Drawing.Point(364, 68);
-            this.team2Score.Name = "team2Score";
-            this.team2Score.Size = new System.Drawing.Size(59, 70);
-            this.team2Score.TabIndex = 24;
-            this.team2Score.Text = "0";
-            this.team2Score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // team2Name
             // 
@@ -283,7 +224,17 @@
             this.team1Name.TabIndex = 22;
             this.team1Name.Text = "TEAM1";
             this.team1Name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.team1Name.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // OrgLbl
+            // 
+            this.OrgLbl.AutoSize = true;
+            this.OrgLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.OrgLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.OrgLbl.Location = new System.Drawing.Point(197, 242);
+            this.OrgLbl.Name = "OrgLbl";
+            this.OrgLbl.Size = new System.Drawing.Size(160, 30);
+            this.OrgLbl.TabIndex = 30;
+            this.OrgLbl.Text = "ORGANIZATION";
             // 
             // GameLbl
             // 
@@ -295,6 +246,42 @@
             this.GameLbl.Size = new System.Drawing.Size(68, 30);
             this.GameLbl.TabIndex = 20;
             this.GameLbl.Text = "GAME";
+            // 
+            // BestOfLbl
+            // 
+            this.BestOfLbl.AutoSize = true;
+            this.BestOfLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BestOfLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BestOfLbl.Location = new System.Drawing.Point(207, 133);
+            this.BestOfLbl.MinimumSize = new System.Drawing.Size(200, 0);
+            this.BestOfLbl.Name = "BestOfLbl";
+            this.BestOfLbl.Size = new System.Drawing.Size(200, 30);
+            this.BestOfLbl.TabIndex = 25;
+            this.BestOfLbl.Text = "BO?";
+            this.BestOfLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TourLbl
+            // 
+            this.TourLbl.AutoSize = true;
+            this.TourLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TourLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.TourLbl.Location = new System.Drawing.Point(197, 287);
+            this.TourLbl.Name = "TourLbl";
+            this.TourLbl.Size = new System.Drawing.Size(150, 30);
+            this.TourLbl.TabIndex = 31;
+            this.TourLbl.Text = "TOURNAMENT";
+            // 
+            // team2Score
+            // 
+            this.team2Score.AutoSize = true;
+            this.team2Score.Font = new System.Drawing.Font("Quicksand Medium", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.team2Score.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.team2Score.Location = new System.Drawing.Point(364, 68);
+            this.team2Score.Name = "team2Score";
+            this.team2Score.Size = new System.Drawing.Size(59, 70);
+            this.team2Score.TabIndex = 24;
+            this.team2Score.Text = "0";
+            this.team2Score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
@@ -386,6 +373,19 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "ORGANIZATION:";
             // 
+            // StatusLbl
+            // 
+            this.StatusLbl.AutoSize = true;
+            this.StatusLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StatusLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.StatusLbl.Location = new System.Drawing.Point(207, 47);
+            this.StatusLbl.MinimumSize = new System.Drawing.Size(200, 0);
+            this.StatusLbl.Name = "StatusLbl";
+            this.StatusLbl.Size = new System.Drawing.Size(200, 30);
+            this.StatusLbl.TabIndex = 26;
+            this.StatusLbl.Text = "STATUS";
+            this.StatusLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // StatusImg
             // 
             this.StatusImg.Location = new System.Drawing.Point(246, -1);
@@ -468,10 +468,10 @@
             this.Load += new System.EventHandler(this.MatchesForm_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.leftWin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rightWin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.team2Img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.team1Img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rightWin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leftWin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StatusImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

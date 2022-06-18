@@ -11,9 +11,7 @@ namespace Esports.Forms
     {
 
         private SqlConnection cn;
-        private User currentUser;
         private ListViewColumnSorter lvwColumnSorter;
-        private String? twitter, twitch;
 
         private SqlConnection getSGBDConnection()
         {

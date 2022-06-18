@@ -101,7 +101,7 @@ namespace Esports.Forms
 
             if (CheckUserMatchPassword(username, password))
             {
-                MainForm MenuForm = new(username, getUserRegion(username));
+                MainForm MenuForm = new(username, getUserRegion(username), "LOG");
                 MenuForm.Show();
                 Hide();
                 MessageBox.Show("Login successful!");
@@ -113,7 +113,7 @@ namespace Esports.Forms
             User u = SaveUser();
             if (u != null)
             {
-                MainForm MenuForm = new(u.Username, u.Region);
+                MainForm MenuForm = new(u.Username, u.Region, "REG");
                 MenuForm.Show();
                 Hide();
             }

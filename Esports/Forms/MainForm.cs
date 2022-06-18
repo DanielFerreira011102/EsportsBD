@@ -6,6 +6,7 @@ namespace Esports
     {
         private Button selectedScreen;
         private Form activeForm;
+        private string back;
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -36,14 +37,26 @@ namespace Esports
             this.selectedScreen = homeBtn;
             this.ControlBox = false;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            this.activeForm = new Forms.HomeForm();
-            openChildForm(activeForm);
         }
 
         public MainForm(String username, String region) : this()
         {
             usernameLbl.Text = username;
             regionLbl.Text = region;
+        }
+
+        public MainForm(string username, string region, string v) : this(username, region)
+        {
+            this.back = v;
+            Form child = new Forms.HomeForm(username, v);
+            activeForm = child;
+            child.TopLevel = false;
+            child.FormBorderStyle = FormBorderStyle.None;
+            child.Dock = DockStyle.Fill;
+            this.panelDesktop.Controls.Add(child);
+            this.panelDesktop.Tag = child;
+            child.BringToFront();
+            child.Show();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -122,7 +135,7 @@ namespace Esports
                 homeBtn.BackColor = Color.FromArgb(220, 239, 255);
                 HeaderLbl.Text = "Home";
                 this.selectedScreen = homeBtn;
-                openChildForm(new Forms.HomeForm());
+                openChildForm(new Forms.HomeForm(usernameLbl.Text, back));
             }
         }
 

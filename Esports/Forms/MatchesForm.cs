@@ -11,9 +11,7 @@ namespace Esports.Forms
     {
 
         private SqlConnection cn;
-        private User currentUser;
         private ListViewColumnSorter lvwColumnSorter;
-        private String? twitter, twitch;
 
         private SqlConnection getSGBDConnection()
         {
@@ -212,7 +210,7 @@ namespace Esports.Forms
                         team2Name.Text = reader["name"].ToString();
                         string? prof = reader["logo_url"].ToString();
                         try { team2Img.Load(prof); }
-                        catch { team1Img.Image = Properties.Resources.notfound; }
+                        catch { team2Img.Image = Properties.Resources.notfound; }
                     }
 
                 }
@@ -226,65 +224,50 @@ namespace Esports.Forms
 
                 while (reader2.Read())
                 {
-
                     string? winner = reader2["winner"].ToString();
                     string? score1 = reader2["score_team1"].ToString();
                     string? score2 = reader2["score_team2"].ToString();
+
+                    int winnerScore = Math.Max(Int32.Parse(score1), Int32.Parse(score2));
+                    int loserScore = Math.Min(Int32.Parse(score1), Int32.Parse(score2));
+
+                    leftWin.Visible = false;
+                    rightWin.Visible = false;
 
                     if (string.IsNullOrEmpty(winner))
                     {
                         team1Score.Text = score1;
                         team2Score.Text = score2;
-                        leftWin.Image = null;
-                        rightWin.Image = null;
-                        leftWin.SendToBack();
-                        rightWin.SendToBack();
                     }
                     else if (winner == team1Name.Text)
                     {
-                        int winnerScore = Math.Max(Int32.Parse(score1), Int32.Parse(score2));
-                        int loserScore = Math.Min(Int32.Parse(score1), Int32.Parse(score2));
+                        leftWin.Visible = true;
                         team1Score.Text = winnerScore.ToString();
                         team2Score.Text = loserScore.ToString();
-                        rightWin.Image = null;
-                        rightWin.SendToBack();
-                        leftWin.BringToFront();
-                        leftWin.Image = Properties.Resources.winner;
-
                     }
                     else if (winner == team2Name.Text)
                     {
-                        int winnerScore = Math.Max(Int32.Parse(score1), Int32.Parse(score2));
-                        int loserScore = Math.Min(Int32.Parse(score1), Int32.Parse(score2));
+                        rightWin.Visible = true;
                         team2Score.Text = winnerScore.ToString();
                         team1Score.Text = loserScore.ToString();
-                        leftWin.Image = null;
-                        leftWin.SendToBack();
-                        rightWin.BringToFront();
-                        rightWin.Image = Properties.Resources.winner;
                     }
-
+                    
                 }
 
                 reader2.Close();
             }
 
+
+            int p = Int32.Parse(BestOfLbl.Text.Substring(8, 1)) / 2 + 1;
+            Debug.WriteLine(p);
+            Debug.WriteLine(Int32.Parse(team1Score.Text));
+            if (Int32.Parse(team2Score.Text) == p)
+                rightWin.Visible = true;
+
+            if (Int32.Parse(team1Score.Text) == p)
+                leftWin.Visible = true;
+
             cn.Close();
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
         }
 
