@@ -294,6 +294,61 @@ namespace Esports.Forms
             this.FirstStage.Visible = true;
         }
 
+        private void OpenFifthStage()
+        {
+            this.FifthStage.Visible = true;
+            lvwColumnSorter = new ListViewColumnSorter();
+            this.RequestsList.ListViewItemSorter = lvwColumnSorter;
+            lvwColumnSorter.SortColumn = 0;
+            lvwColumnSorter.Order = System.Windows.Forms.SortOrder.Ascending;
+            RequestsList.GridLines = true;
+            LoadBDRequests();
+            // Perform the sort with these new sort options.
+            this.RequestsList.Sort();
+            RequestsList.Items[0].Selected = true;
+            RequestsList.Select();
+        }
+
+        private void LoadBDRequests()
+        {
+            if (!verifySGBDConnection())
+                return;
+
+            SqlCommand cmd = new SqlCommand("SELECT * FROM getTeamRequests(@Username)", cn);
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("@Username", user);
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            RequestsList.Items.Clear();
+
+            while (reader.Read())
+            {
+                string username = reader["username"].ToString();
+                ListViewItem item = new(username);
+                string role = reader["role"].ToString();
+                string team = reader["team"].ToString();
+                string ign = reader["IGN"].ToString();
+
+                item.SubItems.Add(role);
+                item.SubItems.Add(team);
+                item.SubItems.Add(ign);
+
+                foreach (ListViewItem.ListViewSubItem sub in item.SubItems)
+                {
+                    sub.ForeColor = System.Drawing.Color.Black;
+                    sub.Font = new System.Drawing.Font("Quicksand", 8, System.Drawing.FontStyle.Regular);
+                }
+
+                RequestsList.Items.Add(item);
+
+            }
+
+            // Close reader 
+            reader.Close();
+
+            cn.Close();
+        }
+
         private void OpenFourthStage()
         {
             this.FourthStage.Visible = true;
@@ -402,6 +457,10 @@ namespace Esports.Forms
             cmd0.Parameters.AddWithValue("@Username", user);
             string captain = (string)cmd0.ExecuteScalar();
 
+            SqlCommand cmd9 = new SqlCommand("SELECT dbo.getNotificationsCount(@Username)", cn);
+            cmd9.Parameters.Clear();
+            cmd9.Parameters.AddWithValue("@Username", user);
+            int number = (int)cmd9.ExecuteScalar();
 
             SqlCommand cmd = new SqlCommand("SELECT * FROM getTeamMembers(@Username)", cn);
             cmd.Parameters.Clear();
@@ -420,6 +479,13 @@ namespace Esports.Forms
                     if (role == "Manager" || username == captain)
                     {
                         editBtn.Visible = true;
+                        DeleteTeamBtn.Visible = true;
+                        if (number > 0)
+                        {
+                            notficationNum.Text = (number > 9)? "9+" : number.ToString();
+                            notficationNum.Visible = true;
+                            notificationIcon.Visible = true;
+                        }
                     } 
 
                 item.SubItems.Add(role);
@@ -631,6 +697,186 @@ namespace Esports.Forms
             EditList.SelectedItems[0].Remove();
             EditList.Items[0].Selected = true;
             EditList.Select();
+        }
+
+        private void FifthStage_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void notificationIcon_Click(object sender, EventArgs e)
+        {
+            ThirdStage.Visible = false;
+            OpenFifthStage();
+        }
+
+        private void notficationNum_Click(object sender, EventArgs e)
+        {
+            ThirdStage.Visible = false;
+            OpenFifthStage();
+        }
+
+        private void RequestsList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            IGNREQ.Visible = false;
+            IGNReqLbl.Visible = false;
+
+            if (RequestsList.SelectedIndices.Count > 0)
+            {
+                string un = RequestsList.SelectedItems[0].SubItems[0].Text;
+                string role = RequestsList.SelectedItems[0].SubItems[1].Text;
+                string team = RequestsList.SelectedItems[0].SubItems[2].Text;
+                string? ign = RequestsList.SelectedItems[0].SubItems[3].Text;
+
+
+                if (role == "Player")
+                {
+                    IGNREQ.Visible = true;
+                    IGNReqLbl.Visible = true;
+                }
+
+                UserReqLbl.Text = un;
+                RoleReqLbl.Text= role;
+                TeamReqLbl.Text = team;
+                IGNReqLbl.Text = ign;
+            }
+        }
+
+        private void ACCEPTREQUEST_Click(object sender, EventArgs e)
+        {
+            if (!verifySGBDConnection())
+                return;
+
+            // check if player already exists
+            SqlCommand cmd0 = new SqlCommand("SELECT dbo.CheckPlayerExists(@Username)", cn);
+            cmd0.Parameters.Clear();
+            cmd0.Parameters.AddWithValue("@Username", UserReqLbl.Text);
+            Boolean UserExist = (bool)cmd0.ExecuteScalar();
+
+            // if so, then just create team and update player
+            if (UserExist)
+            {
+                if (RoleReqLbl.Text == "Player") { 
+                    SqlCommand cmd1 = new SqlCommand("EXEC acceptTeamPlayerExists @IGN = @ign @User = @username", cn);
+                    cmd1.Parameters.Clear();
+                    cmd1.Parameters.AddWithValue("@ign", IGNReqLbl.Text);
+                    cmd1.Parameters.AddWithValue("@username", UserReqLbl.Text);
+
+                    try
+                    {
+                        cmd1.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("Failed to accept request. \n ERROR MESSAGE: \n" + ex.Message);
+                    }
+                    finally
+                    {
+                        cn.Close();
+                    }
+                }
+                else
+                {
+                    SqlCommand cmd1 = new SqlCommand("EXEC acceptTeamStaffExists @Role=@role @User=@username", cn);
+                    cmd1.Parameters.Clear();
+                    cmd1.Parameters.AddWithValue("@role", RoleReqLbl.Text);
+                    cmd1.Parameters.AddWithValue("@username", UserReqLbl.Text);
+
+                    try
+                    {
+                        cmd1.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("Failed to accept request. \n ERROR MESSAGE: \n" + ex.Message);
+                    }
+                    finally
+                    {
+                        cn.Close();
+                    }
+                }
+            }
+            // else, then create team and player
+            else
+            {
+                if (RoleReqLbl.Text == "Player")
+                {
+                    SqlCommand cmd2 = new SqlCommand("EXEC acceptPlayerDoesNotExist @IGN=@ign, @User=@username", cn);
+                    cmd2.Parameters.Clear();
+                    cmd2.Parameters.AddWithValue("@ign", IGNReqLbl.Text);
+                    cmd2.Parameters.AddWithValue("@username", UserReqLbl.Text);
+
+                    try
+                    {
+                        cmd2.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("Failed to accept request. \n ERROR MESSAGE: \n" + ex.Message);
+                    }
+                    finally
+                    {
+                        cn.Close();
+                    }
+                }
+                else
+                {
+                    SqlCommand cmd1 = new SqlCommand("EXEC acceptTeamStaffDoesNotExist @Role=@role @User=@username", cn);
+                    cmd1.Parameters.Clear();
+                    cmd1.Parameters.AddWithValue("@role", RoleReqLbl.Text);
+                    cmd1.Parameters.AddWithValue("@username", UserReqLbl.Text);
+
+                    try
+                    {
+                        cmd1.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("Failed to accept request. \n ERROR MESSAGE: \n" + ex.Message);
+                    }
+                    finally
+                    {
+                        cn.Close();
+                    }
+                }
+            }
+
+            MessageBox.Show(UserReqLbl.Text + " was added to the team!");
+            RequestsList.SelectedItems[0].Remove();
+            RequestsList.Items[0].Selected = true;
+            RequestsList.Select();
+        }
+
+        private void GOBACK_Click(object sender, EventArgs e)
+        {
+            FifthStage.Visible = false;
+            OpenThirdStage();
+        }
+
+        private void DeleteTeamBtn_Click(object sender, EventArgs e)
+        {
+            if (!verifySGBDConnection())
+                return;
+
+            SqlCommand cmd1 = new SqlCommand("EXEC deleteTeam @Username=@username", cn);
+            cmd1.Parameters.Clear();
+            cmd1.Parameters.AddWithValue("@username", user);
+
+            try
+            {
+                cmd1.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to delete team. \n ERROR MESSAGE: \n" + ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+            this.ThirdStage.Visible = false;
+            OpenFirstStage();
         }
 
         private void readPlayer(string un)

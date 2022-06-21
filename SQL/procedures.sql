@@ -20,6 +20,16 @@ DROP PROCEDURE IF EXISTS removeStaffFromTeam
 GO
 DROP PROCEDURE IF EXISTS removePlayerFromTeam
 GO
+DROP PROCEDURE IF EXISTS acceptTeamPlayerExists
+GO
+DROP PROCEDURE IF EXISTS acceptTeamStaffExists
+GO
+DROP PROCEDURE IF EXISTS acceptPlayerDoesNotExist
+GO
+DROP PROCEDURE IF EXISTS acceptTeamStaffDoesNotExist
+GO
+DROP PROCEDURE IF EXISTS deleteTeam
+GO
 
 GO
 CREATE PROCEDURE resetID
@@ -27,6 +37,72 @@ AS
 BEGIN
 	DBCC CHECKIDENT ('TEAM', RESEED, 0);
 	DBCC CHECKIDENT ('SERIES', RESEED, 0);
+END
+GO
+
+GO
+CREATE PROCEDURE deleteTeam (@Username VARCHAR(25))
+AS
+BEGIN
+DECLARE @TEAM_ID INT
+SELECT @TEAM_ID = team_id FROM TEAM_CAPTAIN WHERE @Username = captain
+UPDATE PLAYER SET team_id = NULL, team_join_date = NULL WHERE @TEAM_ID = team_id
+UPDATE TEAM_STAFF SET team_id = NULL, team_join_date = NULL WHERE @TEAM_ID = team_id
+DELETE FROM TEAM_CAPTAIN WHERE @TEAM_ID = team_id
+DELETE FROM TEAM_JOIN_REQUEST WHERE @TEAM_ID = team_id
+DELETE FROM TEAM WHERE @TEAM_ID = id
+END
+GO
+
+GO
+CREATE PROCEDURE acceptPlayerDoesNotExist(@IGN VARCHAR(25), @User VARCHAR(25))
+AS
+BEGIN
+DECLARE @TEAM_ID INT
+DECLARE @GAME VARCHAR(25)
+SELECT @TEAM_ID = team_id FROM TEAM_JOIN_REQUEST WHERE @User = username
+SELECT @GAME = game FROM TEAM WHERE @TEAM_ID = id
+ DECLARE @lastPrank INT
+ SELECT @lastPrank = MAX(ranking) FROM PLAYER WHERE @GAME = game 
+INSERT INTO PLAYER (username, team_id, ranking, IGN, real_name, team_join_date, profile_url, twitter_url, twitch_url, game, country)
+VALUES (@User, @TEAM_ID,  @lastPrank + 1, @IGN, NULL, GETDATE(), NULL, NULL, NULL, @GAME, NULL)
+DELETE FROM TEAM_JOIN_REQUEST WHERE @User = username
+END
+GO
+
+GO
+CREATE PROCEDURE acceptTeamStaffDoesNotExist(@Role VARCHAR(30), @User VARCHAR(25))
+AS
+BEGIN
+DECLARE @TEAM_ID INT
+SELECT @TEAM_ID = team_id FROM TEAM_JOIN_REQUEST WHERE @User = username
+INSERT INTO TEAM_STAFF (username, years_experience, team_join_date, real_name, team_id)
+VALUES (@User, NULL, GETDATE(), NULL, @TEAM_ID)
+INSERT INTO TEAM_STAFF_ROLE VALUES (@User, @Role)
+DELETE FROM TEAM_JOIN_REQUEST WHERE @User = username
+END
+GO
+
+GO
+CREATE PROCEDURE acceptTeamPlayerExists(@IGN VARCHAR(25), @User VARCHAR(25))
+AS
+BEGIN
+DECLARE @TEAM_ID INT
+SELECT @TEAM_ID = team_id FROM TEAM_JOIN_REQUEST WHERE @User = username
+UPDATE PLAYER SET team_id = @TEAM_ID, team_join_date = GETDATE(), IGN = @IGN WHERE @User = username
+DELETE FROM TEAM_JOIN_REQUEST WHERE @User = username
+END
+GO
+
+GO
+CREATE PROCEDURE acceptTeamStaffExists(@Role VARCHAR(30), @User VARCHAR(25))
+AS
+BEGIN
+DECLARE @TEAM_ID INT
+SELECT @TEAM_ID = team_id FROM TEAM_JOIN_REQUEST WHERE @User = username
+UPDATE TEAM_STAFF SET team_id = @TEAM_ID, team_join_date = GETDATE() WHERE @User = username
+UPDATE TEAM_STAFF_ROLE SET [role] = @Role WHERE @User = username
+DELETE FROM TEAM_JOIN_REQUEST WHERE @User = username
 END
 GO
 
@@ -79,8 +155,10 @@ BEGIN
  INSERT INTO TEAM ([name], ranking, logo_url, earnings, wins, ties, losses, game) VALUES (@TeamName, @lastRank + 1, @TeamLogo, 0, 0, 0, 0, @Game)
  DECLARE @lastID INT
  SELECT @lastID = MAX(id) FROM TEAM
- INSERT INTO PLAYER (username, team_id, IGN, real_name, team_join_date, profile_url, twitter_url, twitch_url, game, country)
- VALUES (@User, @lastID, @IGN, NULL, GETDATE(), NULL, NULL, NULL, @Game, NULL)
+ DECLARE @lastPrank INT
+ SELECT @lastPrank = MAX(ranking) FROM PLAYER WHERE @Game = game 
+ INSERT INTO PLAYER (username, team_id, ranking, IGN, real_name, team_join_date, profile_url, twitter_url, twitch_url, game, country)
+ VALUES (@User, @lastID,  @lastPrank, @IGN, NULL, GETDATE(), NULL, NULL, NULL, @Game, NULL)
  INSERT INTO TEAM_CAPTAIN (team_id, captain) VALUES (@lastID, @User)
 END
 GO

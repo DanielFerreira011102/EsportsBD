@@ -74,7 +74,7 @@ found the need for it to avoid said problems.
 
 Regarding SQL indexing, since we were working with a large set of data, we found it helpful to create indexes in specific columns
 so we could speed up table lookup and the rendering of our application list views.
-We added six new indexes, some including multiple columns, and noticed significant improvements.</value>
+We added nine new indexes, some including multiple columns, and noticed significant improvements.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="wave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

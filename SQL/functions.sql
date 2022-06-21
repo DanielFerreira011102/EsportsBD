@@ -64,7 +64,36 @@ DROP FUNCTION IF EXISTS getExtendedPlayerInfo;
 GO
 DROP FUNCTION IF EXISTS getExtendedTeamStaffInfo;
 GO
+DROP FUNCTION IF EXISTS getNotificationsCount;
+GO
+DROP FUNCTION IF EXISTS getTeamRequests;
+GO
 DROP VIEW IF EXISTS getNewID
+
+GO
+CREATE FUNCTION getTeamRequests(@Username VARCHAR(25))
+RETURNS @T TABLE (team VARCHAR(25), username VARCHAR(25), [role] VARCHAR(30), IGN VARCHAR(25))
+AS
+BEGIN
+DECLARE @TEAM_ID INT
+SELECT @TEAM_ID = team_id FROM PLAYER WHERE username = @Username
+INSERT INTO @T SELECT [name], username, [role], IGN FROM TEAM_JOIN_REQUEST, TEAM WHERE team_id = @TEAM_ID AND team_id = id
+RETURN
+END
+GO
+
+GO
+CREATE FUNCTION getNotificationsCount(@Username VARCHAR(25))
+RETURNS INT
+AS
+BEGIN
+DECLARE @TEAM_ID INT
+DECLARE @NotificationCount INT
+SELECT @TEAM_ID = team_id FROM PLAYER WHERE username = @Username
+SELECT @NotificationCount = COUNT(*) FROM TEAM_JOIN_REQUEST WHERE team_id = @TEAM_ID
+RETURN @NotificationCount
+END
+GO
 
 GO
 CREATE FUNCTION getExtendedTeamStaffInfo(@Username VARCHAR(25))

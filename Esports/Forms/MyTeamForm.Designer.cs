@@ -67,6 +67,8 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.ThirdStage = new System.Windows.Forms.Panel();
+            this.notficationNum = new System.Windows.Forms.Label();
+            this.notificationIcon = new System.Windows.Forms.Button();
             this.editBtn = new System.Windows.Forms.Button();
             this.MembersList = new System.Windows.Forms.ListView();
             this.username = new System.Windows.Forms.ColumnHeader();
@@ -74,6 +76,7 @@
             this.PlayerLbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.DeleteTeamBtn = new System.Windows.Forms.Button();
             this.TeamDetailsBtn = new System.Windows.Forms.Button();
             this.GameLbl = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -94,6 +97,20 @@
             this.removeBtn = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.wrapper = new System.Windows.Forms.Panel();
+            this.StaffPanel = new System.Windows.Forms.Panel();
+            this.StaffRoleLbl = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.StaffTeamLbl = new System.Windows.Forms.Label();
+            this.TEAM = new System.Windows.Forms.Label();
+            this.StaffDateLbl = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.StaffExpLbl = new System.Windows.Forms.Label();
+            this.UnStaff = new System.Windows.Forms.Label();
+            this.StaffNameLbl = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             this.PlayerPanel = new System.Windows.Forms.Panel();
             this.RoleLbl = new System.Windows.Forms.Label();
             this.JoinDateLbl = new System.Windows.Forms.Label();
@@ -117,25 +134,30 @@
             this.label21 = new System.Windows.Forms.Label();
             this.MyPlayerPic = new System.Windows.Forms.PictureBox();
             this.IGLStar = new System.Windows.Forms.PictureBox();
-            this.StaffPanel = new System.Windows.Forms.Panel();
-            this.StaffRoleLbl = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.StaffTeamLbl = new System.Windows.Forms.Label();
-            this.TEAM = new System.Windows.Forms.Label();
-            this.StaffDateLbl = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.StaffExpLbl = new System.Windows.Forms.Label();
-            this.UnStaff = new System.Windows.Forms.Label();
-            this.StaffNameLbl = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
             this.EditList = new System.Windows.Forms.ListView();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.label15 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.FifthStage = new System.Windows.Forms.Panel();
+            this.label30 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.IGNReqLbl = new System.Windows.Forms.Label();
+            this.IGNREQ = new System.Windows.Forms.Label();
+            this.ACCEPTREQUEST = new System.Windows.Forms.Button();
+            this.RoleReqLbl = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.TeamReqLbl = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.UserReqLbl = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.GOBACK = new System.Windows.Forms.PictureBox();
+            this.RequestsList = new System.Windows.Forms.ListView();
+            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
+            this.label17 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -154,13 +176,16 @@
             this.FourthStage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.removeBtn)).BeginInit();
             this.wrapper.SuspendLayout();
+            this.StaffPanel.SuspendLayout();
             this.PlayerPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Twitter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Twitch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyPlayerPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IGLStar)).BeginInit();
-            this.StaffPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.FifthStage.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GOBACK)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox7
@@ -652,6 +677,8 @@
             // 
             // ThirdStage
             // 
+            this.ThirdStage.Controls.Add(this.notficationNum);
+            this.ThirdStage.Controls.Add(this.notificationIcon);
             this.ThirdStage.Controls.Add(this.editBtn);
             this.ThirdStage.Controls.Add(this.MembersList);
             this.ThirdStage.Controls.Add(this.PlayerLbl);
@@ -663,6 +690,36 @@
             this.ThirdStage.Size = new System.Drawing.Size(1382, 768);
             this.ThirdStage.TabIndex = 14;
             this.ThirdStage.Visible = false;
+            // 
+            // notficationNum
+            // 
+            this.notficationNum.AutoSize = true;
+            this.notficationNum.BackColor = System.Drawing.Color.Red;
+            this.notficationNum.Font = new System.Drawing.Font("Quicksand SemiBold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.notficationNum.ForeColor = System.Drawing.Color.White;
+            this.notficationNum.Location = new System.Drawing.Point(1331, 142);
+            this.notficationNum.MaximumSize = new System.Drawing.Size(0, 18);
+            this.notficationNum.Name = "notficationNum";
+            this.notficationNum.Size = new System.Drawing.Size(14, 18);
+            this.notficationNum.TabIndex = 58;
+            this.notficationNum.Text = "1";
+            this.notficationNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.notficationNum.Visible = false;
+            this.notficationNum.Click += new System.EventHandler(this.notficationNum_Click);
+            // 
+            // notificationIcon
+            // 
+            this.notificationIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("notificationIcon.BackgroundImage")));
+            this.notificationIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.notificationIcon.FlatAppearance.BorderSize = 0;
+            this.notificationIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.notificationIcon.Location = new System.Drawing.Point(1287, 127);
+            this.notificationIcon.Name = "notificationIcon";
+            this.notificationIcon.Size = new System.Drawing.Size(70, 70);
+            this.notificationIcon.TabIndex = 57;
+            this.notificationIcon.UseVisualStyleBackColor = true;
+            this.notificationIcon.Visible = false;
+            this.notificationIcon.Click += new System.EventHandler(this.notificationIcon_Click);
             // 
             // editBtn
             // 
@@ -731,6 +788,7 @@
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.DeleteTeamBtn);
             this.panel8.Controls.Add(this.TeamDetailsBtn);
             this.panel8.Controls.Add(this.GameLbl);
             this.panel8.Controls.Add(this.label10);
@@ -751,6 +809,25 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(558, 698);
             this.panel8.TabIndex = 51;
+            // 
+            // DeleteTeamBtn
+            // 
+            this.DeleteTeamBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.DeleteTeamBtn.BackColor = System.Drawing.Color.Transparent;
+            this.DeleteTeamBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(86)))), ((int)(((byte)(225)))));
+            this.DeleteTeamBtn.FlatAppearance.BorderSize = 4;
+            this.DeleteTeamBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteTeamBtn.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DeleteTeamBtn.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.DeleteTeamBtn.Location = new System.Drawing.Point(76, 492);
+            this.DeleteTeamBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DeleteTeamBtn.Name = "DeleteTeamBtn";
+            this.DeleteTeamBtn.Size = new System.Drawing.Size(400, 61);
+            this.DeleteTeamBtn.TabIndex = 56;
+            this.DeleteTeamBtn.Text = "DELETE TEAM";
+            this.DeleteTeamBtn.UseVisualStyleBackColor = false;
+            this.DeleteTeamBtn.Visible = false;
+            this.DeleteTeamBtn.Click += new System.EventHandler(this.DeleteTeamBtn_Click);
             // 
             // TeamDetailsBtn
             // 
@@ -774,7 +851,7 @@
             this.GameLbl.AutoSize = true;
             this.GameLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.GameLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.GameLbl.Location = new System.Drawing.Point(119, 362);
+            this.GameLbl.Location = new System.Drawing.Point(119, 390);
             this.GameLbl.Name = "GameLbl";
             this.GameLbl.Size = new System.Drawing.Size(68, 30);
             this.GameLbl.TabIndex = 20;
@@ -784,7 +861,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(18, 362);
+            this.label10.Location = new System.Drawing.Point(18, 390);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(72, 30);
             this.label10.TabIndex = 19;
@@ -828,7 +905,7 @@
             this.LossesLbl.AutoSize = true;
             this.LossesLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LossesLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.LossesLbl.Location = new System.Drawing.Point(119, 320);
+            this.LossesLbl.Location = new System.Drawing.Point(119, 336);
             this.LossesLbl.Name = "LossesLbl";
             this.LossesLbl.Size = new System.Drawing.Size(83, 30);
             this.LossesLbl.TabIndex = 10;
@@ -839,7 +916,7 @@
             this.TiesLbl.AutoSize = true;
             this.TiesLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TiesLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.TiesLbl.Location = new System.Drawing.Point(119, 275);
+            this.TiesLbl.Location = new System.Drawing.Point(119, 283);
             this.TiesLbl.Name = "TiesLbl";
             this.TiesLbl.Size = new System.Drawing.Size(52, 30);
             this.TiesLbl.TabIndex = 9;
@@ -870,7 +947,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(18, 320);
+            this.label8.Location = new System.Drawing.Point(18, 336);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(91, 30);
             this.label8.TabIndex = 6;
@@ -880,7 +957,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(19, 275);
+            this.label7.Location = new System.Drawing.Point(19, 283);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(58, 30);
             this.label7.TabIndex = 5;
@@ -950,6 +1027,7 @@
             this.removeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.removeBtn.TabIndex = 61;
             this.removeBtn.TabStop = false;
+            this.removeBtn.Visible = false;
             this.removeBtn.Click += new System.EventHandler(this.removeBtn_Click);
             // 
             // label16
@@ -971,6 +1049,163 @@
             this.wrapper.Name = "wrapper";
             this.wrapper.Size = new System.Drawing.Size(558, 573);
             this.wrapper.TabIndex = 72;
+            // 
+            // StaffPanel
+            // 
+            this.StaffPanel.Controls.Add(this.StaffRoleLbl);
+            this.StaffPanel.Controls.Add(this.label23);
+            this.StaffPanel.Controls.Add(this.label37);
+            this.StaffPanel.Controls.Add(this.StaffTeamLbl);
+            this.StaffPanel.Controls.Add(this.TEAM);
+            this.StaffPanel.Controls.Add(this.StaffDateLbl);
+            this.StaffPanel.Controls.Add(this.label28);
+            this.StaffPanel.Controls.Add(this.StaffExpLbl);
+            this.StaffPanel.Controls.Add(this.UnStaff);
+            this.StaffPanel.Controls.Add(this.StaffNameLbl);
+            this.StaffPanel.Controls.Add(this.label32);
+            this.StaffPanel.Controls.Add(this.label33);
+            this.StaffPanel.Controls.Add(this.label34);
+            this.StaffPanel.Location = new System.Drawing.Point(0, 0);
+            this.StaffPanel.Name = "StaffPanel";
+            this.StaffPanel.Size = new System.Drawing.Size(558, 573);
+            this.StaffPanel.TabIndex = 71;
+            this.StaffPanel.Visible = false;
+            // 
+            // StaffRoleLbl
+            // 
+            this.StaffRoleLbl.AutoSize = true;
+            this.StaffRoleLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StaffRoleLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.StaffRoleLbl.Location = new System.Drawing.Point(161, 398);
+            this.StaffRoleLbl.Name = "StaffRoleLbl";
+            this.StaffRoleLbl.Size = new System.Drawing.Size(63, 30);
+            this.StaffRoleLbl.TabIndex = 90;
+            this.StaffRoleLbl.Text = "ROLE";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label23.Location = new System.Drawing.Point(17, 398);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(69, 30);
+            this.label23.TabIndex = 89;
+            this.label23.Text = "ROLE:";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label37.Location = new System.Drawing.Point(7, 534);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(57, 30);
+            this.label37.TabIndex = 80;
+            this.label37.Text = "Staff";
+            // 
+            // StaffTeamLbl
+            // 
+            this.StaffTeamLbl.AutoSize = true;
+            this.StaffTeamLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StaffTeamLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.StaffTeamLbl.Location = new System.Drawing.Point(163, 243);
+            this.StaffTeamLbl.Name = "StaffTeamLbl";
+            this.StaffTeamLbl.Size = new System.Drawing.Size(66, 30);
+            this.StaffTeamLbl.TabIndex = 88;
+            this.StaffTeamLbl.Text = "TEAM";
+            // 
+            // TEAM
+            // 
+            this.TEAM.AutoSize = true;
+            this.TEAM.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TEAM.Location = new System.Drawing.Point(19, 243);
+            this.TEAM.Name = "TEAM";
+            this.TEAM.Size = new System.Drawing.Size(70, 30);
+            this.TEAM.TabIndex = 87;
+            this.TEAM.Text = "TEAM:";
+            // 
+            // StaffDateLbl
+            // 
+            this.StaffDateLbl.AutoSize = true;
+            this.StaffDateLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StaffDateLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.StaffDateLbl.Location = new System.Drawing.Point(163, 318);
+            this.StaffDateLbl.Name = "StaffDateLbl";
+            this.StaffDateLbl.Size = new System.Drawing.Size(62, 30);
+            this.StaffDateLbl.TabIndex = 86;
+            this.StaffDateLbl.Text = "DATE";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label28.Location = new System.Drawing.Point(19, 318);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(89, 30);
+            this.label28.TabIndex = 85;
+            this.label28.Text = "JOINED:";
+            // 
+            // StaffExpLbl
+            // 
+            this.StaffExpLbl.AutoSize = true;
+            this.StaffExpLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StaffExpLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.StaffExpLbl.Location = new System.Drawing.Point(161, 173);
+            this.StaffExpLbl.Name = "StaffExpLbl";
+            this.StaffExpLbl.Size = new System.Drawing.Size(127, 30);
+            this.StaffExpLbl.TabIndex = 84;
+            this.StaffExpLbl.Text = "EXPERIENCE";
+            // 
+            // UnStaff
+            // 
+            this.UnStaff.AutoSize = true;
+            this.UnStaff.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UnStaff.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.UnStaff.Location = new System.Drawing.Point(162, 105);
+            this.UnStaff.Name = "UnStaff";
+            this.UnStaff.Size = new System.Drawing.Size(118, 30);
+            this.UnStaff.TabIndex = 83;
+            this.UnStaff.Text = "USERNAME";
+            // 
+            // StaffNameLbl
+            // 
+            this.StaffNameLbl.AutoSize = true;
+            this.StaffNameLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StaffNameLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.StaffNameLbl.Location = new System.Drawing.Point(162, 34);
+            this.StaffNameLbl.Name = "StaffNameLbl";
+            this.StaffNameLbl.Size = new System.Drawing.Size(122, 30);
+            this.StaffNameLbl.TabIndex = 82;
+            this.StaffNameLbl.Text = "REAL NAME";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label32.Location = new System.Drawing.Point(19, 173);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(134, 30);
+            this.label32.TabIndex = 81;
+            this.label32.Text = "EXPERIENCE:";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label33.Location = new System.Drawing.Point(19, 105);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(124, 30);
+            this.label33.TabIndex = 80;
+            this.label33.Text = "USERNAME:";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label34.Location = new System.Drawing.Point(19, 34);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(128, 30);
+            this.label34.TabIndex = 79;
+            this.label34.Text = "REAL NAME:";
             // 
             // PlayerPanel
             // 
@@ -1236,163 +1471,6 @@
             this.IGLStar.TabIndex = 61;
             this.IGLStar.TabStop = false;
             // 
-            // StaffPanel
-            // 
-            this.StaffPanel.Controls.Add(this.StaffRoleLbl);
-            this.StaffPanel.Controls.Add(this.label23);
-            this.StaffPanel.Controls.Add(this.label37);
-            this.StaffPanel.Controls.Add(this.StaffTeamLbl);
-            this.StaffPanel.Controls.Add(this.TEAM);
-            this.StaffPanel.Controls.Add(this.StaffDateLbl);
-            this.StaffPanel.Controls.Add(this.label28);
-            this.StaffPanel.Controls.Add(this.StaffExpLbl);
-            this.StaffPanel.Controls.Add(this.UnStaff);
-            this.StaffPanel.Controls.Add(this.StaffNameLbl);
-            this.StaffPanel.Controls.Add(this.label32);
-            this.StaffPanel.Controls.Add(this.label33);
-            this.StaffPanel.Controls.Add(this.label34);
-            this.StaffPanel.Location = new System.Drawing.Point(0, 0);
-            this.StaffPanel.Name = "StaffPanel";
-            this.StaffPanel.Size = new System.Drawing.Size(558, 573);
-            this.StaffPanel.TabIndex = 71;
-            this.StaffPanel.Visible = false;
-            // 
-            // StaffRoleLbl
-            // 
-            this.StaffRoleLbl.AutoSize = true;
-            this.StaffRoleLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.StaffRoleLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.StaffRoleLbl.Location = new System.Drawing.Point(161, 398);
-            this.StaffRoleLbl.Name = "StaffRoleLbl";
-            this.StaffRoleLbl.Size = new System.Drawing.Size(63, 30);
-            this.StaffRoleLbl.TabIndex = 90;
-            this.StaffRoleLbl.Text = "ROLE";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(17, 398);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(69, 30);
-            this.label23.TabIndex = 89;
-            this.label23.Text = "ROLE:";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label37.Location = new System.Drawing.Point(7, 534);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(57, 30);
-            this.label37.TabIndex = 80;
-            this.label37.Text = "Staff";
-            // 
-            // StaffTeamLbl
-            // 
-            this.StaffTeamLbl.AutoSize = true;
-            this.StaffTeamLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.StaffTeamLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.StaffTeamLbl.Location = new System.Drawing.Point(163, 243);
-            this.StaffTeamLbl.Name = "StaffTeamLbl";
-            this.StaffTeamLbl.Size = new System.Drawing.Size(66, 30);
-            this.StaffTeamLbl.TabIndex = 88;
-            this.StaffTeamLbl.Text = "TEAM";
-            // 
-            // TEAM
-            // 
-            this.TEAM.AutoSize = true;
-            this.TEAM.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TEAM.Location = new System.Drawing.Point(19, 243);
-            this.TEAM.Name = "TEAM";
-            this.TEAM.Size = new System.Drawing.Size(70, 30);
-            this.TEAM.TabIndex = 87;
-            this.TEAM.Text = "TEAM:";
-            // 
-            // StaffDateLbl
-            // 
-            this.StaffDateLbl.AutoSize = true;
-            this.StaffDateLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.StaffDateLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.StaffDateLbl.Location = new System.Drawing.Point(163, 318);
-            this.StaffDateLbl.Name = "StaffDateLbl";
-            this.StaffDateLbl.Size = new System.Drawing.Size(62, 30);
-            this.StaffDateLbl.TabIndex = 86;
-            this.StaffDateLbl.Text = "DATE";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label28.Location = new System.Drawing.Point(19, 318);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(89, 30);
-            this.label28.TabIndex = 85;
-            this.label28.Text = "JOINED:";
-            // 
-            // StaffExpLbl
-            // 
-            this.StaffExpLbl.AutoSize = true;
-            this.StaffExpLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.StaffExpLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.StaffExpLbl.Location = new System.Drawing.Point(161, 173);
-            this.StaffExpLbl.Name = "StaffExpLbl";
-            this.StaffExpLbl.Size = new System.Drawing.Size(127, 30);
-            this.StaffExpLbl.TabIndex = 84;
-            this.StaffExpLbl.Text = "EXPERIENCE";
-            // 
-            // UnStaff
-            // 
-            this.UnStaff.AutoSize = true;
-            this.UnStaff.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UnStaff.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.UnStaff.Location = new System.Drawing.Point(162, 105);
-            this.UnStaff.Name = "UnStaff";
-            this.UnStaff.Size = new System.Drawing.Size(118, 30);
-            this.UnStaff.TabIndex = 83;
-            this.UnStaff.Text = "USERNAME";
-            // 
-            // StaffNameLbl
-            // 
-            this.StaffNameLbl.AutoSize = true;
-            this.StaffNameLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.StaffNameLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.StaffNameLbl.Location = new System.Drawing.Point(162, 34);
-            this.StaffNameLbl.Name = "StaffNameLbl";
-            this.StaffNameLbl.Size = new System.Drawing.Size(122, 30);
-            this.StaffNameLbl.TabIndex = 82;
-            this.StaffNameLbl.Text = "REAL NAME";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label32.Location = new System.Drawing.Point(19, 173);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(134, 30);
-            this.label32.TabIndex = 81;
-            this.label32.Text = "EXPERIENCE:";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label33.Location = new System.Drawing.Point(19, 105);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(124, 30);
-            this.label33.TabIndex = 80;
-            this.label33.Text = "USERNAME:";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label34.Location = new System.Drawing.Point(19, 34);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(128, 30);
-            this.label34.TabIndex = 79;
-            this.label34.Text = "REAL NAME:";
-            // 
             // EditList
             // 
             this.EditList.BackColor = System.Drawing.Color.AliceBlue;
@@ -1427,7 +1505,7 @@
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Quicksand SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(606, 21);
+            this.label15.Location = new System.Drawing.Point(637, 21);
             this.label15.MinimumSize = new System.Drawing.Size(720, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(720, 34);
@@ -1446,15 +1524,227 @@
             this.pictureBox11.TabStop = false;
             this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
+            // FifthStage
+            // 
+            this.FifthStage.Controls.Add(this.label30);
+            this.FifthStage.Controls.Add(this.panel10);
+            this.FifthStage.Controls.Add(this.GOBACK);
+            this.FifthStage.Controls.Add(this.RequestsList);
+            this.FifthStage.Controls.Add(this.label17);
+            this.FifthStage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FifthStage.Location = new System.Drawing.Point(0, 0);
+            this.FifthStage.Name = "FifthStage";
+            this.FifthStage.Size = new System.Drawing.Size(1382, 768);
+            this.FifthStage.TabIndex = 59;
+            this.FifthStage.Visible = false;
+            this.FifthStage.Paint += new System.Windows.Forms.PaintEventHandler(this.FifthStage_Paint);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label30.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.label30.Location = new System.Drawing.Point(51, 166);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(163, 30);
+            this.label30.TabIndex = 93;
+            this.label30.Text = "Requests Details";
+            // 
+            // panel10
+            // 
+            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.IGNReqLbl);
+            this.panel10.Controls.Add(this.IGNREQ);
+            this.panel10.Controls.Add(this.ACCEPTREQUEST);
+            this.panel10.Controls.Add(this.RoleReqLbl);
+            this.panel10.Controls.Add(this.label29);
+            this.panel10.Controls.Add(this.TeamReqLbl);
+            this.panel10.Controls.Add(this.label35);
+            this.panel10.Controls.Add(this.UserReqLbl);
+            this.panel10.Controls.Add(this.label43);
+            this.panel10.Location = new System.Drawing.Point(27, 185);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(558, 573);
+            this.panel10.TabIndex = 72;
+            // 
+            // IGNReqLbl
+            // 
+            this.IGNReqLbl.AutoSize = true;
+            this.IGNReqLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.IGNReqLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.IGNReqLbl.Location = new System.Drawing.Point(159, 324);
+            this.IGNReqLbl.Name = "IGNReqLbl";
+            this.IGNReqLbl.Size = new System.Drawing.Size(47, 30);
+            this.IGNReqLbl.TabIndex = 92;
+            this.IGNReqLbl.Text = "IGN";
+            this.IGNReqLbl.Visible = false;
+            // 
+            // IGNREQ
+            // 
+            this.IGNREQ.AutoSize = true;
+            this.IGNREQ.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.IGNREQ.Location = new System.Drawing.Point(15, 324);
+            this.IGNREQ.Name = "IGNREQ";
+            this.IGNREQ.Size = new System.Drawing.Size(52, 30);
+            this.IGNREQ.TabIndex = 91;
+            this.IGNREQ.Text = "IGN:";
+            this.IGNREQ.Visible = false;
+            // 
+            // ACCEPTREQUEST
+            // 
+            this.ACCEPTREQUEST.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.ACCEPTREQUEST.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.ACCEPTREQUEST.FlatAppearance.BorderSize = 0;
+            this.ACCEPTREQUEST.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ACCEPTREQUEST.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ACCEPTREQUEST.ForeColor = System.Drawing.Color.AliceBlue;
+            this.ACCEPTREQUEST.Location = new System.Drawing.Point(87, 493);
+            this.ACCEPTREQUEST.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ACCEPTREQUEST.Name = "ACCEPTREQUEST";
+            this.ACCEPTREQUEST.Size = new System.Drawing.Size(400, 61);
+            this.ACCEPTREQUEST.TabIndex = 73;
+            this.ACCEPTREQUEST.Text = "ACCEPT";
+            this.ACCEPTREQUEST.UseVisualStyleBackColor = false;
+            this.ACCEPTREQUEST.Click += new System.EventHandler(this.ACCEPTREQUEST_Click);
+            // 
+            // RoleReqLbl
+            // 
+            this.RoleReqLbl.AutoSize = true;
+            this.RoleReqLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RoleReqLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.RoleReqLbl.Location = new System.Drawing.Point(159, 222);
+            this.RoleReqLbl.Name = "RoleReqLbl";
+            this.RoleReqLbl.Size = new System.Drawing.Size(63, 30);
+            this.RoleReqLbl.TabIndex = 90;
+            this.RoleReqLbl.Text = "ROLE";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label29.Location = new System.Drawing.Point(15, 222);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(69, 30);
+            this.label29.TabIndex = 89;
+            this.label29.Text = "ROLE:";
+            // 
+            // TeamReqLbl
+            // 
+            this.TeamReqLbl.AutoSize = true;
+            this.TeamReqLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TeamReqLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.TeamReqLbl.Location = new System.Drawing.Point(159, 122);
+            this.TeamReqLbl.Name = "TeamReqLbl";
+            this.TeamReqLbl.Size = new System.Drawing.Size(66, 30);
+            this.TeamReqLbl.TabIndex = 88;
+            this.TeamReqLbl.Text = "TEAM";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label35.Location = new System.Drawing.Point(15, 122);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(70, 30);
+            this.label35.TabIndex = 87;
+            this.label35.Text = "TEAM:";
+            // 
+            // UserReqLbl
+            // 
+            this.UserReqLbl.AutoSize = true;
+            this.UserReqLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UserReqLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.UserReqLbl.Location = new System.Drawing.Point(157, 35);
+            this.UserReqLbl.Name = "UserReqLbl";
+            this.UserReqLbl.Size = new System.Drawing.Size(118, 30);
+            this.UserReqLbl.TabIndex = 83;
+            this.UserReqLbl.Text = "USERNAME";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label43.Location = new System.Drawing.Point(14, 35);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(124, 30);
+            this.label43.TabIndex = 80;
+            this.label43.Text = "USERNAME:";
+            // 
+            // GOBACK
+            // 
+            this.GOBACK.Image = ((System.Drawing.Image)(resources.GetObject("GOBACK.Image")));
+            this.GOBACK.Location = new System.Drawing.Point(27, 12);
+            this.GOBACK.Name = "GOBACK";
+            this.GOBACK.Size = new System.Drawing.Size(125, 125);
+            this.GOBACK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.GOBACK.TabIndex = 60;
+            this.GOBACK.TabStop = false;
+            this.GOBACK.Click += new System.EventHandler(this.GOBACK_Click);
+            // 
+            // RequestsList
+            // 
+            this.RequestsList.BackColor = System.Drawing.Color.AliceBlue;
+            this.RequestsList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6});
+            this.RequestsList.Font = new System.Drawing.Font("Quicksand", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RequestsList.ForeColor = System.Drawing.Color.White;
+            this.RequestsList.FullRowSelect = true;
+            this.RequestsList.Location = new System.Drawing.Point(637, 58);
+            this.RequestsList.MultiSelect = false;
+            this.RequestsList.Name = "RequestsList";
+            this.RequestsList.Size = new System.Drawing.Size(720, 700);
+            this.RequestsList.TabIndex = 59;
+            this.RequestsList.UseCompatibleStateImageBehavior = false;
+            this.RequestsList.View = System.Windows.Forms.View.Details;
+            this.RequestsList.SelectedIndexChanged += new System.EventHandler(this.RequestsList_SelectedIndexChanged);
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Tag = "";
+            this.columnHeader3.Text = "Username";
+            this.columnHeader3.Width = 358;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Role";
+            this.columnHeader4.Width = 358;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Teaml";
+            this.columnHeader5.Width = 0;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "IGN";
+            this.columnHeader6.Width = 0;
+            // 
+            // label17
+            // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Quicksand SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label17.Location = new System.Drawing.Point(637, 13);
+            this.label17.MinimumSize = new System.Drawing.Size(720, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(720, 34);
+            this.label17.TabIndex = 58;
+            this.label17.Text = "Join Requests";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MyTeamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1382, 768);
-            this.Controls.Add(this.FourthStage);
             this.Controls.Add(this.FirstStage);
             this.Controls.Add(this.ThirdStage);
             this.Controls.Add(this.SecondStage);
+            this.Controls.Add(this.FourthStage);
+            this.Controls.Add(this.FifthStage);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "MyTeamForm";
@@ -1482,15 +1772,20 @@
             this.FourthStage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.removeBtn)).EndInit();
             this.wrapper.ResumeLayout(false);
+            this.StaffPanel.ResumeLayout(false);
+            this.StaffPanel.PerformLayout();
             this.PlayerPanel.ResumeLayout(false);
             this.PlayerPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Twitter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Twitch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyPlayerPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IGLStar)).EndInit();
-            this.StaffPanel.ResumeLayout(false);
-            this.StaffPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.FifthStage.ResumeLayout(false);
+            this.FifthStage.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GOBACK)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1604,5 +1899,27 @@
         private Panel wrapper;
         private Label StaffRoleLbl;
         private Label label23;
+        private Label notficationNum;
+        private Button notificationIcon;
+        private Panel FifthStage;
+        private Label label30;
+        private Panel panel10;
+        private Label IGNReqLbl;
+        private Label IGNREQ;
+        private Button ACCEPTREQUEST;
+        private Label RoleReqLbl;
+        private Label label29;
+        private Label TeamReqLbl;
+        private Label label35;
+        private Label UserReqLbl;
+        private Label label43;
+        private PictureBox GOBACK;
+        private ListView RequestsList;
+        private ColumnHeader columnHeader3;
+        private ColumnHeader columnHeader4;
+        private Label label17;
+        private ColumnHeader columnHeader5;
+        private ColumnHeader columnHeader6;
+        private Button DeleteTeamBtn;
     }
 }
