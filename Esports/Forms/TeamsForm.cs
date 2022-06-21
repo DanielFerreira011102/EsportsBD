@@ -116,21 +116,6 @@ namespace Esports.Forms
             cn.Close();
         }
 
-        private int CalculateAge(DateTime birthDate, DateTime now)
-        {
-            int age = now.Year - birthDate.Year;
-
-            // For leap years we need this
-            if (birthDate > now.AddYears(-age))
-                age--;
-            // Don't use:
-            // if (birthDate.AddYears(age) > now) 
-            //     age--;
-
-            return age;
-        }
-
-
         private void sortByColumn(object sender, ColumnClickEventArgs e)
         {
             // Determine if clicked column is already the column that is being sorted.

@@ -90,6 +90,7 @@
             this.EventsList.ForeColor = System.Drawing.Color.White;
             this.EventsList.FullRowSelect = true;
             this.EventsList.Location = new System.Drawing.Point(659, 69);
+            this.EventsList.MultiSelect = false;
             this.EventsList.Name = "EventsList";
             this.EventsList.OwnerDraw = true;
             this.EventsList.Size = new System.Drawing.Size(720, 700);
@@ -120,7 +121,7 @@
             // Prize
             // 
             this.Prize.Text = "Prize pool";
-            this.Prize.Width = 109;
+            this.Prize.Width = 88;
             // 
             // label2
             // 

@@ -337,6 +337,7 @@
             this.TeamsList.ForeColor = System.Drawing.Color.White;
             this.TeamsList.FullRowSelect = true;
             this.TeamsList.Location = new System.Drawing.Point(659, 69);
+            this.TeamsList.MultiSelect = false;
             this.TeamsList.Name = "TeamsList";
             this.TeamsList.OwnerDraw = true;
             this.TeamsList.Size = new System.Drawing.Size(720, 700);

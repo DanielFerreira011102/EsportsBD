@@ -9,6 +9,17 @@ GO
 DROP PROCEDURE IF EXISTS deletePT
 GO
 DROP PROCEDURE IF EXISTS helpIndex
+GO
+DROP PROCEDURE IF EXISTS createTeamPlayerExists
+GO
+DROP PROCEDURE IF EXISTS createTeamPlayerDoesNotExist
+GO
+DROP PROCEDURE IF EXISTS createTeamPlayerJoinRequest
+GO
+DROP PROCEDURE IF EXISTS removeStaffFromTeam
+GO
+DROP PROCEDURE IF EXISTS removePlayerFromTeam
+GO
 
 GO
 CREATE PROCEDURE resetID
@@ -16,6 +27,61 @@ AS
 BEGIN
 	DBCC CHECKIDENT ('TEAM', RESEED, 0);
 	DBCC CHECKIDENT ('SERIES', RESEED, 0);
+END
+GO
+
+GO
+CREATE PROCEDURE removeStaffFromTeam(@Username VARCHAR(25))
+AS
+BEGIN
+UPDATE TEAM_STAFF SET team_id = NULL, team_join_date = NULL WHERE @Username = username
+END
+GO
+
+GO
+CREATE PROCEDURE removePlayerFromTeam(@Username VARCHAR(25))
+AS
+BEGIN
+UPDATE PLAYER SET team_id = NULL, team_join_date = NULL WHERE @Username = username
+END
+GO
+
+GO
+CREATE PROCEDURE createTeamPlayerJoinRequest(@TeamName VARCHAR(25), @Game VARCHAR(25), @IGN VARCHAR(25), @User VARCHAR(25))
+AS
+BEGIN
+ DECLARE @TEAM_ID INT
+ SELECT @TEAM_ID = id FROM TEAM WHERE [name] = @TeamName AND @Game = game
+ INSERT INTO TEAM_JOIN_REQUEST (team_id, username, [role], IGN) VALUES (@TEAM_ID, @User, 'Player', @IGN)
+END
+GO
+
+GO
+CREATE PROCEDURE createTeamPlayerExists(@TeamName VARCHAR(25), @TeamLogo VARCHAR(500), @IGN VARCHAR(25), @Game VARCHAR(25), @User VARCHAR(25))
+AS
+BEGIN
+ DECLARE @lastRank INT
+ SELECT @lastRank = MAX(ranking) FROM TEAM WHERE game = @Game 
+ INSERT INTO TEAM ([name], ranking, logo_url, earnings, wins, ties, losses, game) VALUES (@TeamName, @lastRank + 1, @TeamLogo, 0, 0, 0, 0, @Game)
+ DECLARE @lastID INT
+ SELECT @lastID = MAX(id) FROM TEAM
+ UPDATE PLAYER SET team_id = @lastID, IGN = @IGN, game = @Game, team_join_date = GETDATE() WHERE username = @User
+ INSERT INTO TEAM_CAPTAIN (team_id, captain) VALUES (@lastID, @User)
+END
+GO
+
+GO
+CREATE PROCEDURE createTeamPlayerDoesNotExist(@TeamName VARCHAR(25), @TeamLogo VARCHAR(500), @IGN VARCHAR(25), @Game VARCHAR(25), @User VARCHAR(25))
+AS
+BEGIN
+ DECLARE @lastRank INT
+ SELECT @lastRank = MAX(ranking) FROM TEAM WHERE game = @Game 
+ INSERT INTO TEAM ([name], ranking, logo_url, earnings, wins, ties, losses, game) VALUES (@TeamName, @lastRank + 1, @TeamLogo, 0, 0, 0, 0, @Game)
+ DECLARE @lastID INT
+ SELECT @lastID = MAX(id) FROM TEAM
+ INSERT INTO PLAYER (username, team_id, IGN, real_name, team_join_date, profile_url, twitter_url, twitch_url, game, country)
+ VALUES (@User, @lastID, @IGN, NULL, GETDATE(), NULL, NULL, NULL, @Game, NULL)
+ INSERT INTO TEAM_CAPTAIN (team_id, captain) VALUES (@lastID, @User)
 END
 GO
 

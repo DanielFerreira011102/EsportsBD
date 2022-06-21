@@ -67,6 +67,7 @@
             this.OrgsList.ForeColor = System.Drawing.Color.White;
             this.OrgsList.FullRowSelect = true;
             this.OrgsList.Location = new System.Drawing.Point(659, 69);
+            this.OrgsList.MultiSelect = false;
             this.OrgsList.Name = "OrgsList";
             this.OrgsList.OwnerDraw = true;
             this.OrgsList.Size = new System.Drawing.Size(720, 700);

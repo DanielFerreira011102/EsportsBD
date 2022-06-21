@@ -12,8 +12,8 @@ namespace Esports.Forms
 {
     public partial class HomeForm : Form
     {
-        private string back;
-        private string name;
+        private readonly string back;
+        private readonly string name;
 
         public HomeForm()
         {

@@ -42,7 +42,137 @@ DROP FUNCTION IF EXISTS getMatchInfo;
 GO
 DROP FUNCTION IF EXISTS getMatchWinner;
 GO
+DROP FUNCTION IF EXISTS CheckPlayerExists;
+GO
+DROP FUNCTION IF EXISTS CheckIGNRegistered;
+GO
+DROP FUNCTION IF EXISTS CheckTeamExists;
+GO
+DROP FUNCTION IF EXISTS CheckTeamExists;
+GO
+DROP FUNCTION IF EXISTS CheckUserHasTeam;
+GO
+DROP FUNCTION IF EXISTS CheckUserHasTeamJoinRequest;
+GO
+DROP FUNCTION IF EXISTS getTeamMembers;
+GO
+DROP FUNCTION IF EXISTS getTeamInfoFromUsername;
+GO
+DROP FUNCTION IF EXISTS getTeamCaptain;
+GO
+DROP FUNCTION IF EXISTS getExtendedPlayerInfo;
+GO
+DROP FUNCTION IF EXISTS getExtendedTeamStaffInfo;
+GO
 DROP VIEW IF EXISTS getNewID
+
+GO
+CREATE FUNCTION getExtendedTeamStaffInfo(@Username VARCHAR(25))
+RETURNS TABLE
+AS
+RETURN (SELECT years_experience, team_join_date, real_name, [name] AS team 
+				FROM TEAM_STAFF, TEAM AS T WHERE team_id = id AND username = @Username)
+GO
+
+GO
+CREATE FUNCTION getExtendedPlayerInfo(@Username VARCHAR(25))
+RETURNS TABLE
+AS
+RETURN (SELECT [name] AS team, P.ranking, IGN, real_name, team_join_date, profile_url, twitch_url, twitter_url, P.game, country
+			FROM PLAYER AS P, TEAM AS T WHERE id = team_id AND username = @Username)
+GO
+
+GO
+CREATE FUNCTION getTeamCaptain(@Username VARCHAR(25))
+RETURNS VARCHAR(25)
+AS
+BEGIN
+DECLARE @TEAM_ID INT
+SELECT @TEAM_ID = team_id FROM PLAYER WHERE username = @Username
+DECLARE @CAPTAIN VARCHAR(25)
+SELECT @CAPTAIN = captain FROM TEAM_CAPTAIN WHERE team_id = @TEAM_ID
+RETURN @CAPTAIN
+END
+GO
+
+GO
+CREATE FUNCTION getTeamInfoFromUsername(@Username VARCHAR(25)) 
+RETURNS @T TABLE ([name] VARCHAR(25), ranking INT, logo_url VARCHAR(500), earnings FLOAT, wins INT, ties INT, losses INT, game VARCHAR(25)) 
+AS
+BEGIN
+DECLARE @TEAM_ID INT
+SELECT @TEAM_ID = team_id FROM PLAYER WHERE username = @Username
+INSERT INTO @T SELECT [name], ranking, logo_url, earnings, wins, ties, losses, game FROM TEAM WHERE id = @TEAM_ID
+RETURN
+END
+GO
+
+GO
+CREATE FUNCTION getTeamMembers(@Username VARCHAR(25)) 
+RETURNS @T TABLE (username VARCHAR(25), [role] VARCHAR(30))
+AS
+BEGIN
+DECLARE @TEAM_ID INT
+SELECT @TEAM_ID = team_id FROM PLAYER WHERE username = @Username
+INSERT INTO @T SELECT username, 'Player' as [role] FROM PLAYER WHERE team_id = @TEAM_ID UNION SELECT TS.username, [role] FROM TEAM_STAFF AS TS, TEAM_STAFF_ROLE AS TSR WHERE team_id = @TEAM_ID AND TS.username = TSR.username
+RETURN
+END
+GO
+
+GO
+CREATE FUNCTION CheckTeamExists(@NAME VARCHAR(25), @Game VARCHAR(25)) 
+RETURNS BIT
+AS
+BEGIN
+	IF EXISTS(SELECT 1 FROM TEAM WHERE [name] = @NAME AND @Game = GAME)
+		RETURN 1	
+	RETURN 0	
+END
+GO
+
+GO
+CREATE FUNCTION CheckUserHasTeam(@Username VARCHAR(25)) 
+RETURNS BIT
+AS
+BEGIN
+	IF EXISTS(SELECT 1 FROM PLAYER WHERE username = @Username AND team_id IS NOT NULL)
+		RETURN 1	
+	RETURN 0	
+END
+
+GO
+GO
+CREATE FUNCTION CheckUserHasTeamJoinRequest(@Username VARCHAR(25)) 
+RETURNS BIT
+AS
+BEGIN
+	IF EXISTS(SELECT 1 FROM TEAM_JOIN_REQUEST WHERE username = @Username)
+		RETURN 1	
+	RETURN 0	
+END
+GO
+
+GO
+CREATE FUNCTION CheckIGNRegistered(@IGN VARCHAR(25), @Game VARCHAR(25), @Username VARCHAR(25)) 
+RETURNS BIT
+AS
+BEGIN
+	IF EXISTS(SELECT 1 FROM PLAYER WHERE IGN = @IGN AND @Game = GAME AND @Username != username)
+		RETURN 1	
+	RETURN 0	
+END
+GO
+
+GO
+CREATE FUNCTION CheckPlayerExists(@Username VARCHAR(25)) 
+RETURNS BIT
+AS
+BEGIN
+	IF EXISTS(SELECT 1 FROM PLAYER WHERE username = @Username)
+		RETURN 1	
+	RETURN 0	
+END
+GO
 
 GO
 CREATE FUNCTION CheckUserExists(@Username VARCHAR(25), @Email VARCHAR(50)) 

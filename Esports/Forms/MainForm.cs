@@ -111,15 +111,15 @@ namespace Esports
 
         private void helpBtn_Click(object sender, EventArgs e)
         {
-            if (this.selectedScreen != helpBtn)
+            if (this.selectedScreen != ProfileBtn)
             {
                 this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
-                panelNav.Height = helpBtn.Height;
-                panelNav.Top = helpBtn.Top;
-                panelNav.Left = helpBtn.Left;
-                helpBtn.BackColor = Color.FromArgb(220, 239, 255);
+                panelNav.Height = ProfileBtn.Height;
+                panelNav.Top = ProfileBtn.Top;
+                panelNav.Left = ProfileBtn.Left;
+                ProfileBtn.BackColor = Color.FromArgb(220, 239, 255);
                 HeaderLbl.Text = "Help";
-                this.selectedScreen = helpBtn;
+                this.selectedScreen = ProfileBtn;
                 openChildForm(activeForm);
             }
         }
@@ -221,6 +221,90 @@ namespace Esports
                 this.selectedScreen = MatchesBtn;
                 openChildForm(new Forms.MatchesForm());
             }
+        }
+
+        private bool isCollapsed = true;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (isCollapsed)
+            {
+                ProfileBtn.Image = Properties.Resources.Collapse_Arrow_20px;
+                panel4.Height += 10;
+                if (panel4.Height == panel4.MaximumSize.Height)
+                {
+                    timer1.Stop();
+                    isCollapsed = false;
+                }
+            }
+            else
+            {
+                ProfileBtn.Image = Properties.Resources.Expand_Arrow_20px;
+                panel4.Height -= 10;
+                if (panel4.Height == panel4.MinimumSize.Height)
+                {
+                    timer1.Stop();
+                    isCollapsed = true;
+                }
+            }
+        }
+
+        private void ProfileBtn_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private Button selectedSub;
+        private void GoToMyAccount(object sender, EventArgs e)
+        {
+            if (this.selectedScreen != ProfileBtn || selectedSub != MyAccountBtn )
+            {
+                this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+                panelNav.Height = orgBtn.Height;
+                panelNav.Top = orgBtn.Top + 67;
+                panelNav.Left = MatchesBtn.Left;
+                ProfileBtn.BackColor = Color.FromArgb(220, 239, 255);
+                HeaderLbl.Text = "My Account";
+                this.selectedScreen = ProfileBtn;
+                this.selectedSub = MyAccountBtn;
+                openChildForm(new Forms.MatchesForm());
+            }
+        }
+
+        private void GoToMyOrg(object sender, EventArgs e)
+        {
+            if (this.selectedScreen != ProfileBtn || selectedSub != MyOrgBtn)
+            {
+                this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+                panelNav.Height = orgBtn.Height;
+                panelNav.Top = orgBtn.Top + 67;
+                panelNav.Left = MatchesBtn.Left;
+                ProfileBtn.BackColor = Color.FromArgb(220, 239, 255);
+                HeaderLbl.Text = "My Organization";
+                this.selectedScreen = ProfileBtn;
+                this.selectedSub= MyOrgBtn;
+                openChildForm(new Forms.MatchesForm());
+            }
+        }
+
+        private void GoToMyTeam(object sender, EventArgs e)
+        {
+            if (this.selectedScreen != ProfileBtn || selectedSub != MyTeamBtn)
+            {
+                this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+                panelNav.Height = orgBtn.Height;
+                panelNav.Top = orgBtn.Top + 67;
+                panelNav.Left = MatchesBtn.Left;
+                ProfileBtn.BackColor = Color.FromArgb(220, 239, 255);
+                HeaderLbl.Text = "My Team";
+                this.selectedScreen = ProfileBtn;
+                this.selectedSub = MyTeamBtn;
+                openChildForm(new Forms.MyTeamForm(usernameLbl.Text));
+            }
+        }
+
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

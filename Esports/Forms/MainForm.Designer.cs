@@ -28,11 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.leaveBtn = new System.Windows.Forms.Button();
             this.panelNav = new System.Windows.Forms.Panel();
-            this.helpBtn = new System.Windows.Forms.Button();
+            this.leaveBtn = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.MyAccountBtn = new System.Windows.Forms.Button();
+            this.MyOrgBtn = new System.Windows.Forms.Button();
+            this.MyTeamBtn = new System.Windows.Forms.Button();
+            this.ProfileBtn = new System.Windows.Forms.Button();
             this.orgBtn = new System.Windows.Forms.Button();
             this.EventsBtn = new System.Windows.Forms.Button();
             this.MatchesBtn = new System.Windows.Forms.Button();
@@ -54,7 +59,9 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -64,9 +71,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.panel1.Controls.Add(this.leaveBtn);
             this.panel1.Controls.Add(this.panelNav);
-            this.panel1.Controls.Add(this.helpBtn);
+            this.panel1.Controls.Add(this.leaveBtn);
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.orgBtn);
             this.panel1.Controls.Add(this.EventsBtn);
             this.panel1.Controls.Add(this.MatchesBtn);
@@ -80,6 +87,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(239, 900);
             this.panel1.TabIndex = 0;
+            // 
+            // panelNav
+            // 
+            this.panelNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.panelNav.Location = new System.Drawing.Point(0, 0);
+            this.panelNav.Margin = new System.Windows.Forms.Padding(4);
+            this.panelNav.Name = "panelNav";
+            this.panelNav.Size = new System.Drawing.Size(4, 133);
+            this.panelNav.TabIndex = 6;
             // 
             // leaveBtn
             // 
@@ -99,32 +115,91 @@
             this.leaveBtn.UseVisualStyleBackColor = true;
             this.leaveBtn.Click += new System.EventHandler(this.leaveBtn_Click);
             // 
-            // panelNav
+            // panel4
             // 
-            this.panelNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.panelNav.Location = new System.Drawing.Point(0, 257);
-            this.panelNav.Margin = new System.Windows.Forms.Padding(4);
-            this.panelNav.Name = "panelNav";
-            this.panelNav.Size = new System.Drawing.Size(4, 133);
-            this.panelNav.TabIndex = 6;
+            this.panel4.Controls.Add(this.MyAccountBtn);
+            this.panel4.Controls.Add(this.MyOrgBtn);
+            this.panel4.Controls.Add(this.MyTeamBtn);
+            this.panel4.Controls.Add(this.ProfileBtn);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 594);
+            this.panel4.MaximumSize = new System.Drawing.Size(0, 217);
+            this.panel4.MinimumSize = new System.Drawing.Size(0, 67);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(239, 67);
+            this.panel4.TabIndex = 7;
             // 
-            // helpBtn
+            // MyAccountBtn
             // 
-            this.helpBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.helpBtn.FlatAppearance.BorderSize = 0;
-            this.helpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.helpBtn.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.helpBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(142)))), ((int)(((byte)(203)))));
-            this.helpBtn.Image = ((System.Drawing.Image)(resources.GetObject("helpBtn.Image")));
-            this.helpBtn.Location = new System.Drawing.Point(0, 594);
-            this.helpBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.helpBtn.Name = "helpBtn";
-            this.helpBtn.Size = new System.Drawing.Size(239, 67);
-            this.helpBtn.TabIndex = 5;
-            this.helpBtn.Text = "Help";
-            this.helpBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.helpBtn.UseVisualStyleBackColor = true;
-            this.helpBtn.Click += new System.EventHandler(this.helpBtn_Click);
+            this.MyAccountBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(74)))), ((int)(((byte)(119)))));
+            this.MyAccountBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MyAccountBtn.FlatAppearance.BorderSize = 0;
+            this.MyAccountBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MyAccountBtn.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MyAccountBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(142)))), ((int)(((byte)(203)))));
+            this.MyAccountBtn.Location = new System.Drawing.Point(0, 167);
+            this.MyAccountBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.MyAccountBtn.Name = "MyAccountBtn";
+            this.MyAccountBtn.Size = new System.Drawing.Size(239, 50);
+            this.MyAccountBtn.TabIndex = 9;
+            this.MyAccountBtn.Text = "My Account";
+            this.MyAccountBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.MyAccountBtn.UseVisualStyleBackColor = false;
+            this.MyAccountBtn.Click += new System.EventHandler(this.GoToMyAccount);
+            // 
+            // MyOrgBtn
+            // 
+            this.MyOrgBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(74)))), ((int)(((byte)(119)))));
+            this.MyOrgBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MyOrgBtn.FlatAppearance.BorderSize = 0;
+            this.MyOrgBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MyOrgBtn.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MyOrgBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(142)))), ((int)(((byte)(203)))));
+            this.MyOrgBtn.Location = new System.Drawing.Point(0, 117);
+            this.MyOrgBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.MyOrgBtn.Name = "MyOrgBtn";
+            this.MyOrgBtn.Size = new System.Drawing.Size(239, 50);
+            this.MyOrgBtn.TabIndex = 8;
+            this.MyOrgBtn.Text = "My Organization";
+            this.MyOrgBtn.UseVisualStyleBackColor = false;
+            this.MyOrgBtn.Click += new System.EventHandler(this.GoToMyOrg);
+            // 
+            // MyTeamBtn
+            // 
+            this.MyTeamBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(74)))), ((int)(((byte)(119)))));
+            this.MyTeamBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MyTeamBtn.FlatAppearance.BorderSize = 0;
+            this.MyTeamBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MyTeamBtn.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MyTeamBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(142)))), ((int)(((byte)(203)))));
+            this.MyTeamBtn.Location = new System.Drawing.Point(0, 67);
+            this.MyTeamBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.MyTeamBtn.Name = "MyTeamBtn";
+            this.MyTeamBtn.Size = new System.Drawing.Size(239, 50);
+            this.MyTeamBtn.TabIndex = 7;
+            this.MyTeamBtn.Text = "My Team";
+            this.MyTeamBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.MyTeamBtn.UseVisualStyleBackColor = false;
+            this.MyTeamBtn.Click += new System.EventHandler(this.GoToMyTeam);
+            // 
+            // ProfileBtn
+            // 
+            this.ProfileBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.ProfileBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ProfileBtn.FlatAppearance.BorderSize = 0;
+            this.ProfileBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ProfileBtn.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ProfileBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(142)))), ((int)(((byte)(203)))));
+            this.ProfileBtn.Image = ((System.Drawing.Image)(resources.GetObject("ProfileBtn.Image")));
+            this.ProfileBtn.Location = new System.Drawing.Point(0, 0);
+            this.ProfileBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.ProfileBtn.Name = "ProfileBtn";
+            this.ProfileBtn.Size = new System.Drawing.Size(239, 67);
+            this.ProfileBtn.TabIndex = 6;
+            this.ProfileBtn.Text = "Profile";
+            this.ProfileBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.ProfileBtn.UseVisualStyleBackColor = false;
+            this.ProfileBtn.Click += new System.EventHandler(this.ProfileBtn_Click);
             // 
             // orgBtn
             // 
@@ -384,6 +459,12 @@
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(1401, 815);
             this.panelDesktop.TabIndex = 6;
+            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 15;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // MainForm
             // 
@@ -403,6 +484,7 @@
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -425,7 +507,6 @@
         private Button orgBtn;
         private Button EventsBtn;
         private Button teamBtn;
-        private Button helpBtn;
         private Panel panelNav;
         private Label HeaderLbl;
         private Panel panel3;
@@ -441,5 +522,11 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.ComponentModel.BackgroundWorker backgroundWorker3;
         private Button MatchesBtn;
+        private Panel panel4;
+        private Button MyAccountBtn;
+        private Button MyOrgBtn;
+        private Button MyTeamBtn;
+        private Button ProfileBtn;
+        private System.Windows.Forms.Timer timer1;
     }
 }

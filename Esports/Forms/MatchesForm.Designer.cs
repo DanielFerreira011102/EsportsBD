@@ -168,6 +168,7 @@
             this.leftWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.leftWin.TabIndex = 28;
             this.leftWin.TabStop = false;
+            this.leftWin.Visible = false;
             // 
             // rightWin
             // 
@@ -178,6 +179,7 @@
             this.rightWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rightWin.TabIndex = 29;
             this.rightWin.TabStop = false;
+            this.rightWin.Visible = false;
             // 
             // team2Img
             // 
@@ -417,6 +419,7 @@
             this.TeamsList.ForeColor = System.Drawing.Color.White;
             this.TeamsList.FullRowSelect = true;
             this.TeamsList.Location = new System.Drawing.Point(659, 69);
+            this.TeamsList.MultiSelect = false;
             this.TeamsList.Name = "TeamsList";
             this.TeamsList.OwnerDraw = true;
             this.TeamsList.Size = new System.Drawing.Size(720, 700);

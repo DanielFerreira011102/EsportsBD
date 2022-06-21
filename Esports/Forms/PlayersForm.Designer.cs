@@ -407,6 +407,7 @@
             this.PlayerList.ForeColor = System.Drawing.Color.White;
             this.PlayerList.FullRowSelect = true;
             this.PlayerList.Location = new System.Drawing.Point(659, 69);
+            this.PlayerList.MultiSelect = false;
             this.PlayerList.Name = "PlayerList";
             this.PlayerList.OwnerDraw = true;
             this.PlayerList.Size = new System.Drawing.Size(720, 700);
