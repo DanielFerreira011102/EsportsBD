@@ -158,7 +158,6 @@
             this.DetailsBtn.TabIndex = 16;
             this.DetailsBtn.Text = "CHECK DETAILS";
             this.DetailsBtn.UseVisualStyleBackColor = false;
-            this.DetailsBtn.Click += new System.EventHandler(this.DetailsBtn_Click);
             // 
             // panel3
             // 

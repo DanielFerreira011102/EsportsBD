@@ -171,10 +171,5 @@ namespace Esports.Forms
 
         }
 
-        private void DetailsBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

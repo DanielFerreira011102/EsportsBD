@@ -757,7 +757,7 @@ namespace Esports.Forms
             if (UserExist)
             {
                 if (RoleReqLbl.Text == "Player") { 
-                    SqlCommand cmd1 = new SqlCommand("EXEC acceptTeamPlayerExists @IGN = @ign @User = @username", cn);
+                    SqlCommand cmd1 = new SqlCommand("EXEC acceptTeamPlayerExists @IGN = @ign, @User = @username", cn);
                     cmd1.Parameters.Clear();
                     cmd1.Parameters.AddWithValue("@ign", IGNReqLbl.Text);
                     cmd1.Parameters.AddWithValue("@username", UserReqLbl.Text);
@@ -777,7 +777,7 @@ namespace Esports.Forms
                 }
                 else
                 {
-                    SqlCommand cmd1 = new SqlCommand("EXEC acceptTeamStaffExists @Role=@role @User=@username", cn);
+                    SqlCommand cmd1 = new SqlCommand("EXEC acceptTeamStaffExists @Role=@role, @User=@username", cn);
                     cmd1.Parameters.Clear();
                     cmd1.Parameters.AddWithValue("@role", RoleReqLbl.Text);
                     cmd1.Parameters.AddWithValue("@username", UserReqLbl.Text);
@@ -843,8 +843,17 @@ namespace Esports.Forms
 
             MessageBox.Show(UserReqLbl.Text + " was added to the team!");
             RequestsList.SelectedItems[0].Remove();
-            RequestsList.Items[0].Selected = true;
-            RequestsList.Select();
+            notficationNum.Text = (Int32.Parse(notficationNum.Text) - 1).ToString();
+            
+            if (Int32.Parse(notficationNum.Text) <= 0)
+            {
+                notficationNum.Visible = false;
+                notificationIcon.Visible = false;
+            }
+
+            if (RequestsList.Items.Count > 0)
+                RequestsList.Items[0].Selected = true;
+                RequestsList.Select();
         }
 
         private void GOBACK_Click(object sender, EventArgs e)
@@ -855,28 +864,37 @@ namespace Esports.Forms
 
         private void DeleteTeamBtn_Click(object sender, EventArgs e)
         {
-            if (!verifySGBDConnection())
-                return;
 
-            SqlCommand cmd1 = new SqlCommand("EXEC deleteTeam @Username=@username", cn);
-            cmd1.Parameters.Clear();
-            cmd1.Parameters.AddWithValue("@username", user);
+            DialogResult dialogResult = MessageBox.Show("Are you sure?", "Delete User", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                if (!verifySGBDConnection())
+                    return;
 
-            try
-            {
-                cmd1.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Failed to delete team. \n ERROR MESSAGE: \n" + ex.Message);
-            }
-            finally
-            {
-                cn.Close();
-            }
+                SqlCommand cmd1 = new SqlCommand("EXEC deleteTeam @Username=@username", cn);
+                cmd1.Parameters.Clear();
+                cmd1.Parameters.AddWithValue("@username", user);
 
-            this.ThirdStage.Visible = false;
-            OpenFirstStage();
+                try
+                {
+                    cmd1.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Failed to delete team. \n ERROR MESSAGE: \n" + ex.Message);
+                }
+                finally
+                {
+                    cn.Close();
+                }
+
+                this.ThirdStage.Visible = false;
+                OpenFirstStage();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do something else
+            }
         }
 
         private void readPlayer(string un)

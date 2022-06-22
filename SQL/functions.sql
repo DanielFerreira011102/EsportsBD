@@ -68,7 +68,15 @@ DROP FUNCTION IF EXISTS getNotificationsCount;
 GO
 DROP FUNCTION IF EXISTS getTeamRequests;
 GO
+DROP FUNCTION IF EXISTS getUserData;
+GO
 DROP VIEW IF EXISTS getNewID
+GO
+CREATE FUNCTION getUserData(@User VARCHAR(25))
+RETURNS TABLE
+AS
+	RETURN (SELECT [password], birthday, email, region, join_date, gender FROM [USER] WHERE username = @User)
+GO
 
 GO
 CREATE FUNCTION getTeamRequests(@Username VARCHAR(25))

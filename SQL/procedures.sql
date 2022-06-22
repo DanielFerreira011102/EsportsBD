@@ -30,6 +30,16 @@ DROP PROCEDURE IF EXISTS acceptTeamStaffDoesNotExist
 GO
 DROP PROCEDURE IF EXISTS deleteTeam
 GO
+DROP PROCEDURE IF EXISTS deleteUser
+GO
+DROP PROCEDURE IF EXISTS editUser
+GO
+DROP PROCEDURE IF EXISTS search
+GO
+DROP PROCEDURE IF EXISTS SearchAllTables
+GO
+DROP PROCEDURE IF EXISTS searchAll
+GO
 
 GO
 CREATE PROCEDURE resetID
@@ -41,7 +51,107 @@ END
 GO
 
 GO
-CREATE PROCEDURE deleteTeam (@Username VARCHAR(25))
+CREATE PROC search
+(
+@SearchStr nvarchar(max)
+)
+AS
+BEGIN
+
+    CREATE TABLE #Results (ColumnName nvarchar(370), ColumnValue nvarchar(3630))
+
+    SET NOCOUNT ON
+
+    DECLARE @TableName nvarchar(256), @ColumnName nvarchar(128), @SearchStr2 nvarchar(110)
+    SET  @TableName = ''
+    SET @SearchStr2 = QUOTENAME('%' + @SearchStr + '%','''')
+
+    WHILE @TableName IS NOT NULL
+
+    BEGIN
+        SET @ColumnName = ''
+        SET @TableName = 
+        (
+            SELECT MIN(QUOTENAME(TABLE_SCHEMA) + '.' + QUOTENAME(TABLE_NAME))
+            FROM     INFORMATION_SCHEMA.TABLES
+            WHERE         TABLE_TYPE = 'BASE TABLE'
+                AND    QUOTENAME(TABLE_SCHEMA) + '.' + QUOTENAME(TABLE_NAME) > @TableName
+                AND    OBJECTPROPERTY(
+                        OBJECT_ID(
+                            QUOTENAME(TABLE_SCHEMA) + '.' + QUOTENAME(TABLE_NAME)
+                             ), 'IsMSShipped'
+                               ) = 0
+        )
+
+        WHILE (@TableName IS NOT NULL) AND (@ColumnName IS NOT NULL)
+
+        BEGIN
+            SET @ColumnName =
+            (
+                SELECT MIN(QUOTENAME(COLUMN_NAME))
+                FROM     INFORMATION_SCHEMA.COLUMNS
+                WHERE         TABLE_SCHEMA    = PARSENAME(@TableName, 2)
+                    AND    TABLE_NAME    = PARSENAME(@TableName, 1)
+                    AND    DATA_TYPE IN ('char', 'varchar', 'nchar', 'nvarchar', 'int', 'decimal')
+                    AND    QUOTENAME(COLUMN_NAME) > @ColumnName
+            )
+
+            IF @ColumnName IS NOT NULL
+
+            BEGIN
+                INSERT INTO #Results
+                EXEC
+                (
+                    'SELECT ' + 'LEFT(' + @ColumnName + ', 3630) AS [match], ''' + @TableName + ''' AS [type]
+					FROM ' + @TableName + 'WITH (NOLOCK) ' +
+                    ' WHERE ' + @ColumnName + ' LIKE ' + @SearchStr2
+                )
+            END
+        END    
+    END
+
+    
+	SELECT DISTINCT * FROM (
+	SELECT [match],
+	CASE
+		WHEN [type] = '[dbo].[PLAYER]' THEN 'Player'
+		WHEN [type] = '[dbo].[TEAM]' THEN 'Team'
+		WHEN [type] = '[dbo].[TEAM_STAFF]' THEN 'Team Staff'
+		WHEN [type] = '[dbo].[TEAM_STAFF_ROLE]' THEN 'Team Staff'
+		WHEN [type] = '[dbo].[EVENT_STAFF]' THEN 'Team Staff'
+		WHEN [type] = '[dbo].[EVENT_STAFF_ROLE]' THEN 'Event Staff'
+		WHEN [type] = '[dbo].[GAME]' THEN 'Game'
+		WHEN [type] = '[dbo].[GAME_TYPE]' THEN 'Game'
+		WHEN [type] = '[dbo].[SERIES]' THEN 'Series'
+		WHEN [type] = '[dbo].[SERIES_RESULT]' THEN 'Series'
+		WHEN [type] = '[dbo].[TOURNAMENT]' THEN 'Tournament'
+		WHEN [type] = '[dbo].[ORGANIZATION]' THEN 'Organization'
+		ELSE NULL
+	END AS [type] 
+FROM (SELECT ColumnName AS [match], ColumnValue AS [type] FROM #Results) AS Results) AS Fianl WHERE [type] IS NOT NULL
+END
+GO
+
+
+GO
+CREATE PROCEDURE editUser(@Username VARCHAR(25), @Password VARCHAR(30), @Region VARCHAR(20))
+AS
+BEGIN
+UPDATE [USER] SET [password] = @Password, region = @Region WHERE username = @Username
+END
+GO
+
+GO
+CREATE PROCEDURE deleteUser(@Username VARCHAR(25))
+AS
+BEGIN
+DELETE [USER] WHERE username = @Username
+-- just need that the rest of data like player are deleted on cascade
+END
+GO
+
+GO
+CREATE PROCEDURE deleteTeam(@Username VARCHAR(25))
 AS
 BEGIN
 DECLARE @TEAM_ID INT
@@ -391,3 +501,4 @@ as
 
 	return (0) -- sp_helpindex
 GO
+

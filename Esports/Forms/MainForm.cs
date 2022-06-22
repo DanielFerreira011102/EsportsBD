@@ -48,7 +48,7 @@ namespace Esports
         public MainForm(string username, string region, string v) : this(username, region)
         {
             this.back = v;
-            Form child = new Forms.HomeForm(username, v);
+            Form child = new Forms.MyHomeForm(username, v);
             activeForm = child;
             child.TopLevel = false;
             child.FormBorderStyle = FormBorderStyle.None;
@@ -135,7 +135,7 @@ namespace Esports
                 homeBtn.BackColor = Color.FromArgb(220, 239, 255);
                 HeaderLbl.Text = "Home";
                 this.selectedScreen = homeBtn;
-                openChildForm(new Forms.HomeForm(usernameLbl.Text, back));
+                openChildForm(new Forms.MyHomeForm(usernameLbl.Text, back));
             }
         }
 
@@ -266,7 +266,7 @@ namespace Esports
                 HeaderLbl.Text = "My Account";
                 this.selectedScreen = ProfileBtn;
                 this.selectedSub = MyAccountBtn;
-                openChildForm(new Forms.MatchesForm());
+                openChildForm(new Forms.MyAccountForm(usernameLbl.Text));
             }
         }
 
@@ -302,9 +302,27 @@ namespace Esports
             }
         }
 
+        private void GoToMSearch()
+        {
+           openChildForm(new Forms.SearchForm(textBox1.Text));
+        }
+
         private void panelDesktop_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                GoToMSearch();
+            }
+        }
+
+        private void searchBtn_Click(object sender, EventArgs e)
+        {
+            GoToMSearch();
         }
     }
 }

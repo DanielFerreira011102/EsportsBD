@@ -57,25 +57,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>We developed this desktop application as the final project for our Databases course. It is a simple application with Esports events
-as its core, enabling potential users to check registered teams, events, players, matches, and organizations.
-
-We decided to put some effort into the UI of the form. That allowed us to organize all the data in a readable and
-easy-to-understand format.
-
-We gathered all the data using Python and the pyodbc open-source module.
-We created functions to generate the records for each table and used pyodbc to perform operations over our database.
-It enabled us to work with DQL and DML, helping us execute queries and manipulate data. 
-
-As we developed our generators, we found some problems with the database structure. Some relationships between the tables
-gave rise to some issues when we tried inserting data. Therefore, we used the standard normalization process whenever we
-found the need for it to avoid said problems.
-
-Regarding SQL indexing, since we were working with a large set of data, we found it helpful to create indexes in specific columns
-so we could speed up table lookup and the rendering of our application list views.
-We added 10 new indexes, some including multiple columns, and noticed significant improvements.</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="wave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2225,5 +2206,19 @@ We added 10 new indexes, some including multiple columns, and noticed significan
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYCkZG/sf4X3qTZAk/tQAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>We developed this desktop application as the final project for our Databases course. It is a simple application with Esports events as its core, enabling potential users to check registered teams, events, players, matches, and organizations.
+
+We decided to put some effort into the UI of the form. That allowed us to organize all the data in a readable and easy-to-understand format.
+
+We gathered all the data using Python and the pyodbc open-source module.
+We created functions to generate the records for each table and used pyodbc to perform operations over our database.
+It enabled us to work with DQL and DML, helping us execute queries and manipulate data. 
+
+As we developed our generators, we found some problems with the database structure. Some relationships between the tables gave rise to some issues when we tried inserting data. Therefore, we used the standard normalization process whenever we found the need for it to avoid said problems.
+
+Regarding SQL indexing, since we were working with a large set of data, we found it helpful to create indexes in specific columns so we could speed up table lookup and the rendering of our application list views.
+We added 10 new indexes, some including multiple columns, and noticed significant improvements.</value>
   </data>
 </root>

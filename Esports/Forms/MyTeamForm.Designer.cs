@@ -218,7 +218,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(796, 71);
+            this.pictureBox6.Location = new System.Drawing.Point(797, 71);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(53, 53);
@@ -365,7 +365,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(121, 71);
+            this.pictureBox1.Location = new System.Drawing.Point(122, 71);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(53, 53);
@@ -584,7 +584,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Quicksand", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(81, 71);
+            this.label12.Location = new System.Drawing.Point(88, 71);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(32, 49);
             this.label12.TabIndex = 91;
@@ -1740,11 +1740,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1382, 768);
-            this.Controls.Add(this.FirstStage);
             this.Controls.Add(this.ThirdStage);
-            this.Controls.Add(this.SecondStage);
-            this.Controls.Add(this.FourthStage);
             this.Controls.Add(this.FifthStage);
+            this.Controls.Add(this.FourthStage);
+            this.Controls.Add(this.FirstStage);
+            this.Controls.Add(this.SecondStage);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "MyTeamForm";
