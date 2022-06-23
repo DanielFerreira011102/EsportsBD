@@ -223,11 +223,11 @@ END
 GO
 
 GO
-CREATE FUNCTION CheckUserMatchPassword(@Username VARCHAR(25), @Password VARCHAR(30)) 
+CREATE FUNCTION CheckUserMatchPassword(@user VARCHAR(50), @Password VARCHAR(30)) 
 RETURNS BIT
 AS
 BEGIN
-	IF EXISTS(SELECT 1 FROM [USER] WHERE username = @Username AND [password] = @Password)
+	IF EXISTS(SELECT 1 FROM [USER] WHERE (username = @User OR @User = email) AND [password] = @Password)
 		RETURN 1	
 	RETURN 0	
 END

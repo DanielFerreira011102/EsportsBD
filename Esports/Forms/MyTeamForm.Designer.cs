@@ -142,6 +142,7 @@
             this.FifthStage = new System.Windows.Forms.Panel();
             this.label30 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.RejectBtn = new System.Windows.Forms.Button();
             this.IGNReqLbl = new System.Windows.Forms.Label();
             this.IGNREQ = new System.Windows.Forms.Label();
             this.ACCEPTREQUEST = new System.Windows.Forms.Button();
@@ -1537,7 +1538,6 @@
             this.FifthStage.Size = new System.Drawing.Size(1382, 768);
             this.FifthStage.TabIndex = 59;
             this.FifthStage.Visible = false;
-            this.FifthStage.Paint += new System.Windows.Forms.PaintEventHandler(this.FifthStage_Paint);
             // 
             // label30
             // 
@@ -1553,6 +1553,7 @@
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.RejectBtn);
             this.panel10.Controls.Add(this.IGNReqLbl);
             this.panel10.Controls.Add(this.IGNREQ);
             this.panel10.Controls.Add(this.ACCEPTREQUEST);
@@ -1566,6 +1567,24 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(558, 573);
             this.panel10.TabIndex = 72;
+            // 
+            // RejectBtn
+            // 
+            this.RejectBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.RejectBtn.BackColor = System.Drawing.Color.Transparent;
+            this.RejectBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(86)))), ((int)(((byte)(225)))));
+            this.RejectBtn.FlatAppearance.BorderSize = 4;
+            this.RejectBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RejectBtn.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.RejectBtn.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.RejectBtn.Location = new System.Drawing.Point(88, 411);
+            this.RejectBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.RejectBtn.Name = "RejectBtn";
+            this.RejectBtn.Size = new System.Drawing.Size(400, 61);
+            this.RejectBtn.TabIndex = 94;
+            this.RejectBtn.Text = "REJECT";
+            this.RejectBtn.UseVisualStyleBackColor = false;
+            this.RejectBtn.Click += new System.EventHandler(this.RejectBtn_Click);
             // 
             // IGNReqLbl
             // 
@@ -1740,11 +1759,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1382, 768);
-            this.Controls.Add(this.ThirdStage);
             this.Controls.Add(this.FifthStage);
-            this.Controls.Add(this.FourthStage);
+            this.Controls.Add(this.ThirdStage);
             this.Controls.Add(this.FirstStage);
             this.Controls.Add(this.SecondStage);
+            this.Controls.Add(this.FourthStage);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "MyTeamForm";
@@ -1921,5 +1940,6 @@
         private ColumnHeader columnHeader5;
         private ColumnHeader columnHeader6;
         private Button DeleteTeamBtn;
+        private Button RejectBtn;
     }
 }

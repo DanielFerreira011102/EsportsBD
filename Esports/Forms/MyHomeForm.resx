@@ -2219,6 +2219,6 @@ It enabled us to work with DQL and DML, helping us execute queries and manipulat
 As we developed our generators, we found some problems with the database structure. Some relationships between the tables gave rise to some issues when we tried inserting data. Therefore, we used the standard normalization process whenever we found the need for it to avoid said problems.
 
 Regarding SQL indexing, since we were working with a large set of data, we found it helpful to create indexes in specific columns so we could speed up table lookup and the rendering of our application list views.
-We added 10 new indexes, some including multiple columns, and noticed significant improvements.</value>
+We added 22 new indexes, some including multiple columns, and noticed significant improvements.</value>
   </data>
 </root>

@@ -40,6 +40,18 @@ DROP PROCEDURE IF EXISTS SearchAllTables
 GO
 DROP PROCEDURE IF EXISTS searchAll
 GO
+DROP PROCEDURE IF EXISTS getSearchPlayer
+GO
+DROP PROCEDURE IF EXISTS getSearchTeam
+GO
+DROP PROCEDURE IF EXISTS getSearchOrg
+GO
+DROP PROCEDURE IF EXISTS getSearchSeries
+GO
+DROP PROCEDURE IF EXISTS getSearchTour
+GO
+DROP PROCEDURE IF EXISTS rejectRequest
+GO
 
 GO
 CREATE PROCEDURE resetID
@@ -51,6 +63,52 @@ END
 GO
 
 GO
+CREATE PROCEDURE rejectRequest (@Username VARCHAR(25))
+AS
+DELETE FROM TEAM_JOIN_REQUEST WHERE @Username = username
+GO
+GO
+CREATE PROCEDURE getSearchPlayer (@ID VARCHAR(25))
+AS
+BEGIN
+SELECT [name] AS team, P.ranking, IGN, real_name, team_join_date, profile_url, twitch_url, twitter_url, P.game, country FROM PLAYER AS P, TEAM AS T WHERE username=@ID AND team_id = id
+END
+GO
+
+GO
+CREATE PROCEDURE getSearchTeam (@ID INT)
+AS
+BEGIN
+SELECT [name], ranking, logo_url, earnings, wins, losses, ties, game FROM TEAM WHERE id = @ID
+END
+GO
+
+GO
+CREATE PROCEDURE getSearchOrg (@ID VARCHAR(25))
+AS
+BEGIN
+SELECT contact, logo_url FROM ORGANIZATION WHERE [name] = @ID
+END
+GO
+
+GO
+CREATE PROCEDURE getSearchSeries (@ID INT)
+AS
+BEGIN
+SELECT [date], best_of, tournament, S.[status], CAST(CASE WHEN TM.id = winner THEN 1 ELSE 0 END AS BIT) AS isWinner, score_team1, score_team2, TM.[name], organization, T.game, TM.logo_url FROM SERIES AS S, SERIES_RESULT AS SR, TOURNAMENT AS T, TEAM_PLAYS AS TP, TEAM AS TM WHERE S.id = @ID AND SR.match_id=S.id AND TP.match_id=S.id AND tournament=T.[name] AND TM.id = TP.team_id
+END
+GO
+
+
+GO
+CREATE PROCEDURE getSearchTour (@ID VARCHAR(25))
+AS
+BEGIN
+SELECT organization, T.game, [format], region, prize_pool, [start_date], [end_date], [status], number_teams, TM.[name] AS team FROM TOURNAMENT AS T, TOURNAMENT_WINNER, TEAM  AS TM WHERE TM.[name] = @ID AND tournament=TM.[name] AND team_id=id
+END
+
+GO
+GO
 CREATE PROC search
 (
 @SearchStr nvarchar(max)
@@ -58,12 +116,15 @@ CREATE PROC search
 AS
 BEGIN
 
-    CREATE TABLE #Results (ColumnName nvarchar(370), ColumnValue nvarchar(3630))
+	-- criar uma tabela results temporaria, não dá para selecionar EXECs
+    CREATE TABLE #Results (pkey VARCHAR(370), ColumnName nvarchar(370), ColumnValue nvarchar(3630))
 
     SET NOCOUNT ON
 
     DECLARE @TableName nvarchar(256), @ColumnName nvarchar(128), @SearchStr2 nvarchar(110)
     SET  @TableName = ''
+
+	-- colocar a string no formaro certo para fazer LIKE
     SET @SearchStr2 = QUOTENAME('%' + @SearchStr + '%','''')
 
     WHILE @TableName IS NOT NULL
@@ -72,6 +133,7 @@ BEGIN
         SET @ColumnName = ''
         SET @TableName = 
         (
+			-- colocar nome da tabela como [schema].[Table]
             SELECT MIN(QUOTENAME(TABLE_SCHEMA) + '.' + QUOTENAME(TABLE_NAME))
             FROM     INFORMATION_SCHEMA.TABLES
             WHERE         TABLE_TYPE = 'BASE TABLE'
@@ -96,39 +158,64 @@ BEGIN
                     AND    QUOTENAME(COLUMN_NAME) > @ColumnName
             )
 
+			DECLARE @myprimarykey VARCHAR(370)
             IF @ColumnName IS NOT NULL
 
             BEGIN
+			
+			-- buscar a coluna PK de cada tabela
+			SELECT @myprimarykey =  CASE
+			WHEN @TableName = '[dbo].[PLAYER]' THEN 'username'
+			WHEN @TableName = '[dbo].[TEAM]' THEN 'id'
+			WHEN @TableName = '[dbo].[TEAM_STAFF]' THEN 'username'
+			WHEN @TableName = '[dbo].[TEAM_STAFF_ROLE]' THEN 'username'
+			WHEN @TableName = '[dbo].[EVENT_STAFF]' THEN 'username'
+			WHEN @TableName = '[dbo].[EVENT_STAFF_ROLE]' THEN 'username'
+			WHEN @TableName = '[dbo].[GAME]' THEN 'name'
+			WHEN @TableName = '[dbo].[GAME_TYPE]' THEN 'game'
+			WHEN @TableName = '[dbo].[SERIES]' THEN 'id'
+			WHEN @TableName = '[dbo].[SERIES_RESULT]' THEN 'match_id'
+			WHEN @TableName = '[dbo].[TOURNAMENT]' THEN 'name'
+			WHEN @TableName = '[dbo].[ORGANIZATION]' THEN 'name'
+			ELSE NULL END
+
+			declare @sql nvarchar(max)
+
+			-- gerar query para obter o valor da PK, Valor da Tabela que dá match, nome da Tabela 
+			set @sql = 'SELECT [' + replace(@myprimarykey, '''', '''''') + '], LEFT(' + @ColumnName + ', 3630), ''' + @TableName + '''
+					FROM ' + @TableName + 'WITH (NOLOCK) ' +
+                    ' WHERE ' + @ColumnName + ' LIKE ' + @SearchStr2
+
+					PRINT @sql
+
                 INSERT INTO #Results
                 EXEC
                 (
-                    'SELECT ' + 'LEFT(' + @ColumnName + ', 3630) AS [match], ''' + @TableName + ''' AS [type]
-					FROM ' + @TableName + 'WITH (NOLOCK) ' +
-                    ' WHERE ' + @ColumnName + ' LIKE ' + @SearchStr2
+                    @sql
                 )
             END
         END    
     END
 
-    
 	SELECT DISTINCT * FROM (
-	SELECT [match],
-	CASE
-		WHEN [type] = '[dbo].[PLAYER]' THEN 'Player'
-		WHEN [type] = '[dbo].[TEAM]' THEN 'Team'
-		WHEN [type] = '[dbo].[TEAM_STAFF]' THEN 'Team Staff'
-		WHEN [type] = '[dbo].[TEAM_STAFF_ROLE]' THEN 'Team Staff'
-		WHEN [type] = '[dbo].[EVENT_STAFF]' THEN 'Team Staff'
-		WHEN [type] = '[dbo].[EVENT_STAFF_ROLE]' THEN 'Event Staff'
-		WHEN [type] = '[dbo].[GAME]' THEN 'Game'
-		WHEN [type] = '[dbo].[GAME_TYPE]' THEN 'Game'
-		WHEN [type] = '[dbo].[SERIES]' THEN 'Series'
-		WHEN [type] = '[dbo].[SERIES_RESULT]' THEN 'Series'
-		WHEN [type] = '[dbo].[TOURNAMENT]' THEN 'Tournament'
-		WHEN [type] = '[dbo].[ORGANIZATION]' THEN 'Organization'
-		ELSE NULL
-	END AS [type] 
-FROM (SELECT ColumnName AS [match], ColumnValue AS [type] FROM #Results) AS Results) AS Fianl WHERE [type] IS NOT NULL
+		SELECT [match],
+		CASE
+			WHEN [type] = '[dbo].[PLAYER]' THEN 'Player'
+			WHEN [type] = '[dbo].[TEAM]' THEN 'Team'
+			WHEN [type] = '[dbo].[TEAM_STAFF]' THEN 'Team Staff'
+			WHEN [type] = '[dbo].[TEAM_STAFF_ROLE]' THEN 'Team Staff'
+			WHEN [type] = '[dbo].[EVENT_STAFF]' THEN 'Event Staff'
+			WHEN [type] = '[dbo].[EVENT_STAFF_ROLE]' THEN 'Event Staff'
+			WHEN [type] = '[dbo].[GAME]' THEN 'Game'
+			WHEN [type] = '[dbo].[GAME_TYPE]' THEN 'Game'
+			WHEN [type] = '[dbo].[SERIES]' THEN 'Series'
+			WHEN [type] = '[dbo].[SERIES_RESULT]' THEN 'Series'
+			WHEN [type] = '[dbo].[TOURNAMENT]' THEN 'Tournament'
+			WHEN [type] = '[dbo].[ORGANIZATION]' THEN 'Organization'
+			ELSE NULL
+		END AS [type],
+		pkey
+			FROM (SELECT pkey, ColumnName AS [match], ColumnValue AS [type] FROM #Results) AS Results) AS Fianl WHERE [type] IS NOT NULL
 END
 GO
 

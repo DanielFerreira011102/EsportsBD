@@ -216,3 +216,6 @@ def generateRandomPlayers(number):
         players.append(player)
 
     return players
+
+p = generateRandomPlayers(20)
+print(p)

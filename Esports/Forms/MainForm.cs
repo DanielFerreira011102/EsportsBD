@@ -1,4 +1,6 @@
 using System.Runtime.InteropServices;
+using System.Diagnostics;
+using System.Text.RegularExpressions;
 
 namespace Esports
 {
@@ -68,7 +70,9 @@ namespace Esports
         {
             if (this.selectedScreen != EventsBtn)
             {
-                this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+                if (this.selectedScreen != searchBtn)
+                    this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+
                 panelNav.Height = EventsBtn.Height;
                 panelNav.Top = EventsBtn.Top;
                 panelNav.Left = EventsBtn.Left;
@@ -83,7 +87,9 @@ namespace Esports
         {
             if (this.selectedScreen != teamBtn)
             {
-                this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+                if (this.selectedScreen != searchBtn)
+                    this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+
                 panelNav.Height = teamBtn.Height;
                 panelNav.Top = teamBtn.Top;
                 panelNav.Left = teamBtn.Left;
@@ -98,7 +104,9 @@ namespace Esports
         {
             if (this.selectedScreen != orgBtn)
             {
-                this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+                if (this.selectedScreen != searchBtn)
+                    this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+
                 panelNav.Height = orgBtn.Height;
                 panelNav.Top = orgBtn.Top;
                 panelNav.Left = orgBtn.Left;
@@ -113,7 +121,9 @@ namespace Esports
         {
             if (this.selectedScreen != ProfileBtn)
             {
-                this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+                if (this.selectedScreen != searchBtn)
+                    this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+
                 panelNav.Height = ProfileBtn.Height;
                 panelNav.Top = ProfileBtn.Top;
                 panelNav.Left = ProfileBtn.Left;
@@ -128,7 +138,9 @@ namespace Esports
         {
             if (this.selectedScreen != homeBtn)
             {
-                this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+                if (this.selectedScreen != searchBtn)
+                    this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+
                 panelNav.Height = homeBtn.Height;
                 panelNav.Top = homeBtn.Top;
                 panelNav.Left = homeBtn.Left;
@@ -150,7 +162,9 @@ namespace Esports
         {
             if (this.selectedScreen != playersBtn)
             {
-                this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+                if (this.selectedScreen != searchBtn)
+                    this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+
                 panelNav.Height = playersBtn.Height;
                 panelNav.Top = playersBtn.Top;
                 panelNav.Left = playersBtn.Left;
@@ -189,7 +203,7 @@ namespace Esports
 
         private void openChildForm(Form child)
         {
-            if (activeForm != child)
+            if (activeForm != child || (string)child.Tag == "Search")
             {
                 activeForm.Close();
                 activeForm = child;
@@ -212,7 +226,9 @@ namespace Esports
         {
             if (this.selectedScreen != MatchesBtn)
             {
-                this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+                if (this.selectedScreen != searchBtn)
+                    this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+
                 panelNav.Height = MatchesBtn.Height;
                 panelNav.Top = MatchesBtn.Top;
                 panelNav.Left = MatchesBtn.Left;
@@ -258,7 +274,9 @@ namespace Esports
         {
             if (this.selectedScreen != ProfileBtn || selectedSub != MyAccountBtn )
             {
-                this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+                if (this.selectedScreen != searchBtn)
+                    this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+
                 panelNav.Height = orgBtn.Height;
                 panelNav.Top = orgBtn.Top + 67;
                 panelNav.Left = MatchesBtn.Left;
@@ -274,7 +292,9 @@ namespace Esports
         {
             if (this.selectedScreen != ProfileBtn || selectedSub != MyOrgBtn)
             {
-                this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+                if (this.selectedScreen != searchBtn)
+                    this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+
                 panelNav.Height = orgBtn.Height;
                 panelNav.Top = orgBtn.Top + 67;
                 panelNav.Left = MatchesBtn.Left;
@@ -290,7 +310,9 @@ namespace Esports
         {
             if (this.selectedScreen != ProfileBtn || selectedSub != MyTeamBtn)
             {
-                this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+                if (this.selectedScreen != searchBtn)
+                    this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+
                 panelNav.Height = orgBtn.Height;
                 panelNav.Top = orgBtn.Top + 67;
                 panelNav.Left = MatchesBtn.Left;
@@ -304,25 +326,42 @@ namespace Esports
 
         private void GoToMSearch()
         {
-           openChildForm(new Forms.SearchForm(textBox1.Text));
-        }
-
-        private void panelDesktop_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox1_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
+            if (string.IsNullOrEmpty(textBox1.Text))
             {
-                GoToMSearch();
+                return;
             }
+
+            if ((string)activeForm.Tag == "Search")
+            {
+                Forms.SearchForm used = (Forms.SearchForm)activeForm;
+                used.LoadBDData(textBox1.Text);
+            }
+            else
+            {
+                this.panelNav.Height = 0;
+                this.selectedScreen.BackColor = Color.FromArgb(24, 30, 54);
+                this.selectedScreen = searchBtn;
+                this.selectedSub = searchBtn;
+                HeaderLbl.Text = "Search";
+                Debug.WriteLine("st" + textBox1.Text + "nd");
+                openChildForm(new Forms.SearchForm(textBox1.Text));
+            }
+            textBox1.Clear(); // optional
         }
+
+
 
         private void searchBtn_Click(object sender, EventArgs e)
         {
             GoToMSearch();
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                GoToMSearch();
+            }
         }
     }
 }

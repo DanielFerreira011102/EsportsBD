@@ -699,11 +699,6 @@ namespace Esports.Forms
             EditList.Select();
         }
 
-        private void FifthStage_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void notificationIcon_Click(object sender, EventArgs e)
         {
             ThirdStage.Visible = false;
@@ -849,6 +844,8 @@ namespace Esports.Forms
             {
                 notficationNum.Visible = false;
                 notificationIcon.Visible = false;
+                FifthStage.Visible = false;
+                OpenThirdStage();
             }
 
             if (RequestsList.Items.Count > 0)
@@ -895,6 +892,45 @@ namespace Esports.Forms
             {
                 //do something else
             }
+        }
+
+        private void RejectBtn_Click(object sender, EventArgs e)
+        {
+            if (!verifySGBDConnection())
+                return;
+
+            SqlCommand cmd1 = new SqlCommand("EXEC rejectRequest @username", cn);
+            cmd1.Parameters.Clear();
+            cmd1.Parameters.AddWithValue("@username", UserReqLbl.Text);
+
+            try
+            {
+                cmd1.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to delete request. \n ERROR MESSAGE: \n" + ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+            MessageBox.Show(UserReqLbl.Text + " was rejected!");
+            RequestsList.SelectedItems[0].Remove();
+            notficationNum.Text = (Int32.Parse(notficationNum.Text) - 1).ToString();
+
+            if (Int32.Parse(notficationNum.Text) <= 0)
+            {
+                notficationNum.Visible = false;
+                notificationIcon.Visible = false;
+                FifthStage.Visible = false;
+                OpenThirdStage();
+            }
+
+            if (RequestsList.Items.Count > 0)
+                RequestsList.Items[0].Selected = true;
+            RequestsList.Select();
         }
 
         private void readPlayer(string un)

@@ -21,7 +21,7 @@ AttrMap = {'[USER]': 7, 'TOURNAMENT': 10, 'TEAM_STAFF_ROLE': 2, 'TEAM_STAFF': 5,
            'SERIES_RESULT': 4, 'SERIES_MVP': 2, 'MAP_RESULT': 4, 'SUPER_EVENT_STAFF': 2}
 
 DRIVER = 'SQL Server'
-SERVER_NAME = 'LAPTOP-C8296JRI\\SQLEXPRESS'
+SERVER_NAME = 'mednat.ieeta.pt\\SQLSERVER,8101'
 DATABASE_NAME = 'Esports'
 
 conn_string = f"""

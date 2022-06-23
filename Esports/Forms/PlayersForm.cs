@@ -271,6 +271,7 @@ namespace Esports.Forms
             }
         }
 
+
         private void GameSelect_OnSelectedIndexChanged(object sender, EventArgs e)
         {
             LoadBDPlayers();

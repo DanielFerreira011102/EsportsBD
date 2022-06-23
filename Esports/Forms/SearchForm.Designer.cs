@@ -32,6 +32,7 @@
             this.SearchList = new System.Windows.Forms.ListView();
             this.match = new System.Windows.Forms.ColumnHeader();
             this.Type = new System.Windows.Forms.ColumnHeader();
+            this.id = new System.Windows.Forms.ColumnHeader();
             this.PlayersLbl = new System.Windows.Forms.Label();
             this.PlayerPanel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -55,10 +56,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.PlayerLbl = new System.Windows.Forms.Label();
+            this.SearchLbl = new System.Windows.Forms.Label();
             this.OrgLbl = new System.Windows.Forms.Label();
             this.OrgPanel = new System.Windows.Forms.Panel();
-            this.DetailsBtn = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.NameLbl = new System.Windows.Forms.Label();
             this.ContactLbl = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -66,19 +67,19 @@
             this.OrgProfile = new System.Windows.Forms.PictureBox();
             this.SeriesLbl = new System.Windows.Forms.Label();
             this.SeriesPanel = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.leftWin = new System.Windows.Forms.PictureBox();
             this.rightWin = new System.Windows.Forms.PictureBox();
             this.team2Img = new System.Windows.Forms.PictureBox();
             this.team1Img = new System.Windows.Forms.PictureBox();
             this.team2Name = new System.Windows.Forms.Label();
             this.team1Name = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.OrgSName = new System.Windows.Forms.Label();
+            this.GameSLbl = new System.Windows.Forms.Label();
             this.BestOfLbl = new System.Windows.Forms.Label();
             this.TourLbl = new System.Windows.Forms.Label();
             this.team2Score = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.LoginBtn = new System.Windows.Forms.Button();
             this.DateLbl = new System.Windows.Forms.Label();
             this.TiesLbl = new System.Windows.Forms.Label();
             this.team1Score = new System.Windows.Forms.Label();
@@ -89,20 +90,20 @@
             this.StatusImg = new System.Windows.Forms.PictureBox();
             this.EventsLbl = new System.Windows.Forms.Label();
             this.EventsPanel = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.Tgame = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.WinnerLbl = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.Torg = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.EventDetailsBtn = new System.Windows.Forms.Button();
             this.NumTeamsLbl = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.Tname = new System.Windows.Forms.Label();
             this.FormatLbl = new System.Windows.Forms.Label();
             this.RegionLbl = new System.Windows.Forms.Label();
             this.PrizeLbl = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.Tstatus = new System.Windows.Forms.Label();
             this.EndLbl = new System.Windows.Forms.Label();
             this.StartLbl = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
@@ -112,16 +113,16 @@
             this.label30 = new System.Windows.Forms.Label();
             this.lbl3 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label32 = new System.Windows.Forms.Label();
+            this.TeamHeaderLbl = new System.Windows.Forms.Label();
+            this.TeamsPanel = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.TeamGame = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
+            this.TeamRank = new System.Windows.Forms.Label();
+            this.TeamName = new System.Windows.Forms.Label();
             this.EarningsLbl = new System.Windows.Forms.Label();
             this.LossesLbl = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
+            this.TeamTies = new System.Windows.Forms.Label();
             this.WinsLbl = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
@@ -130,6 +131,9 @@
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.TeamProfile = new System.Windows.Forms.PictureBox();
+            this.TODO = new System.Windows.Forms.Label();
+            this.Temp = new System.Windows.Forms.PictureBox();
+            this.TodoPanel = new System.Windows.Forms.Panel();
             this.PlayerPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PlayerProfile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IGLStar)).BeginInit();
@@ -144,8 +148,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.team1Img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StatusImg)).BeginInit();
             this.EventsPanel.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.TeamsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamProfile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Temp)).BeginInit();
+            this.TodoPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // SearchList
@@ -153,7 +159,8 @@
             this.SearchList.BackColor = System.Drawing.Color.AliceBlue;
             this.SearchList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.match,
-            this.Type});
+            this.Type,
+            this.id});
             this.SearchList.Font = new System.Drawing.Font("Quicksand", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SearchList.ForeColor = System.Drawing.Color.White;
             this.SearchList.FullRowSelect = true;
@@ -164,17 +171,23 @@
             this.SearchList.TabIndex = 51;
             this.SearchList.UseCompatibleStateImageBehavior = false;
             this.SearchList.View = System.Windows.Forms.View.Details;
+            this.SearchList.SelectedIndexChanged += new System.EventHandler(this.SearchList_SelectedIndexChanged);
             // 
             // match
             // 
             this.match.Tag = "";
-            this.match.Text = "Match";
+            this.match.Text = "Results";
             this.match.Width = 358;
             // 
             // Type
             // 
             this.Type.Text = "Type";
             this.Type.Width = 358;
+            // 
+            // id
+            // 
+            this.id.Text = "id";
+            this.id.Width = 0;
             // 
             // PlayersLbl
             // 
@@ -441,18 +454,18 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "IGN:";
             // 
-            // PlayerLbl
+            // SearchLbl
             // 
-            this.PlayerLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PlayerLbl.AutoSize = true;
-            this.PlayerLbl.Font = new System.Drawing.Font("Quicksand SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.PlayerLbl.Location = new System.Drawing.Point(650, 9);
-            this.PlayerLbl.MinimumSize = new System.Drawing.Size(720, 0);
-            this.PlayerLbl.Name = "PlayerLbl";
-            this.PlayerLbl.Size = new System.Drawing.Size(720, 34);
-            this.PlayerLbl.TabIndex = 52;
-            this.PlayerLbl.Text = "Search Results";
-            this.PlayerLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SearchLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SearchLbl.AutoSize = true;
+            this.SearchLbl.Font = new System.Drawing.Font("Quicksand SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SearchLbl.Location = new System.Drawing.Point(650, 22);
+            this.SearchLbl.MinimumSize = new System.Drawing.Size(720, 0);
+            this.SearchLbl.Name = "SearchLbl";
+            this.SearchLbl.Size = new System.Drawing.Size(720, 34);
+            this.SearchLbl.TabIndex = 52;
+            this.SearchLbl.Text = "Search Results";
+            this.SearchLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // OrgLbl
             // 
@@ -468,7 +481,7 @@
             // OrgPanel
             // 
             this.OrgPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.OrgPanel.Controls.Add(this.DetailsBtn);
+            this.OrgPanel.Controls.Add(this.button5);
             this.OrgPanel.Controls.Add(this.NameLbl);
             this.OrgPanel.Controls.Add(this.ContactLbl);
             this.OrgPanel.Controls.Add(this.label11);
@@ -480,21 +493,21 @@
             this.OrgPanel.TabIndex = 58;
             this.OrgPanel.Visible = false;
             // 
-            // DetailsBtn
+            // button5
             // 
-            this.DetailsBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.DetailsBtn.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.DetailsBtn.FlatAppearance.BorderSize = 0;
-            this.DetailsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DetailsBtn.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.DetailsBtn.ForeColor = System.Drawing.Color.AliceBlue;
-            this.DetailsBtn.Location = new System.Drawing.Point(109, 1152);
-            this.DetailsBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.DetailsBtn.Name = "DetailsBtn";
-            this.DetailsBtn.Size = new System.Drawing.Size(400, 61);
-            this.DetailsBtn.TabIndex = 16;
-            this.DetailsBtn.Text = "CHECK DETAILS";
-            this.DetailsBtn.UseVisualStyleBackColor = false;
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button5.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5.ForeColor = System.Drawing.Color.AliceBlue;
+            this.button5.Location = new System.Drawing.Point(104, 533);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(400, 61);
+            this.button5.TabIndex = 66;
+            this.button5.Text = "CHECK DETAILS";
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // NameLbl
             // 
@@ -563,19 +576,19 @@
             // SeriesPanel
             // 
             this.SeriesPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SeriesPanel.Controls.Add(this.button2);
             this.SeriesPanel.Controls.Add(this.leftWin);
             this.SeriesPanel.Controls.Add(this.rightWin);
             this.SeriesPanel.Controls.Add(this.team2Img);
             this.SeriesPanel.Controls.Add(this.team1Img);
             this.SeriesPanel.Controls.Add(this.team2Name);
             this.SeriesPanel.Controls.Add(this.team1Name);
-            this.SeriesPanel.Controls.Add(this.label5);
-            this.SeriesPanel.Controls.Add(this.label13);
+            this.SeriesPanel.Controls.Add(this.OrgSName);
+            this.SeriesPanel.Controls.Add(this.GameSLbl);
             this.SeriesPanel.Controls.Add(this.BestOfLbl);
             this.SeriesPanel.Controls.Add(this.TourLbl);
             this.SeriesPanel.Controls.Add(this.team2Score);
             this.SeriesPanel.Controls.Add(this.label14);
-            this.SeriesPanel.Controls.Add(this.LoginBtn);
             this.SeriesPanel.Controls.Add(this.DateLbl);
             this.SeriesPanel.Controls.Add(this.TiesLbl);
             this.SeriesPanel.Controls.Add(this.team1Score);
@@ -589,6 +602,22 @@
             this.SeriesPanel.Size = new System.Drawing.Size(615, 700);
             this.SeriesPanel.TabIndex = 60;
             this.SeriesPanel.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.Color.AliceBlue;
+            this.button2.Location = new System.Drawing.Point(104, 557);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(400, 61);
+            this.button2.TabIndex = 66;
+            this.button2.Text = "CHECK DETAILS";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // leftWin
             // 
@@ -658,27 +687,27 @@
             this.team1Name.Text = "TEAM1";
             this.team1Name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label5
+            // OrgSName
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label5.Location = new System.Drawing.Point(197, 242);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(160, 30);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "ORGANIZATION";
+            this.OrgSName.AutoSize = true;
+            this.OrgSName.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.OrgSName.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.OrgSName.Location = new System.Drawing.Point(197, 242);
+            this.OrgSName.Name = "OrgSName";
+            this.OrgSName.Size = new System.Drawing.Size(160, 30);
+            this.OrgSName.TabIndex = 30;
+            this.OrgSName.Text = "ORGANIZATION";
             // 
-            // label13
+            // GameSLbl
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label13.Location = new System.Drawing.Point(197, 374);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(68, 30);
-            this.label13.TabIndex = 20;
-            this.label13.Text = "GAME";
+            this.GameSLbl.AutoSize = true;
+            this.GameSLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GameSLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.GameSLbl.Location = new System.Drawing.Point(197, 374);
+            this.GameSLbl.Name = "GameSLbl";
+            this.GameSLbl.Size = new System.Drawing.Size(68, 30);
+            this.GameSLbl.TabIndex = 20;
+            this.GameSLbl.Text = "GAME";
             // 
             // BestOfLbl
             // 
@@ -725,22 +754,6 @@
             this.label14.Size = new System.Drawing.Size(72, 30);
             this.label14.TabIndex = 19;
             this.label14.Text = "GAME:";
-            // 
-            // LoginBtn
-            // 
-            this.LoginBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.LoginBtn.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.LoginBtn.FlatAppearance.BorderSize = 0;
-            this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LoginBtn.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LoginBtn.ForeColor = System.Drawing.Color.AliceBlue;
-            this.LoginBtn.Location = new System.Drawing.Point(106, 1072);
-            this.LoginBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.LoginBtn.Name = "LoginBtn";
-            this.LoginBtn.Size = new System.Drawing.Size(400, 61);
-            this.LoginBtn.TabIndex = 16;
-            this.LoginBtn.Text = "CHECK DETAILS";
-            this.LoginBtn.UseVisualStyleBackColor = false;
             // 
             // DateLbl
             // 
@@ -842,20 +855,20 @@
             // EventsPanel
             // 
             this.EventsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EventsPanel.Controls.Add(this.label18);
+            this.EventsPanel.Controls.Add(this.button4);
+            this.EventsPanel.Controls.Add(this.Tgame);
             this.EventsPanel.Controls.Add(this.label19);
             this.EventsPanel.Controls.Add(this.WinnerLbl);
             this.EventsPanel.Controls.Add(this.label20);
-            this.EventsPanel.Controls.Add(this.label21);
+            this.EventsPanel.Controls.Add(this.Torg);
             this.EventsPanel.Controls.Add(this.label22);
-            this.EventsPanel.Controls.Add(this.EventDetailsBtn);
             this.EventsPanel.Controls.Add(this.NumTeamsLbl);
             this.EventsPanel.Controls.Add(this.label23);
-            this.EventsPanel.Controls.Add(this.label24);
+            this.EventsPanel.Controls.Add(this.Tname);
             this.EventsPanel.Controls.Add(this.FormatLbl);
             this.EventsPanel.Controls.Add(this.RegionLbl);
             this.EventsPanel.Controls.Add(this.PrizeLbl);
-            this.EventsPanel.Controls.Add(this.label25);
+            this.EventsPanel.Controls.Add(this.Tstatus);
             this.EventsPanel.Controls.Add(this.EndLbl);
             this.EventsPanel.Controls.Add(this.StartLbl);
             this.EventsPanel.Controls.Add(this.label26);
@@ -871,16 +884,32 @@
             this.EventsPanel.TabIndex = 62;
             this.EventsPanel.Visible = false;
             // 
-            // label18
+            // button4
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label18.Location = new System.Drawing.Point(202, 72);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(68, 30);
-            this.label18.TabIndex = 61;
-            this.label18.Text = "GAME";
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button4.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4.ForeColor = System.Drawing.Color.AliceBlue;
+            this.button4.Location = new System.Drawing.Point(104, 569);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(400, 61);
+            this.button4.TabIndex = 66;
+            this.button4.Text = "CHECK DETAILS";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // Tgame
+            // 
+            this.Tgame.AutoSize = true;
+            this.Tgame.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Tgame.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.Tgame.Location = new System.Drawing.Point(202, 72);
+            this.Tgame.Name = "Tgame";
+            this.Tgame.Size = new System.Drawing.Size(68, 30);
+            this.Tgame.TabIndex = 61;
+            this.Tgame.Text = "GAME";
             // 
             // label19
             // 
@@ -913,16 +942,16 @@
             this.label20.TabIndex = 58;
             this.label20.Text = "WINNER:";
             // 
-            // label21
+            // Torg
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label21.Location = new System.Drawing.Point(201, 27);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(55, 30);
-            this.label21.TabIndex = 57;
-            this.label21.Text = "ORG";
+            this.Torg.AutoSize = true;
+            this.Torg.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Torg.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.Torg.Location = new System.Drawing.Point(201, 27);
+            this.Torg.Name = "Torg";
+            this.Torg.Size = new System.Drawing.Size(55, 30);
+            this.Torg.TabIndex = 57;
+            this.Torg.Text = "ORG";
             // 
             // label22
             // 
@@ -933,22 +962,6 @@
             this.label22.Size = new System.Drawing.Size(166, 30);
             this.label22.TabIndex = 56;
             this.label22.Text = "ORGANIZATION:";
-            // 
-            // EventDetailsBtn
-            // 
-            this.EventDetailsBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.EventDetailsBtn.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.EventDetailsBtn.FlatAppearance.BorderSize = 0;
-            this.EventDetailsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EventDetailsBtn.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.EventDetailsBtn.ForeColor = System.Drawing.Color.AliceBlue;
-            this.EventDetailsBtn.Location = new System.Drawing.Point(103, 1125);
-            this.EventDetailsBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.EventDetailsBtn.Name = "EventDetailsBtn";
-            this.EventDetailsBtn.Size = new System.Drawing.Size(400, 61);
-            this.EventDetailsBtn.TabIndex = 55;
-            this.EventDetailsBtn.Text = "CHECK DETAILS";
-            this.EventDetailsBtn.UseVisualStyleBackColor = false;
             // 
             // NumTeamsLbl
             // 
@@ -971,16 +984,16 @@
             this.label23.TabIndex = 19;
             this.label23.Text = "TEAMS:";
             // 
-            // label24
+            // Tname
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label24.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label24.Location = new System.Drawing.Point(202, 115);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(69, 30);
-            this.label24.TabIndex = 14;
-            this.label24.Text = "NAME";
+            this.Tname.AutoSize = true;
+            this.Tname.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Tname.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.Tname.Location = new System.Drawing.Point(202, 115);
+            this.Tname.Name = "Tname";
+            this.Tname.Size = new System.Drawing.Size(69, 30);
+            this.Tname.TabIndex = 14;
+            this.Tname.Text = "NAME";
             // 
             // FormatLbl
             // 
@@ -1015,16 +1028,16 @@
             this.PrizeLbl.TabIndex = 11;
             this.PrizeLbl.Text = "PRIZE";
             // 
-            // label25
+            // Tstatus
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label25.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label25.Location = new System.Drawing.Point(201, 377);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(84, 30);
-            this.label25.TabIndex = 10;
-            this.label25.Text = "STATUS";
+            this.Tstatus.AutoSize = true;
+            this.Tstatus.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Tstatus.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.Tstatus.Location = new System.Drawing.Point(201, 377);
+            this.Tstatus.Name = "Tstatus";
+            this.Tstatus.Size = new System.Drawing.Size(84, 30);
+            this.Tstatus.TabIndex = 10;
+            this.Tstatus.Text = "STATUS";
             // 
             // EndLbl
             // 
@@ -1118,52 +1131,68 @@
             this.label31.TabIndex = 1;
             this.label31.Text = "FORMAT:";
             // 
-            // label2
+            // TeamHeaderLbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(46, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 30);
-            this.label2.TabIndex = 65;
-            this.label2.Text = "Team Details";
-            this.label2.Visible = false;
+            this.TeamHeaderLbl.AutoSize = true;
+            this.TeamHeaderLbl.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TeamHeaderLbl.Location = new System.Drawing.Point(46, 42);
+            this.TeamHeaderLbl.Name = "TeamHeaderLbl";
+            this.TeamHeaderLbl.Size = new System.Drawing.Size(131, 30);
+            this.TeamHeaderLbl.TabIndex = 65;
+            this.TeamHeaderLbl.Text = "Team Details";
+            this.TeamHeaderLbl.Visible = false;
             // 
-            // panel3
+            // TeamsPanel
             // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label32);
-            this.panel3.Controls.Add(this.label33);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.label34);
-            this.panel3.Controls.Add(this.label35);
-            this.panel3.Controls.Add(this.EarningsLbl);
-            this.panel3.Controls.Add(this.LossesLbl);
-            this.panel3.Controls.Add(this.label36);
-            this.panel3.Controls.Add(this.WinsLbl);
-            this.panel3.Controls.Add(this.label37);
-            this.panel3.Controls.Add(this.label38);
-            this.panel3.Controls.Add(this.label39);
-            this.panel3.Controls.Add(this.label40);
-            this.panel3.Controls.Add(this.label41);
-            this.panel3.Controls.Add(this.label42);
-            this.panel3.Controls.Add(this.TeamProfile);
-            this.panel3.Location = new System.Drawing.Point(12, 59);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(615, 700);
-            this.panel3.TabIndex = 64;
-            this.panel3.Visible = false;
+            this.TeamsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TeamsPanel.Controls.Add(this.button3);
+            this.TeamsPanel.Controls.Add(this.TeamGame);
+            this.TeamsPanel.Controls.Add(this.label33);
+            this.TeamsPanel.Controls.Add(this.TeamRank);
+            this.TeamsPanel.Controls.Add(this.TeamName);
+            this.TeamsPanel.Controls.Add(this.EarningsLbl);
+            this.TeamsPanel.Controls.Add(this.LossesLbl);
+            this.TeamsPanel.Controls.Add(this.TeamTies);
+            this.TeamsPanel.Controls.Add(this.WinsLbl);
+            this.TeamsPanel.Controls.Add(this.label37);
+            this.TeamsPanel.Controls.Add(this.label38);
+            this.TeamsPanel.Controls.Add(this.label39);
+            this.TeamsPanel.Controls.Add(this.label40);
+            this.TeamsPanel.Controls.Add(this.label41);
+            this.TeamsPanel.Controls.Add(this.label42);
+            this.TeamsPanel.Controls.Add(this.TeamProfile);
+            this.TeamsPanel.Location = new System.Drawing.Point(12, 59);
+            this.TeamsPanel.Name = "TeamsPanel";
+            this.TeamsPanel.Size = new System.Drawing.Size(615, 700);
+            this.TeamsPanel.TabIndex = 64;
+            this.TeamsPanel.Visible = false;
             // 
-            // label32
+            // button3
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label32.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label32.Location = new System.Drawing.Point(119, 362);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(68, 30);
-            this.label32.TabIndex = 20;
-            this.label32.Text = "GAME";
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button3.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.ForeColor = System.Drawing.Color.AliceBlue;
+            this.button3.Location = new System.Drawing.Point(104, 557);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(400, 61);
+            this.button3.TabIndex = 67;
+            this.button3.Text = "CHECK DETAILS";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // TeamGame
+            // 
+            this.TeamGame.AutoSize = true;
+            this.TeamGame.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TeamGame.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.TeamGame.Location = new System.Drawing.Point(119, 362);
+            this.TeamGame.Name = "TeamGame";
+            this.TeamGame.Size = new System.Drawing.Size(68, 30);
+            this.TeamGame.TabIndex = 20;
+            this.TeamGame.Text = "GAME";
             // 
             // label33
             // 
@@ -1175,43 +1204,27 @@
             this.label33.TabIndex = 19;
             this.label33.Text = "GAME:";
             // 
-            // button2
+            // TeamRank
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.AliceBlue;
-            this.button2.Location = new System.Drawing.Point(106, 1072);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(400, 61);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "CHECK DETAILS";
-            this.button2.UseVisualStyleBackColor = false;
+            this.TeamRank.AutoSize = true;
+            this.TeamRank.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TeamRank.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.TeamRank.Location = new System.Drawing.Point(334, 39);
+            this.TeamRank.Name = "TeamRank";
+            this.TeamRank.Size = new System.Drawing.Size(68, 30);
+            this.TeamRank.TabIndex = 14;
+            this.TeamRank.Text = "RANK";
             // 
-            // label34
+            // TeamName
             // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label34.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label34.Location = new System.Drawing.Point(334, 39);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(68, 30);
-            this.label34.TabIndex = 14;
-            this.label34.Text = "RANK";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label35.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label35.Location = new System.Drawing.Point(336, 108);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(47, 30);
-            this.label35.TabIndex = 13;
-            this.label35.Text = "IGN";
+            this.TeamName.AutoSize = true;
+            this.TeamName.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TeamName.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.TeamName.Location = new System.Drawing.Point(336, 108);
+            this.TeamName.Name = "TeamName";
+            this.TeamName.Size = new System.Drawing.Size(47, 30);
+            this.TeamName.TabIndex = 13;
+            this.TeamName.Text = "IGN";
             // 
             // EarningsLbl
             // 
@@ -1235,16 +1248,16 @@
             this.LossesLbl.TabIndex = 10;
             this.LossesLbl.Text = "LOSSES";
             // 
-            // label36
+            // TeamTies
             // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label36.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label36.Location = new System.Drawing.Point(119, 275);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(52, 30);
-            this.label36.TabIndex = 9;
-            this.label36.Text = "TIES";
+            this.TeamTies.AutoSize = true;
+            this.TeamTies.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TeamTies.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.TeamTies.Location = new System.Drawing.Point(119, 275);
+            this.TeamTies.Name = "TeamTies";
+            this.TeamTies.Size = new System.Drawing.Size(52, 30);
+            this.TeamTies.TabIndex = 9;
+            this.TeamTies.Text = "TIES";
             // 
             // WinsLbl
             // 
@@ -1327,26 +1340,61 @@
             this.TeamProfile.TabIndex = 0;
             this.TeamProfile.TabStop = false;
             // 
+            // TODO
+            // 
+            this.TODO.AutoSize = true;
+            this.TODO.Font = new System.Drawing.Font("Quicksand Medium", 48F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.TODO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(213)))), ((int)(((byte)(88)))));
+            this.TODO.Location = new System.Drawing.Point(132, 33);
+            this.TODO.Name = "TODO";
+            this.TODO.Size = new System.Drawing.Size(298, 119);
+            this.TODO.TabIndex = 67;
+            this.TODO.Text = "TODO:";
+            this.TODO.Visible = false;
+            // 
+            // Temp
+            // 
+            this.Temp.Image = ((System.Drawing.Image)(resources.GetObject("Temp.Image")));
+            this.Temp.Location = new System.Drawing.Point(71, 95);
+            this.Temp.Name = "Temp";
+            this.Temp.Size = new System.Drawing.Size(500, 500);
+            this.Temp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Temp.TabIndex = 68;
+            this.Temp.TabStop = false;
+            // 
+            // TodoPanel
+            // 
+            this.TodoPanel.Controls.Add(this.TODO);
+            this.TodoPanel.Controls.Add(this.Temp);
+            this.TodoPanel.Location = new System.Drawing.Point(12, 59);
+            this.TodoPanel.Name = "TodoPanel";
+            this.TodoPanel.Size = new System.Drawing.Size(615, 700);
+            this.TodoPanel.TabIndex = 69;
+            this.TodoPanel.Visible = false;
+            // 
             // SearchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1382, 768);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.EventsLbl);
-            this.Controls.Add(this.EventsPanel);
-            this.Controls.Add(this.OrgPanel);
             this.Controls.Add(this.SeriesLbl);
-            this.Controls.Add(this.SeriesPanel);
             this.Controls.Add(this.OrgLbl);
-            this.Controls.Add(this.SearchList);
+            this.Controls.Add(this.EventsLbl);
             this.Controls.Add(this.PlayersLbl);
+            this.Controls.Add(this.TeamHeaderLbl);
+            this.Controls.Add(this.SearchLbl);
+            this.Controls.Add(this.TodoPanel);
+            this.Controls.Add(this.OrgPanel);
+            this.Controls.Add(this.EventsPanel);
             this.Controls.Add(this.PlayerPanel);
-            this.Controls.Add(this.PlayerLbl);
+            this.Controls.Add(this.SeriesPanel);
+            this.Controls.Add(this.TeamsPanel);
+            this.Controls.Add(this.SearchList);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "SearchForm";
+            this.Tag = "Search";
             this.Text = "SearchForm";
             this.Load += new System.EventHandler(this.SearchForm_Load);
             this.PlayerPanel.ResumeLayout(false);
@@ -1367,9 +1415,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.StatusImg)).EndInit();
             this.EventsPanel.ResumeLayout(false);
             this.EventsPanel.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.TeamsPanel.ResumeLayout(false);
+            this.TeamsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeamProfile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Temp)).EndInit();
+            this.TodoPanel.ResumeLayout(false);
+            this.TodoPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1401,12 +1452,11 @@
         private Label label4;
         private Label label3;
         private Label label1;
-        private Label PlayerLbl;
+        private Label SearchLbl;
         private ColumnHeader Type;
         private Button button1;
         private Label OrgLbl;
         private Panel OrgPanel;
-        private Button DetailsBtn;
         private Label NameLbl;
         private Label ContactLbl;
         private Label label11;
@@ -1420,13 +1470,12 @@
         private PictureBox team1Img;
         private Label team2Name;
         private Label team1Name;
-        private Label label5;
-        private Label label13;
+        private Label OrgSName;
+        private Label GameSLbl;
         private Label BestOfLbl;
         private Label TourLbl;
         private Label team2Score;
         private Label label14;
-        private Button LoginBtn;
         private Label DateLbl;
         private Label TiesLbl;
         private Label team1Score;
@@ -1437,20 +1486,19 @@
         private PictureBox StatusImg;
         private Label EventsLbl;
         private Panel EventsPanel;
-        private Label label18;
+        private Label Tgame;
         private Label label19;
         private Label WinnerLbl;
         private Label label20;
-        private Label label21;
+        private Label Torg;
         private Label label22;
-        private Button EventDetailsBtn;
         private Label NumTeamsLbl;
         private Label label23;
-        private Label label24;
+        private Label Tname;
         private Label FormatLbl;
         private Label RegionLbl;
         private Label PrizeLbl;
-        private Label label25;
+        private Label Tstatus;
         private Label EndLbl;
         private Label StartLbl;
         private Label label26;
@@ -1460,16 +1508,15 @@
         private Label label30;
         private Label lbl3;
         private Label label31;
-        private Label label2;
-        private Panel panel3;
-        private Label label32;
+        private Label TeamHeaderLbl;
+        private Panel TeamsPanel;
+        private Label TeamGame;
         private Label label33;
-        private Button button2;
-        private Label label34;
-        private Label label35;
+        private Label TeamRank;
+        private Label TeamName;
         private Label EarningsLbl;
         private Label LossesLbl;
-        private Label label36;
+        private Label TeamTies;
         private Label WinsLbl;
         private Label label37;
         private Label label38;
@@ -1478,5 +1525,13 @@
         private Label label41;
         private Label label42;
         private PictureBox TeamProfile;
+        private ColumnHeader id;
+        private Button button5;
+        private Button button2;
+        private Button button4;
+        private Button button3;
+        private Label TODO;
+        private PictureBox Temp;
+        private Panel TodoPanel;
     }
 }

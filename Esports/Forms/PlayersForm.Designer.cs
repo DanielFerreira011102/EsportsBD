@@ -279,9 +279,9 @@
             this.CountryLbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.CountryLbl.Location = new System.Drawing.Point(330, 169);
             this.CountryLbl.Name = "CountryLbl";
-            this.CountryLbl.Size = new System.Drawing.Size(122, 30);
+            this.CountryLbl.Size = new System.Drawing.Size(106, 30);
             this.CountryLbl.TabIndex = 11;
-            this.CountryLbl.Text = "REAL NAME";
+            this.CountryLbl.Text = "COUNTRY";
             // 
             // GameLbl
             // 

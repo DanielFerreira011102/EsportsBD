@@ -6,12 +6,7 @@ def GetSQLDataStandard(query, argument=False, asList=True, newSetup=False):
     SERVER_NAME = 'LAPTOP-C8296JRI\\SQLEXPRESS'
     DATABASE_NAME = 'Esports'
 
-    conn_string = f"""
-        Driver={{{DRIVER}}};
-        Server={SERVER_NAME};
-        Database={DATABASE_NAME};
-        Trust_Connection=yes;
-    """
+    conn_string = f"""Driver={{{DRIVER}}};Server={SERVER_NAME};Database={DATABASE_NAME};Trust_Connection=yes;"""
 
     try:
         conn = odbc.connect(conn_string)
