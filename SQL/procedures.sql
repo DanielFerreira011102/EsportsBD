@@ -496,7 +496,9 @@ as
 				+ ' located on ' + groupname),
 		'index_keys' = index_keys
 	from #spindtab
-	order by table_name, index_name
+	-- comentar a linha a baixo para mostar todos os indices
+	where index_name NOT LIKE 'PK%' AND index_name NOT LIKE 'UQ%'
+	order by table_name, index_name 
 
 
 	return (0) -- sp_helpindex

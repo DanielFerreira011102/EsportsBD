@@ -237,6 +237,7 @@
             this.LoginBtn.TabIndex = 16;
             this.LoginBtn.Text = "CHECK DETAILS";
             this.LoginBtn.UseVisualStyleBackColor = false;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // RankLbl
             // 

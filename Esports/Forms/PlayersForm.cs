@@ -287,6 +287,11 @@ namespace Esports.Forms
             }
         }
 
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void Twitch_Click(object sender, EventArgs e)
         {
             try

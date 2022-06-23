@@ -277,5 +277,10 @@ namespace Esports.Forms
             TeamsList.Items[0].Selected = true;
             TeamsList.Select();
         }
+
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
