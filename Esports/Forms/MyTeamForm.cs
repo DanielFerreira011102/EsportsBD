@@ -14,6 +14,7 @@ namespace Esports.Forms
         private ListViewColumnSorter lvwColumnSorter;
         private string user;
         private string twitter, twitch;
+        private string userole;
 
         private SqlConnection getSGBDConnection()
         {
@@ -476,17 +477,25 @@ namespace Esports.Forms
                 string role = reader["role"].ToString();
 
                 if (username == user)
+                {
+                    this.userole = role;
                     if (role == "Manager" || username == captain)
                     {
                         editBtn.Visible = true;
                         DeleteTeamBtn.Visible = true;
                         if (number > 0)
                         {
-                            notficationNum.Text = (number > 9)? "9+" : number.ToString();
+                            notficationNum.Text = (number > 9) ? "9+" : number.ToString();
                             notficationNum.Visible = true;
                             notificationIcon.Visible = true;
                         }
-                    } 
+                    }
+                    else
+                    {
+                        LeaveBtn.Visible = true;
+
+                    }
+                }
 
                 item.SubItems.Add(role);
 
@@ -667,8 +676,12 @@ namespace Esports.Forms
 
             MessageBox.Show(un + "was removed from the team!");
             EditList.SelectedItems[0].Remove();
-            EditList.Items[0].Selected = true;
-            EditList.Select();
+
+            if (EditList.SelectedItems.Count > 0)
+            {
+                EditList.Items[0].Selected = true;
+                EditList.Select();
+            }
         }
 
         private void removeStaff(string un)
@@ -695,8 +708,12 @@ namespace Esports.Forms
 
             MessageBox.Show(un + "was removed from the team!");
             EditList.SelectedItems[0].Remove();
-            EditList.Items[0].Selected = true;
-            EditList.Select();
+
+            if (EditList.SelectedItems.Count > 0)
+            {
+                EditList.Items[0].Selected = true;
+                EditList.Select();
+            }
         }
 
         private void notificationIcon_Click(object sender, EventArgs e)
@@ -862,7 +879,7 @@ namespace Esports.Forms
         private void DeleteTeamBtn_Click(object sender, EventArgs e)
         {
 
-            DialogResult dialogResult = MessageBox.Show("Are you sure?", "Delete User", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Are you sure?", "Delete Team", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 if (!verifySGBDConnection())
@@ -923,6 +940,7 @@ namespace Esports.Forms
             if (Int32.Parse(notficationNum.Text) <= 0)
             {
                 notficationNum.Visible = false;
+                notficationNum.Visible = false;
                 notificationIcon.Visible = false;
                 FifthStage.Visible = false;
                 OpenThirdStage();
@@ -931,6 +949,64 @@ namespace Esports.Forms
             if (RequestsList.Items.Count > 0)
                 RequestsList.Items[0].Selected = true;
             RequestsList.Select();
+        }
+
+        private void LeaveBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure?", "Leave team", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                if (!verifySGBDConnection())
+                    return;
+
+                if (this.userole == "Player")
+                {
+
+                    SqlCommand cmd2 = new SqlCommand("EXEC removePlayerFromTeam @Username=@user", cn);
+                    cmd2.Parameters.Clear();
+                    cmd2.Parameters.AddWithValue("@user", user);
+
+                    try
+                    {
+                        cmd2.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("Failed to remove player from team. \n ERROR MESSAGE: \n" + ex.Message);
+                    }
+                    finally
+                    {
+                        cn.Close();
+                    }
+                }
+                else
+                {
+
+                    SqlCommand cmd2 = new SqlCommand("EXEC removeStaffFromTeam @Username=@user", cn);
+                    cmd2.Parameters.Clear();
+                    cmd2.Parameters.AddWithValue("@user", user);
+
+                    try
+                    {
+                        cmd2.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("Failed to remove staff from team. \n ERROR MESSAGE: \n" + ex.Message);
+                    }
+                    finally
+                    {
+                        cn.Close();
+                    }
+                }
+
+                this.ThirdStage.Visible = false;
+                OpenFirstStage();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do something else
+            }
         }
 
         private void readPlayer(string un)

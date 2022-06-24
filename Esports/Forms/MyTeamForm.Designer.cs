@@ -159,6 +159,7 @@
             this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
             this.label17 = new System.Windows.Forms.Label();
+            this.LeaveBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -789,6 +790,7 @@
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.LeaveBtn);
             this.panel8.Controls.Add(this.DeleteTeamBtn);
             this.panel8.Controls.Add(this.TeamDetailsBtn);
             this.panel8.Controls.Add(this.GameLbl);
@@ -1754,16 +1756,35 @@
             this.label17.Text = "Join Requests";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // LeaveBtn
+            // 
+            this.LeaveBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.LeaveBtn.BackColor = System.Drawing.Color.Transparent;
+            this.LeaveBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(86)))), ((int)(((byte)(225)))));
+            this.LeaveBtn.FlatAppearance.BorderSize = 4;
+            this.LeaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LeaveBtn.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LeaveBtn.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.LeaveBtn.Location = new System.Drawing.Point(76, 492);
+            this.LeaveBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.LeaveBtn.Name = "LeaveBtn";
+            this.LeaveBtn.Size = new System.Drawing.Size(400, 61);
+            this.LeaveBtn.TabIndex = 57;
+            this.LeaveBtn.Text = "LEAVE TEAM";
+            this.LeaveBtn.UseVisualStyleBackColor = false;
+            this.LeaveBtn.Visible = false;
+            this.LeaveBtn.Click += new System.EventHandler(this.LeaveBtn_Click);
+            // 
             // MyTeamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1382, 768);
-            this.Controls.Add(this.FifthStage);
+            this.Controls.Add(this.FourthStage);
             this.Controls.Add(this.ThirdStage);
+            this.Controls.Add(this.FifthStage);
             this.Controls.Add(this.FirstStage);
             this.Controls.Add(this.SecondStage);
-            this.Controls.Add(this.FourthStage);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "MyTeamForm";
@@ -1941,5 +1962,6 @@
         private ColumnHeader columnHeader6;
         private Button DeleteTeamBtn;
         private Button RejectBtn;
+        private Button LeaveBtn;
     }
 }
