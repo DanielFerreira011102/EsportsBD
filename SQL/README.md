@@ -11,4 +11,4 @@
 - functions: contém as funções
 
 - esports: código inicial para gerar as tabelas\
-(eu fui fazendo alteração na base de dados, e apesar de ter tentado atualizar este ficheiro sempre que houve mudança, é capaz de me ter escapado alguma coisa)
+(eu fui fazendo alteração na base de dados, e apesar de ter tentado atualizar este ficheiro sempre que houve mudança, é capaz de me ter escapados alguma coisa)
