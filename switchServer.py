@@ -25,7 +25,7 @@ HELP = \
     """
    Search and replace recursive
    Usage:
-        ~$ python switchServer.py [searched_text] [replace_text] [path]
+        ~$ python switchServer.py [old_conn_string] [new_conn_string] [path]
     Or just run it with no arguments it will switch between local and remote context
 """
 
@@ -52,7 +52,7 @@ def replace(find, replacement, path):
                 print(e)
 
 
-if len(sys.argv) <= 2:
+if len(sys.argv) <= 3:
     context = getValueFromConfigFile('CURRENT_CONTEXT', 'context')
 
     if context == 'local':

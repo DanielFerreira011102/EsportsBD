@@ -21,15 +21,10 @@ AttrMap = {'[USER]': 7, 'TOURNAMENT': 10, 'TEAM_STAFF_ROLE': 2, 'TEAM_STAFF': 5,
            'SERIES_RESULT': 4, 'SERIES_MVP': 2, 'MAP_RESULT': 4, 'SUPER_EVENT_STAFF': 2}
 
 DRIVER = 'SQL Server'
-SERVER_NAME = 'mednat.ieeta.pt\\SQLSERVER,8101'
+SERVER_NAME = 'LAPTOP-C8296JRI\\SQLEXPRESS'
 DATABASE_NAME = 'Esports'
 
-conn_string = f"""
-    Driver={{{DRIVER}}};
-    Server={SERVER_NAME};
-    Database={DATABASE_NAME};
-    Trust_Connection=yes;
-"""
+conn_string = f"""Driver={{{DRIVER}}};Server=mednat.ieeta.pt\\SQLSERVER,8101;Database=p5g5;uid=p5g5;pwd=@Aveiro123;"""
 
 """ --------- FUNCTIONS --------- """
 

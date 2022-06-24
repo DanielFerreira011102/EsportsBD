@@ -17,7 +17,7 @@ namespace Esports.Forms
         private SqlConnection getSGBDConnection()
         {
             //return new SqlConnection("data source= CCWIN8\\SQL2012EXPRESS;integrated security=true;initial catalog=Northwind");
-            SqlConnection CN = new SqlConnection("data source=LAPTOP-C8296JRI\\SQLEXPRESS;Database=Esports;Trusted_Connection=True");
+            SqlConnection CN = new SqlConnection("data source=mednat.ieeta.pt\\SQLSERVER,8101; initial catalog=p5g5;User id=p5g5;password=@Aveiro123");
 
             try
             {
